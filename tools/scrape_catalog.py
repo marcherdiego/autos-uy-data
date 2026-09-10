@@ -173,6 +173,14 @@ def build_catalog(html, previous):
 
     previous_names = {slug(b["name"]): b["name"] for b in previous.get("brands", [])}
     previous_logos = {b["id"]: b for b in previous.get("brands", [])}
+    # Cada versión apunta a su ficha con modelKey, y ese vínculo lo arma el
+    # proceso de fichas, no este. Si no se copia del catálogo anterior, la app
+    # se queda sin fotos ni ficha técnica: muestra solo el importador.
+    model_of = {
+        version_id: model["modelKey"]
+        for model in previous.get("models", [])
+        for version_id in model.get("versionIds", [])
+    }
 
     by_id, importers, cars, new_brands = {}, [], [], []
     for section in sections:
@@ -228,6 +236,9 @@ def build_catalog(html, previous):
                 "batteryKwh": battery_of(version),
                 "category": category_of(version),
                 "note": f"+ {note}" if note else None,
+                # Null en una versión nueva: hasta que tenga ficha, la app le
+                # muestra precio, importador y poco más.
+                "modelKey": model_of.get(car_id),
             })
 
     text = body.get_text(" ", strip=True)
@@ -284,9 +295,10 @@ def main():
     catalog, new_brands = build_catalog(fetch_html(), previous)
 
     changes = diff_summary(previous, catalog)
+    sin_ficha = sum(1 for car in catalog["cars"] if not car.get("modelKey"))
     print(f"marcas: {len(catalog['brands'])} | importadores: {len(catalog['importers'])} | "
           f"versiones: {len(catalog['cars'])} | fichas: {len(catalog['models'])} | "
-          f"actualizado: {catalog['updatedAt']}")
+          f"sin ficha: {sin_ficha} | actualizado: {catalog['updatedAt']}")
     if new_brands:
         print("marcas nuevas: " + ", ".join(new_brands))
     if changes:
@@ -295,8 +307,10 @@ def main():
             print("  " + line)
         if len(changes) > 60:
             print(f"  … y {len(changes) - 60} más")
-    else:
+    elif previous.get("dataVersion") == catalog["dataVersion"]:
         print("sin cambios respecto del catálogo anterior")
+    else:
+        print("sin altas, bajas ni cambios de precio, pero el contenido cambió")
 
     if args.dry_run:
         return
