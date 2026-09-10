@@ -6,7 +6,7 @@ venta en Uruguay.
 **El archivo es [`catalog.json`](catalog.json)**, y la app lo lee de:
 
 ```
-https://raw.githubusercontent.com/marcherdiego/autos-uy-data/master/catalog.json
+https://raw.githubusercontent.com/marcherdiego/autos-uy-data/main/catalog.json
 ```
 
 ## Cómo se actualiza
