@@ -351,7 +351,7 @@
     const changed = show('other') ? (e.changed || []).filter(matches) : [];
     const brandLevel = show('other') && !state.q && !state.brand;
     const importers = brandLevel ? (e.importers || []) : (show('other') ? (e.importers || []).filter((i) => (!state.brand || i.brand === state.brand) && (!state.q || i.brand.toLowerCase().includes(state.q.toLowerCase()))) : []);
-    const extras = brandLevel ? [...(e.brandsAdded || []), ...(e.brandsRemoved || []), ...(e.modelsRemoved || [])].length + (e.changedSummary ? 1 : 0) : 0;
+    const extras = brandLevel ? [...(e.brandsAdded || []), ...(e.brandsRemoved || []), ...(e.modelsRemoved || [])].length + (e.changedSummary ? 1 : 0) + (e.modelsChanged || 0) : 0;
     const any = added.length + removed.length + repriced.length + changed.length + importers.length + extras;
     if (filtering && !any) return '';
     if (!filtering && !any) {
@@ -366,6 +366,7 @@
       c.up && `<span class="badge price">▲ ${c.up} ${c.up === 1 ? 'suba' : 'subas'}</span>`,
       c.down && `<span class="badge price">▼ ${c.down} ${c.down === 1 ? 'baja de precio' : 'bajas de precio'}</span>`,
       otherCount(e) && `<span class="badge">${int(otherCount(e))} ${otherCount(e) === 1 ? 'otro cambio' : 'otros cambios'}</span>`,
+      e.modelsChanged && `<span class="badge">${int(e.modelsChanged)} ${e.modelsChanged === 1 ? 'ficha actualizada' : 'fichas actualizadas'}</span>`,
       bigRemoval && `<span class="badge warn">⚠ muchas bajas: revisar</span>`,
       e.manual && `<span class="badge">manual</span>`,
     ].filter(Boolean).join('');
@@ -374,6 +375,7 @@
       <summary><span class="chev" aria-hidden="true">▸</span><span class="when">${fmtDate(e.at)}</span>
         <span class="badges">${badges}</span><span class="spacer"></span>${links(e)}</summary>
       <div class="body">
+        ${e.note ? `<p class="small">${esc(e.note)}</p>` : ''}
         ${e.brandsAdded && e.brandsAdded.length && brandLevel ? `<h3>Marcas nuevas</h3><p class="small">${e.brandsAdded.map(esc).join(', ')} — la app les dibuja las iniciales hasta que salga una versión con su logo.</p>` : ''}
         ${e.brandsRemoved && e.brandsRemoved.length && brandLevel ? `<h3>Marcas que salieron</h3><p class="small">${e.brandsRemoved.map(esc).join(', ')}</p>` : ''}
         ${added.length ? section('Altas', added, ['Marca', 'Versión', 'Precio'], (x) => `<td>${esc(x.brand)}</td><td>${esc(x.name)}</td><td class="num">${usd(x.priceUsd)}</td>`) : ''}
