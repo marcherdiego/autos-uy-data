@@ -26,6 +26,28 @@ python3 tools/scrape_catalog.py --dry-run   # sólo informa
 python3 tools/scrape_catalog.py             # escribe catalog.json
 ```
 
+## Changelog y panel de monitoreo
+
+Cada corrida que publica un catálogo nuevo agrega una entrada a
+[`changelog.json`](changelog.json) (la más nueva primero): versiones que entraron,
+que salieron y que cambiaron de precio, otros campos que cambiaron (nombre,
+nota, combustible, ficha), marcas e importadores nuevos o modificados, y fichas
+que se quedaron sin versiones. Una corrida sin cambios no escribe nada.
+
+El panel lo muestra junto con el estado de cada corrida del job:
+**https://autos-uy-panel.vercel.app** (pide la contraseña, `ADMIN_SECRET`).
+
+- `public/index.html` es el panel (HTML + JS, sin build) y `api/panel.js` le
+  junta los datos: las corridas, de la API de GitHub, y el changelog, de este repo.
+  Los lee en vivo, así que un cambio en los datos no necesita deploy.
+- El proyecto de Vercel (`autos-uy-panel`) está conectado a este repo, pero
+  `ignoreCommand` en `vercel.json` saltea el deploy salvo que el commit toque el
+  panel (`public/`, `api/`, `vercel.json`, `package.json`): los commits diarios
+  del catálogo no deployan nada.
+- Variables en Vercel: `ADMIN_SECRET` (sin ella el panel responde 503) y,
+  opcional, `GITHUB_TOKEN` para no depender del cupo sin autenticar de la API de
+  GitHub. Si ese cupo se agota, el panel pide las corridas desde el navegador.
+
 ## Qué actualiza y qué no
 
 | | |

@@ -1,0 +1,5 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- public api vercel.json package.json"
+}

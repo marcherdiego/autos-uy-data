@@ -43,7 +43,9 @@ jobs:
           version=$(python3 -c "import json;print(json.load(open('catalog.json'))['dataVersion'])")
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog.json
+          # changelog.json lo escribe el scraper junto con el catálogo: es lo
+          # que lee el panel de monitoreo.
+          git add catalog.json changelog.json
           git commit -m "Catálogo $version
 
           $(cat /tmp/resumen.txt)"

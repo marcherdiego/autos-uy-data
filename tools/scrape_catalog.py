@@ -22,6 +22,7 @@ Requiere: beautifulsoup4.
 """
 
 import argparse
+import datetime
 import hashlib
 import json
 import os
@@ -264,24 +265,115 @@ def build_catalog(html, previous):
     return catalog, new_brands
 
 
-def diff_summary(previous, catalog):
-    """Qué cambió respecto del catálogo anterior, en una lista de líneas."""
+# Campos de una versión que, si cambian, entran al changelog. `importerId` queda
+# afuera: es posicional ("marca_<n>") y cambia cada vez que se reordena la lista.
+TRACKED_FIELDS = ("name", "note", "fuel", "category", "batteryKwh", "modelKey")
+IMPORTER_FIELDS = ("address", "phone", "web", "warranty")
+CHANGELOG = os.path.join(ROOT, "changelog.json")
+# El panel muestra lo reciente; más de esto no hace falta y el archivo crece
+# con cada ola de precios.
+CHANGELOG_MAX_ENTRIES = 400
+
+
+def diff_catalogs(previous, catalog):
+    """Qué cambió respecto del catálogo anterior, estructurado para el changelog."""
+    names = {b["id"]: b["name"] for b in previous.get("brands", [])}
+    names.update({b["id"]: b["name"] for b in catalog["brands"]})
+
+    def brief(car):
+        return {"id": car["id"], "brand": names.get(car["brandId"], car["brandId"]),
+                "name": car["name"], "priceUsd": car["priceUsd"]}
+
     old_cars = {c["id"]: c for c in previous.get("cars", [])}
     new_cars = {c["id"]: c for c in catalog["cars"]}
-    added = [new_cars[i] for i in new_cars.keys() - old_cars.keys()]
-    removed = [old_cars[i] for i in old_cars.keys() - new_cars.keys()]
-    repriced = [
-        (new_cars[i], old_cars[i]["priceUsd"])
-        for i in new_cars.keys() & old_cars.keys()
-        if new_cars[i]["priceUsd"] != old_cars[i]["priceUsd"]
-    ]
+    shared = sorted(new_cars.keys() & old_cars.keys())
+
+    changed = []
+    for i in shared:
+        fields = {f: [old_cars[i].get(f), new_cars[i].get(f)]
+                  for f in TRACKED_FIELDS if old_cars[i].get(f) != new_cars[i].get(f)}
+        if fields:
+            changed.append({**brief(new_cars[i]), "fields": fields})
+
+    # Los importadores se emparejan por (marca, nombre): su id es posicional.
+    def importer_key(imp):
+        return (imp["brandId"], imp["name"])
+
+    old_imps = {importer_key(i): i for i in previous.get("importers", [])}
+    new_imps = {importer_key(i): i for i in catalog["importers"]}
+    importers = []
+    for key in sorted(new_imps.keys() | old_imps.keys()):
+        brand = names.get(key[0], key[0])
+        if key not in old_imps:
+            importers.append({"brand": brand, "name": key[1], "status": "added"})
+        elif key not in new_imps:
+            importers.append({"brand": brand, "name": key[1], "status": "removed"})
+        else:
+            fields = {f: [old_imps[key].get(f), new_imps[key].get(f)]
+                      for f in IMPORTER_FIELDS if old_imps[key].get(f) != new_imps[key].get(f)}
+            if fields:
+                importers.append({"brand": brand, "name": key[1], "status": "changed", "fields": fields})
+
+    old_brands = {b["id"] for b in previous.get("brands", [])}
+    new_brands = {b["id"] for b in catalog["brands"]}
+    new_models = {m["modelKey"] for m in catalog["models"]}
+    return {
+        "added": [brief(new_cars[i]) for i in sorted(new_cars.keys() - old_cars.keys())],
+        "removed": [brief(old_cars[i]) for i in sorted(old_cars.keys() - new_cars.keys())],
+        "repriced": [
+            {**brief(new_cars[i]), "from": old_cars[i]["priceUsd"]}
+            for i in shared if new_cars[i]["priceUsd"] != old_cars[i]["priceUsd"]
+        ],
+        "changed": changed,
+        "brandsAdded": sorted(names[b] for b in new_brands - old_brands),
+        "brandsRemoved": sorted(names[b] for b in old_brands - new_brands),
+        "importers": importers,
+        # Fichas que se quedaron sin ninguna versión a la venta y salieron.
+        "modelsRemoved": sorted(m["modelKey"] for m in previous.get("models", [])
+                                if m["modelKey"] not in new_models),
+    }
+
+
+def totals_of(catalog):
+    return {
+        "brands": len(catalog["brands"]), "importers": len(catalog["importers"]),
+        "cars": len(catalog["cars"]), "models": len(catalog["models"]),
+        "withoutModel": sum(1 for car in catalog["cars"] if not car.get("modelKey")),
+    }
+
+
+def changelog_entry(previous, catalog, at, run_id=None):
+    return {
+        "at": at,
+        "runId": run_id,
+        "dataVersion": catalog["dataVersion"],
+        "previousVersion": previous.get("dataVersion"),
+        "sourceUpdatedAt": catalog["updatedAt"],
+        "totals": totals_of(catalog),
+        **diff_catalogs(previous, catalog),
+    }
+
+
+def append_changelog(entry):
+    entries = []
+    if os.path.exists(CHANGELOG):
+        with open(CHANGELOG, encoding="utf-8") as handle:
+            entries = json.load(handle).get("entries", [])
+    entries = [entry] + [e for e in entries if e["dataVersion"] != entry["dataVersion"]]
+    with open(CHANGELOG, "w", encoding="utf-8") as handle:
+        json.dump({"entries": entries[:CHANGELOG_MAX_ENTRIES]}, handle, ensure_ascii=False, indent=1)
+        handle.write("\n")
+
+
+def summary_lines(diff):
+    """El resumen de una línea por cambio que va al commit y al job."""
     lines = []
-    for car in sorted(added, key=lambda c: c["id"]):
+    for car in diff["added"]:
         lines.append(f"+ {car['id']} — U$S {car['priceUsd']:,}".replace(",", "."))
-    for car in sorted(removed, key=lambda c: c["id"]):
+    for car in diff["removed"]:
         lines.append(f"- {car['id']}")
-    for car, before in sorted(repriced, key=lambda p: p[0]["id"]):
-        lines.append(f"~ {car['id']} — {before} -> {car['priceUsd']}")
+    for car in diff["repriced"]:
+        lines.append(f"~ {car['id']} — {car['from']} -> {car['priceUsd']}")
     return lines
 
 
@@ -294,7 +386,8 @@ def main():
     previous = previous_catalog()
     catalog, new_brands = build_catalog(fetch_html(), previous)
 
-    changes = diff_summary(previous, catalog)
+    diff = diff_catalogs(previous, catalog)
+    changes = summary_lines(diff)
     sin_ficha = sum(1 for car in catalog["cars"] if not car.get("modelKey"))
     print(f"marcas: {len(catalog['brands'])} | importadores: {len(catalog['importers'])} | "
           f"versiones: {len(catalog['cars'])} | fichas: {len(catalog['models'])} | "
@@ -316,6 +409,11 @@ def main():
         return
     with open(CATALOG, "w", encoding="utf-8") as handle:
         json.dump(catalog, handle, ensure_ascii=False, separators=(",", ":"))
+    # Cada versión publicada deja su entrada en changelog.json, que es lo que lee
+    # el panel de monitoreo. Una corrida sin cambios no escribe nada.
+    if previous.get("dataVersion") != catalog["dataVersion"]:
+        at = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+        append_changelog(changelog_entry(previous, catalog, at, os.environ.get("GITHUB_RUN_ID")))
 
 
 if __name__ == "__main__":

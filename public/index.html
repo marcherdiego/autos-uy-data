@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Autos UY · Catálogo</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f4f5f7;
+    --card: #ffffff;
+    --text: #1c1f26;
+    --muted: #6b7280;
+    --border: #e3e6ea;
+    --accent: #1f5fbf;
+    --accent-text: #ffffff;
+    --good: #0a7f5a;
+    --good-soft: #e7f6ef;
+    --danger: #c0392b;
+    --danger-soft: #fdecea;
+    --warn: #9a6412;
+    --warn-soft: #fff6e0;
+    --info-soft: #eaf1fb;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 14px rgba(0,0,0,.05);
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101216;
+      --card: #191c22;
+      --text: #e8eaee;
+      --muted: #9aa1ad;
+      --border: #2a2f38;
+      --accent: #6ea2f0;
+      --accent-text: #0b1422;
+      --good: #2fbf8a;
+      --good-soft: #16302a;
+      --danger: #ff6b5e;
+      --danger-soft: #3a1d1a;
+      --warn: #f0b74a;
+      --warn-soft: #3a2f16;
+      --info-soft: #172234;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif; }
+  a { color: var(--accent); }
+  button { font: inherit; cursor: pointer; }
+  input, select { font: inherit; color: var(--text); background: var(--card);
+    border: 1px solid var(--border); border-radius: 10px; padding: 9px 11px; width: 100%; }
+  input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .btn { border: 1px solid var(--border); background: var(--card); color: var(--text);
+    border-radius: 10px; padding: 9px 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+  .btn:hover { filter: brightness(.97); }
+  .btn:disabled { opacity: .55; cursor: not-allowed; }
+  .btn-primary { background: var(--accent); color: var(--accent-text); border-color: transparent; }
+  .btn-ghost { background: transparent; }
+  .btn-sm { padding: 6px 10px; font-size: 13px; }
+
+  header { position: sticky; top: 0; z-index: 20; background: var(--card); border-bottom: 1px solid var(--border); }
+  .bar { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand { font-weight: 700; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .brand .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .spacer { flex: 1; }
+  .tabs { display: flex; gap: 4px; background: var(--bg); padding: 4px; border-radius: 12px; }
+  .tab { border: 0; background: transparent; color: var(--muted); padding: 7px 12px; border-radius: 9px; font-weight: 600; }
+  .tab[aria-selected="true"] { background: var(--card); color: var(--text); box-shadow: var(--shadow); }
+  .tab .count { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 6px; border-radius: 999px;
+    background: var(--border); font-size: 12px; line-height: 20px; text-align: center; }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  @media (max-width: 480px) { main { padding: 12px; } .bar { padding: 10px 12px; } .tile .value { font-size: 20px; } .tile { padding: 12px; } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .muted { color: var(--muted); }
+  .small { font-size: 13px; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+  .empty { text-align: center; color: var(--muted); padding: 48px 16px; }
+
+  .status { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; margin-bottom: 16px; }
+  .status .icon { font-size: 20px; line-height: 1.2; }
+  .status.ok { background: var(--good-soft); border-color: transparent; }
+  .status.bad { background: var(--danger-soft); border-color: transparent; }
+  .status.warn { background: var(--warn-soft); border-color: transparent; }
+  .status.info { background: var(--info-soft); border-color: transparent; }
+  .status h2 { margin: 0; font-size: 16px; }
+  .status p { margin: 2px 0 0; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .tile { padding: 14px 16px; }
+  .tile .label { color: var(--muted); font-size: 13px; }
+  .tile .value { font-size: 26px; font-weight: 700; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .tile .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+  .filters .search { flex: 1 1 220px; }
+  .filters select { flex: 0 1 200px; width: auto; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { border: 1px solid var(--border); background: var(--card); color: var(--muted); border-radius: 999px;
+    padding: 5px 11px; font-size: 13px; font-weight: 600; }
+  .chip[aria-pressed="true"] { background: var(--text); color: var(--card); border-color: transparent; }
+
+  .entry { margin-bottom: 12px; }
+  .entry > summary { list-style: none; cursor: pointer; padding: 14px 16px; display: flex; gap: 12px;
+    align-items: center; flex-wrap: wrap; }
+  .entry > summary::-webkit-details-marker { display: none; }
+  .entry > summary .chev { transition: transform .15s; color: var(--muted); }
+  .entry[open] > summary .chev { transform: rotate(90deg); }
+  .entry .when { font-weight: 700; }
+  .entry .body { padding: 0 16px 14px; border-top: 1px solid var(--border); }
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge { font-size: 12px; font-weight: 700; border-radius: 999px; padding: 2px 9px; background: var(--bg);
+    color: var(--text); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .badge.add { background: var(--good-soft); color: var(--good); }
+  .badge.del { background: var(--danger-soft); color: var(--danger); }
+  .badge.price { background: var(--info-soft); color: var(--accent); }
+  .badge.warn { background: var(--warn-soft); color: var(--warn); }
+
+  h3 { font-size: 14px; margin: 16px 0 6px; display: flex; gap: 8px; align-items: baseline; }
+  h3 .muted { font-weight: 400; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; white-space: nowrap; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  .up { color: var(--danger); }
+  .down { color: var(--good); }
+  del { color: var(--muted); }
+
+  .runs td { white-space: nowrap; }
+  .runs td.what { white-space: normal; }
+  .pill { display: inline-flex; gap: 5px; align-items: center; font-weight: 600; }
+  .pill.ok { color: var(--good); }
+  .pill.bad { color: var(--danger); }
+  .pill.run { color: var(--warn); }
+
+  .login { max-width: 420px; margin: 12vh auto 0; padding: 22px; }
+  .login h1 { margin: 0 0 6px; font-size: 20px; }
+  .login form { display: flex; gap: 8px; margin-top: 14px; }
+  .error { color: var(--danger); margin-top: 10px; }
+  .more { margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+(() => {
+  const STORAGE_KEY = 'autosuy.panel.secret';
+  const REPO = 'marcherdiego/autos-uy-data';
+  const WORKFLOW = 'actualizar-catalogo.yml';
+  const TZ = 'America/Montevideo';
+  // Un día sin corrida exitosa es normal (GitHub larga el cron de las 08:00
+  // horas tarde); más de 30 h ya es que algo se trabó.
+  const STALE_HOURS = 30;
+  const PAGE_ROWS = 25;
+
+  const app = document.getElementById('app');
+  const state = { data: null, tab: 'changelog', kind: 'all', brand: '', q: '', loading: false };
+
+  function readSecret() { try { return localStorage.getItem(STORAGE_KEY) || ''; } catch { return ''; } }
+  function writeSecret(v) { try { v ? localStorage.setItem(STORAGE_KEY, v) : localStorage.removeItem(STORAGE_KEY); } catch {} }
+  let secret = readSecret();
+
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const usd = (n) => n == null ? '—' : 'U$S ' + Number(n).toLocaleString('es-UY');
+  const int = (n) => Number(n).toLocaleString('es-UY');
+  const dateFmt = new Intl.DateTimeFormat('es-UY', { timeZone: TZ, weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  const fmtDate = (iso) => iso ? dateFmt.format(new Date(iso)) : '—';
+  function ago(iso) {
+    const h = (Date.now() - new Date(iso).getTime()) / 3.6e6;
+    if (h < 1) return `hace ${Math.max(1, Math.round(h * 60))} min`;
+    if (h < 48) return `hace ${Math.round(h)} h`;
+    return `hace ${Math.round(h / 24)} días`;
+  }
+  function duration(run) {
+    if (!run.startedAt || run.status !== 'completed') return '—';
+    const s = Math.round((new Date(run.updatedAt) - new Date(run.startedAt)) / 1000);
+    return s < 90 ? `${s} s` : `${Math.round(s / 60)} min`;
+  }
+  const FIELD_LABELS = { name: 'nombre', note: 'nota', fuel: 'combustible', category: 'categoría',
+    batteryKwh: 'batería (kWh)', modelKey: 'ficha', address: 'dirección', phone: 'teléfono', web: 'web', warranty: 'garantía' };
+
+  // ---------- datos ----------
+  async function load() {
+    state.loading = true; render();
+    try {
+      const r = await fetch('/api/panel', { headers: { 'x-admin-secret': secret } });
+      if (r.status === 401) { writeSecret(''); secret = ''; state.loginError = 'Contraseña incorrecta.'; state.loading = false; return render(); }
+      if (r.status === 503) { state.fatal = 'El panel está deshabilitado: falta la variable ADMIN_SECRET en Vercel.'; state.loading = false; return render(); }
+      if (!r.ok) throw new Error(`El servidor respondió ${r.status}`);
+      const data = await r.json();
+      // Si la API de GitHub se quedó sin cupo desde Vercel, las corridas se
+      // piden desde el navegador (el repo es público; el cupo es por IP).
+      if (!data.runs) {
+        try {
+          const g = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW}/runs?per_page=60`);
+          if (g.ok) {
+            data.runs = (await g.json()).workflow_runs.map((run) => ({ id: String(run.id), status: run.status,
+              conclusion: run.conclusion, event: run.event, createdAt: run.created_at, updatedAt: run.updated_at,
+              startedAt: run.run_started_at, url: run.html_url }));
+            data.runsError = null;
+          }
+        } catch {}
+      }
+      state.data = data; state.error = null;
+    } catch (e) {
+      state.error = String(e.message || e);
+    }
+    state.loading = false; render();
+  }
+
+  // ---------- derivados ----------
+  function entryCounts(e) {
+    const up = (e.repriced || []).filter((c) => c.priceUsd > c.from).length;
+    return { added: (e.added || []).length, removed: (e.removed || []).length, up,
+      down: (e.repriced || []).length - up, changed: (e.changed || []).length,
+      other: (e.brandsAdded || []).length + (e.brandsRemoved || []).length + (e.importers || []).length + (e.modelsRemoved || []).length };
+  }
+
+  // Cambios que no son altas, bajas ni precios: nombres, notas, importadores,
+  // marcas y fichas. En las versiones manuales el detalle viene resumido.
+  function otherCount(e) {
+    const c = entryCounts(e);
+    const summary = e.changedSummary ? Object.values(e.changedSummary).reduce((a, b) => a + b, 0) : c.changed;
+    return summary + c.other;
+  }
+
+  function describe(e) {
+    const c = entryCounts(e);
+    const parts = [
+      c.added && `+${c.added} ${c.added === 1 ? 'alta' : 'altas'}`,
+      c.removed && `−${c.removed} ${c.removed === 1 ? 'baja' : 'bajas'}`,
+      (c.up + c.down) && `${c.up + c.down} ${c.up + c.down === 1 ? 'precio' : 'precios'}`,
+      otherCount(e) && `${otherCount(e)} ${otherCount(e) === 1 ? 'otro cambio' : 'otros cambios'}`,
+    ].filter(Boolean);
+    return parts.length ? parts.join(', ') : 'cambios menores';
+  }
+
+  function statusOf(runs, entries) {
+    if (!runs) return { cls: 'info', icon: 'ℹ️', title: 'No se pudieron leer las corridas',
+      text: `GitHub: ${state.data.runsError || 'sin respuesta'}. El changelog de abajo sí está al día.` };
+    const last = runs[0];
+    const lastOk = runs.find((r) => r.conclusion === 'success');
+    if (!last) return { cls: 'warn', icon: '⚠️', title: 'Todavía no hay corridas', text: '' };
+    if (last.status !== 'completed') return { cls: 'info', icon: '⏳', title: 'Corriendo ahora', text: `Empezó ${ago(last.createdAt)}.` };
+    const staleH = lastOk ? (Date.now() - new Date(lastOk.updatedAt)) / 3.6e6 : Infinity;
+    if (last.conclusion !== 'success') return { cls: 'bad', icon: '✖', title: 'La última corrida falló',
+      text: `${fmtDate(last.createdAt)} (${ago(last.createdAt)}). ${lastOk ? `La última que salió bien fue ${ago(lastOk.updatedAt)}.` : ''} Mirá el log en GitHub: si la página de precios cambió de estructura, el scraper corta antes de publicar.`, url: last.url };
+    if (staleH > STALE_HOURS) return { cls: 'warn', icon: '⚠️', title: `Sin corridas exitosas hace ${Math.round(staleH)} h`,
+      text: 'El job diario no está corriendo. En repos públicos GitHub pausa los crons después de 60 días sin actividad en el repo.' };
+    const lastEntry = entries && entries[0];
+    const published = lastEntry && lastEntry.runId === last.id;
+    return { cls: 'ok', icon: '✔', title: published ? 'La última corrida publicó cambios' : 'Todo en orden',
+      text: `Última corrida ${fmtDate(last.createdAt)} (${ago(last.createdAt)}), ${published ? 'con cambios' : 'sin cambios'}. ${lastEntry ? `El catálogo cambió por última vez ${ago(lastEntry.at)}.` : ''}` };
+  }
+
+  function recentTotals(entries, days) {
+    const since = Date.now() - days * 864e5;
+    const t = { added: 0, removed: 0, repriced: 0, versions: 0 };
+    for (const e of entries) {
+      if (e.initial || e.manual || new Date(e.at).getTime() < since) continue;
+      const c = entryCounts(e);
+      t.added += c.added; t.removed += c.removed; t.repriced += c.up + c.down; t.versions++;
+    }
+    return t;
+  }
+
+  function matches(item) {
+    if (state.brand && item.brand !== state.brand) return false;
+    if (!state.q) return true;
+    const q = state.q.toLowerCase();
+    return `${item.brand} ${item.name} ${item.id}`.toLowerCase().includes(q);
+  }
+
+  // ---------- render ----------
+  function render() {
+    if (!secret) return renderLogin();
+    if (state.fatal) { app.innerHTML = `<main><div class="card status bad"><span class="icon">✖</span><div><h2>Panel deshabilitado</h2><p>${esc(state.fatal)}</p></div></div></main>`; return; }
+    const d = state.data;
+    const entries = (d && d.entries) || [];
+    const runs = d && d.runs;
+    app.innerHTML = `
+      <header><div class="bar">
+        <div class="brand"><span class="dot"></span>Autos UY · Catálogo</div>
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" data-tab="changelog" aria-selected="${state.tab === 'changelog'}">Changelog<span class="count">${entries.filter((e) => !e.initial).length}</span></button>
+          <button class="tab" role="tab" data-tab="runs" aria-selected="${state.tab === 'runs'}">Corridas<span class="count">${runs ? runs.length : '–'}</span></button>
+        </div>
+        <span class="spacer"></span>
+        <button class="btn btn-sm" id="refresh" ${state.loading ? 'disabled' : ''}>${state.loading ? 'Cargando…' : '↻ Actualizar'}</button>
+        <button class="btn btn-sm btn-ghost" id="logout">Salir</button>
+      </div></header>
+      <main>${!d ? (state.error ? errorBox(state.error) : '<div class="empty">Cargando…</div>') : body(entries, runs)}</main>`;
+    bind();
+  }
+
+  function errorBox(msg) {
+    return `<div class="card status bad"><span class="icon">✖</span><div><h2>No se pudo cargar el panel</h2><p>${esc(msg)}</p></div></div>`;
+  }
+
+  function body(entries, runs) {
+    const st = statusOf(runs, entries);
+    const cur = entries[0] && entries[0].totals;
+    const month = recentTotals(entries, 30);
+    const src = entries[0] && entries[0].sourceUpdatedAt;
+    return `
+      <div class="card status ${st.cls}"><span class="icon" aria-hidden="true">${st.icon}</span><div>
+        <h2>${esc(st.title)}</h2><p class="small">${esc(st.text)} ${st.url ? `<a href="${esc(st.url)}" target="_blank" rel="noopener">Ver log</a>` : ''}</p>
+      </div></div>
+      ${state.data.entriesError ? errorBox('changelog.json: ' + state.data.entriesError) : ''}
+      ${cur ? `<div class="tiles">
+        ${tile('Versiones a la venta', int(cur.cars), `${int(cur.brands)} marcas · ${int(cur.importers)} importadores`)}
+        ${tile('Fichas técnicas', int(cur.models), `${int(cur.withoutModel)} versiones todavía sin ficha`)}
+        ${tile('Últimos 30 días', `${month.versions} ${month.versions === 1 ? 'versión' : 'versiones'}`, `+${month.added} altas · −${month.removed} bajas · ${month.repriced} precios`)}
+        ${tile('Lista de precios del', src ? src.slice(0, 5) : '—', src ? `${src.slice(6)} · la fecha que publica la fuente` : '')}
+      </div>` : ''}
+      ${state.tab === 'runs' ? runsView(runs, entries) : changelogView(entries)}`;
+  }
+
+  function tile(label, value, sub) {
+    return `<div class="card tile"><div class="label">${esc(label)}</div><div class="value">${esc(value)}</div><div class="sub">${esc(sub)}</div></div>`;
+  }
+
+  function changelogView(entries) {
+    const brands = [...new Set(entries.flatMap((e) => [...(e.added || []), ...(e.removed || []), ...(e.repriced || []), ...(e.changed || [])].map((c) => c.brand)))].sort((a, b) => a.localeCompare(b, 'es'));
+    const kinds = [['all', 'Todo'], ['added', 'Altas'], ['removed', 'Bajas'], ['repriced', 'Precios'], ['other', 'Otros cambios']];
+    const filtering = state.kind !== 'all' || state.brand || state.q;
+    const cards = entries.map((e) => entryCard(e, filtering)).filter(Boolean);
+    return `
+      <div class="filters">
+        <input class="search" id="q" type="search" placeholder="Buscar versión o marca…" value="${esc(state.q)}" aria-label="Buscar">
+        <select id="brand" aria-label="Marca"><option value="">Todas las marcas</option>${brands.map((b) => `<option ${b === state.brand ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select>
+        <div class="chips">${kinds.map(([k, l]) => `<button class="chip" data-kind="${k}" aria-pressed="${state.kind === k}">${l}</button>`).join('')}</div>
+      </div>
+      ${cards.length ? cards.join('') : '<div class="card empty">Ningún cambio coincide con el filtro.</div>'}`;
+  }
+
+  function entryCard(e, filtering) {
+    if (e.initial) {
+      if (filtering) return '';
+      return `<div class="card entry"><summary style="cursor:default"><span class="when">${fmtDate(e.at)}</span>
+        <span class="muted small">Primera versión del catálogo: ${int(e.totals.cars)} versiones de ${int(e.totals.brands)} marcas.</span></summary></div>`;
+    }
+    const show = (k) => state.kind === 'all' || state.kind === k;
+    const added = show('added') ? (e.added || []).filter(matches) : [];
+    const removed = show('removed') ? (e.removed || []).filter(matches) : [];
+    const repriced = show('repriced') ? (e.repriced || []).filter(matches) : [];
+    const changed = show('other') ? (e.changed || []).filter(matches) : [];
+    const brandLevel = show('other') && !state.q && !state.brand;
+    const importers = brandLevel ? (e.importers || []) : (show('other') ? (e.importers || []).filter((i) => (!state.brand || i.brand === state.brand) && (!state.q || i.brand.toLowerCase().includes(state.q.toLowerCase()))) : []);
+    const extras = brandLevel ? [...(e.brandsAdded || []), ...(e.brandsRemoved || []), ...(e.modelsRemoved || [])].length + (e.changedSummary ? 1 : 0) : 0;
+    const any = added.length + removed.length + repriced.length + changed.length + importers.length + extras;
+    if (filtering && !any) return '';
+    if (!filtering && !any) {
+      return `<div class="card entry"><summary style="cursor:default"><span class="when">${fmtDate(e.at)}</span>
+        <span class="muted small">Cambió el contenido sin altas, bajas ni precios (versión ${esc(e.dataVersion)}).</span> ${links(e)}</summary></div>`;
+    }
+    const c = entryCounts(e);
+    const bigRemoval = e.totals && c.removed > Math.max(20, e.totals.cars * 0.05);
+    const badges = [
+      c.added && `<span class="badge add">+${c.added} ${c.added === 1 ? 'alta' : 'altas'}</span>`,
+      c.removed && `<span class="badge del">−${c.removed} ${c.removed === 1 ? 'baja' : 'bajas'}</span>`,
+      c.up && `<span class="badge price">▲ ${c.up} ${c.up === 1 ? 'suba' : 'subas'}</span>`,
+      c.down && `<span class="badge price">▼ ${c.down} ${c.down === 1 ? 'baja de precio' : 'bajas de precio'}</span>`,
+      otherCount(e) && `<span class="badge">${int(otherCount(e))} ${otherCount(e) === 1 ? 'otro cambio' : 'otros cambios'}</span>`,
+      bigRemoval && `<span class="badge warn">⚠ muchas bajas: revisar</span>`,
+      e.manual && `<span class="badge">manual</span>`,
+    ].filter(Boolean).join('');
+    const open = filtering || state.openAll;
+    return `<details class="card entry" ${open ? 'open' : ''}>
+      <summary><span class="chev" aria-hidden="true">▸</span><span class="when">${fmtDate(e.at)}</span>
+        <span class="badges">${badges}</span><span class="spacer"></span>${links(e)}</summary>
+      <div class="body">
+        ${e.brandsAdded && e.brandsAdded.length && brandLevel ? `<h3>Marcas nuevas</h3><p class="small">${e.brandsAdded.map(esc).join(', ')} — la app les dibuja las iniciales hasta que salga una versión con su logo.</p>` : ''}
+        ${e.brandsRemoved && e.brandsRemoved.length && brandLevel ? `<h3>Marcas que salieron</h3><p class="small">${e.brandsRemoved.map(esc).join(', ')}</p>` : ''}
+        ${added.length ? section('Altas', added, ['Marca', 'Versión', 'Precio'], (x) => `<td>${esc(x.brand)}</td><td>${esc(x.name)}</td><td class="num">${usd(x.priceUsd)}</td>`) : ''}
+        ${removed.length ? section('Bajas', removed, ['Marca', 'Versión', 'Último precio'], (x) => `<td>${esc(x.brand)}</td><td>${esc(x.name)}</td><td class="num">${usd(x.priceUsd)}</td>`) : ''}
+        ${repriced.length ? section('Cambios de precio', [...repriced].sort((a, b) => Math.abs(b.priceUsd / b.from - 1) - Math.abs(a.priceUsd / a.from - 1)), ['Marca', 'Versión', 'Antes', 'Ahora', 'Variación'], priceRow) : ''}
+        ${changed.length ? section('Otros cambios', changed, ['Marca', 'Versión', 'Qué cambió'], (x) => `<td>${esc(x.brand)}</td><td>${esc(x.name)}</td><td>${fieldDiffs(x.fields)}</td>`) : ''}
+        ${e.changedSummary && brandLevel ? `<p class="small muted">Además, en esta versión manual: ${Object.entries(e.changedSummary).map(([f, n]) => `${int(n)} × ${esc(FIELD_LABELS[f] || f)}`).join(', ')}.</p>` : ''}
+        ${importers.length ? section('Importadores', importers, ['Marca', 'Importador', 'Qué cambió'], (x) => `<td>${esc(x.brand)}</td><td>${esc(x.name)}</td><td>${x.status === 'added' ? 'nuevo' : x.status === 'removed' ? 'ya no figura' : fieldDiffs(x.fields)}</td>`) : ''}
+        ${e.modelsRemoved && e.modelsRemoved.length && brandLevel ? `<h3>Fichas retiradas <span class="muted small">se quedaron sin versiones a la venta</span></h3><p class="small mono">${e.modelsRemoved.map(esc).join(', ')}</p>` : ''}
+        <p class="small muted">Versión ${esc(e.dataVersion)}${e.previousVersion ? ` (antes ${esc(e.previousVersion)})` : ''} · precios del ${esc(e.sourceUpdatedAt)} · ${int(e.totals.cars)} versiones después del cambio</p>
+      </div></details>`;
+  }
+
+  function links(e) {
+    const out = [];
+    if (e.runId) out.push(`<a class="small" href="https://github.com/${REPO}/actions/runs/${esc(e.runId)}" target="_blank" rel="noopener">corrida</a>`);
+    if (e.commit) out.push(`<a class="small" href="https://github.com/${REPO}/commit/${esc(e.commit)}" target="_blank" rel="noopener">commit</a>`);
+    return out.join(' · ');
+  }
+
+  function section(title, rows, headers, row) {
+    const id = `${title}-${Math.random().toString(36).slice(2, 8)}`;
+    const shown = rows.slice(0, PAGE_ROWS);
+    return `<h3>${esc(title)} <span class="muted small">${int(rows.length)}</span></h3>
+      <div class="table-wrap"><table><thead><tr>${headers.map((h, i) => `<th class="${i >= 2 && title !== 'Otros cambios' && title !== 'Importadores' ? 'num' : ''}">${h}</th>`).join('')}</tr></thead>
+      <tbody data-rows="${id}">${shown.map((x) => `<tr>${row(x)}</tr>`).join('')}</tbody></table></div>
+      ${rows.length > PAGE_ROWS ? `<button class="btn btn-sm more" data-more="${id}">Ver ${int(rows.length - PAGE_ROWS)} más</button>` : ''}
+      <template data-all="${id}">${rows.slice(PAGE_ROWS).map((x) => `<tr>${row(x)}</tr>`).join('')}</template>`;
+  }
+
+  function priceRow(x) {
+    const pct = (x.priceUsd / x.from - 1) * 100;
+    const cls = pct > 0 ? 'up' : 'down';
+    const sign = pct > 0 ? '▲ +' : '▼ ';
+    return `<td>${esc(x.brand)}</td><td>${esc(x.name)}</td><td class="num"><del>${usd(x.from)}</del></td><td class="num">${usd(x.priceUsd)}</td>
+      <td class="num ${cls}">${sign}${pct.toFixed(1).replace('.', ',')}% <span class="muted">(${pct > 0 ? '+' : '−'}${int(Math.abs(x.priceUsd - x.from))})</span></td>`;
+  }
+
+  function fieldDiffs(fields) {
+    return Object.entries(fields || {}).map(([f, [a, b]]) =>
+      `<div><span class="muted">${esc(FIELD_LABELS[f] || f)}:</span> <del>${esc(a ?? '—')}</del> → ${esc(b ?? '—')}</div>`).join('');
+  }
+
+  function runsView(runs, entries) {
+    if (!runs) return errorBox(`No se pudieron leer las corridas de GitHub: ${state.data.runsError}`);
+    if (!runs.length) return '<div class="card empty">Todavía no hay corridas.</div>';
+    const byRun = new Map(entries.filter((e) => e.runId).map((e) => [e.runId, e]));
+    const ok = runs.filter((r) => r.conclusion === 'success').length;
+    const withChanges = runs.filter((r) => byRun.has(r.id)).length;
+    return `<p class="small muted">Últimas ${runs.length} corridas de <code>${WORKFLOW}</code>: ${ok} salieron bien, ${withChanges} publicaron cambios. Corre todos los días a las 08:00 (GitHub suele largarla entre las 10 y las 14).</p>
+      <div class="card table-wrap"><table class="runs"><thead><tr><th>Cuándo</th><th>Resultado</th><th class="what">Qué hizo</th><th>Disparo</th><th class="num">Duración</th><th></th></tr></thead><tbody>
+      ${runs.map((r) => {
+        const e = byRun.get(r.id);
+        let pill, what;
+        if (r.status !== 'completed') { pill = '<span class="pill run">⏳ En curso</span>'; what = '—'; }
+        else if (r.conclusion === 'success') {
+          pill = '<span class="pill ok">✔ OK</span>';
+          if (e) what = `Publicó: ${describe(e)} · <a href="#" data-goto="${esc(e.dataVersion)}">ver</a>`;
+          else what = '<span class="muted">Sin cambios</span>';
+        } else { pill = `<span class="pill bad">✖ ${r.conclusion === 'cancelled' ? 'Cancelada' : 'Falló'}</span>`; what = '<span class="muted">No publicó nada</span>'; }
+        return `<tr><td>${fmtDate(r.createdAt)}</td><td>${pill}</td><td class="what">${what}</td>
+          <td>${r.event === 'schedule' ? 'programada' : r.event === 'workflow_dispatch' ? 'a mano' : esc(r.event)}</td>
+          <td class="num">${duration(r)}</td><td><a class="small" href="${esc(r.url)}" target="_blank" rel="noopener">log</a></td></tr>`;
+      }).join('')}
+      </tbody></table></div>`;
+  }
+
+  function renderLogin() {
+    app.innerHTML = `<div class="card login">
+      <h1>Autos UY · Catálogo</h1>
+      <p class="muted">Monitoreo del job que actualiza los precios. Ingresá la contraseña del panel (<code>ADMIN_SECRET</code>); queda guardada en este navegador.</p>
+      <form id="login"><input id="secret" type="password" autocomplete="current-password" placeholder="Contraseña" required><button class="btn btn-primary">Entrar</button></form>
+      ${state.loginError ? `<div class="error">${esc(state.loginError)}</div>` : ''}
+    </div>`;
+    document.getElementById('login').addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      secret = document.getElementById('secret').value.trim();
+      writeSecret(secret); state.loginError = null; load();
+    });
+    document.getElementById('secret').focus();
+  }
+
+  function bind() {
+    app.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => { state.tab = b.dataset.tab; render(); }));
+    app.querySelectorAll('[data-kind]').forEach((b) => b.addEventListener('click', () => { state.kind = b.dataset.kind; render(); }));
+    const refresh = document.getElementById('refresh'); if (refresh) refresh.addEventListener('click', load);
+    document.getElementById('logout').addEventListener('click', () => { writeSecret(''); secret = ''; state.data = null; render(); });
+    const brand = document.getElementById('brand'); if (brand) brand.addEventListener('change', () => { state.brand = brand.value; render(); });
+    const q = document.getElementById('q');
+    if (q) q.addEventListener('input', () => {
+      state.q = q.value;
+      clearTimeout(bind.t);
+      bind.t = setTimeout(() => { const pos = q.selectionStart; render(); const n = document.getElementById('q'); n.focus(); n.setSelectionRange(pos, pos); }, 200);
+    });
+    app.querySelectorAll('[data-more]').forEach((b) => b.addEventListener('click', () => {
+      const id = b.dataset.more;
+      app.querySelector(`[data-rows="${id}"]`).insertAdjacentHTML('beforeend', app.querySelector(`[data-all="${id}"]`).innerHTML);
+      b.remove();
+    }));
+    app.querySelectorAll('[data-goto]').forEach((a) => a.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      state.tab = 'changelog'; state.kind = 'all'; state.brand = ''; state.q = ''; render();
+      const i = state.data.entries.findIndex((e) => e.dataVersion === a.dataset.goto);
+      const el = app.querySelectorAll('.entry')[i];
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }));
+  }
+
+  render();
+  if (secret) load();
+})();
+</script>
+</body>
+</html>

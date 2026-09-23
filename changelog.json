@@ -1,0 +1,2421 @@
+{
+ "entries": [
+  {
+   "at": "2026-09-22T15:21:50+00:00",
+   "runId": "35746779131",
+   "dataVersion": "41214d4f500b",
+   "previousVersion": "b7aa936609cd",
+   "sourceUpdatedAt": "22/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 385,
+    "withoutModel": 38
+   },
+   "added": [
+    {
+     "id": "byd-sealion_blue_ev_rwd_71_8_kwh",
+     "brand": "BYD",
+     "name": "Sealion Blue EV RWD (71,8 kWh)",
+     "priceUsd": 36490
+    }
+   ],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "byd-sealion_7_ev_awd_82_5_kwh",
+     "brand": "BYD",
+     "name": "Sealion 7 EV AWD (82,5 kWh)",
+     "priceUsd": 46990,
+     "from": 55990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "commit": "aa51660"
+  },
+  {
+   "at": "2026-09-19T14:07:50+00:00",
+   "runId": "35447786953",
+   "dataVersion": "b7aa936609cd",
+   "previousVersion": "e20c7275b2c9",
+   "sourceUpdatedAt": "22/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1078,
+    "models": 385,
+    "withoutModel": 37
+   },
+   "added": [
+    {
+     "id": "honda-wr_v_sport_1_5_cvt",
+     "brand": "Honda",
+     "name": "WR-V Sport 1.5 CVT",
+     "priceUsd": 27900
+    }
+   ],
+   "removed": [
+    {
+     "id": "audi-rs_6_avant_performance_4_0_tfsi_tiptronic_quattro",
+     "brand": "Audi",
+     "name": "RS 6 Avant Performance 4.0 TFSI tiptronic quattro",
+     "priceUsd": 298000
+    },
+    {
+     "id": "gwm-haval_jolion_hev_deluxe_1_5_gdi_dht",
+     "brand": "GWM",
+     "name": "Haval Jolion HEV Deluxe 1.5 GDI DHT",
+     "priceUsd": 28990
+    },
+    {
+     "id": "gwm-haval_jolion_hev_elite_1_5_gdi_dht",
+     "brand": "GWM",
+     "name": "Haval Jolion HEV Elite 1.5 GDI DHT",
+     "priceUsd": 27990
+    },
+    {
+     "id": "gwm-haval_jolion_pro_hev_deluxe_1_5_gdi_dht",
+     "brand": "GWM",
+     "name": "Haval Jolion Pro HEV Deluxe 1.5 GDI DHT",
+     "priceUsd": 31990
+    },
+    {
+     "id": "gwm-haval_jolion_pro_hev_elite_1_5_gdi_dht",
+     "brand": "GWM",
+     "name": "Haval Jolion Pro HEV Elite 1.5 GDI DHT",
+     "priceUsd": 29990
+    },
+    {
+     "id": "honda-zr_v_touring_2_0_i_vtec_2wd_cvt",
+     "brand": "Honda",
+     "name": "ZR-V Touring 2.0 i-VTEC 2WD CVT",
+     "priceUsd": 46900
+    }
+   ],
+   "repriced": [
+    {
+     "id": "fiat-fastback_audace_t200_1_0_cvt",
+     "brand": "Fiat",
+     "name": "Fastback Audace T200 1.0 CVT",
+     "priceUsd": 26990,
+     "from": 28990
+    },
+    {
+     "id": "fiat-fastback_impetus_t200_1_0_cvt",
+     "brand": "Fiat",
+     "name": "Fastback Impetus T200 1.0 CVT",
+     "priceUsd": 28990,
+     "from": 30990
+    },
+    {
+     "id": "porsche-cayenne_coupe_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Coupé Electric (113 kWh)",
+     "priceUsd": 143700,
+     "from": 131900
+    },
+    {
+     "id": "porsche-cayenne_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Electric (113 kWh)",
+     "priceUsd": 141600,
+     "from": 129900
+    },
+    {
+     "id": "porsche-cayenne_s_coupe_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne S Coupé Electric (113 kWh)",
+     "priceUsd": 160100,
+     "from": 146900
+    },
+    {
+     "id": "porsche-cayenne_s_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne S Electric (113 kWh)",
+     "priceUsd": 155800,
+     "from": 142900
+    },
+    {
+     "id": "porsche-cayenne_turbo_coupe_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Turbo Coupé Electric (113 kWh)",
+     "priceUsd": 208100,
+     "from": 190900
+    },
+    {
+     "id": "porsche-cayenne_turbo_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Turbo Electric (113 kWh)",
+     "priceUsd": 204800,
+     "from": 187900
+    },
+    {
+     "id": "porsche-macan_4_electric_100_kwh",
+     "brand": "Porsche",
+     "name": "Macan 4 Electric (100 kWh)",
+     "priceUsd": 118400,
+     "from": 117200
+    },
+    {
+     "id": "porsche-macan_4s_electric_100_kwh",
+     "brand": "Porsche",
+     "name": "Macan 4S Electric (100 kWh)",
+     "priceUsd": 130600,
+     "from": 129200
+    },
+    {
+     "id": "porsche-macan_electric_100_kwh",
+     "brand": "Porsche",
+     "name": "Macan Electric (100 kWh)",
+     "priceUsd": 114000,
+     "from": 113100
+    },
+    {
+     "id": "porsche-macan_gts_electric_100_kwh",
+     "brand": "Porsche",
+     "name": "Macan GTS Electric (100 kWh)",
+     "priceUsd": 147300,
+     "from": 143200
+    },
+    {
+     "id": "porsche-macan_turbo_electric_100_kwh",
+     "brand": "Porsche",
+     "name": "Macan Turbo Electric (100 kWh)",
+     "priceUsd": 155800,
+     "from": 151200
+    },
+    {
+     "id": "porsche-taycan_4_89_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4 (89 kWh)",
+     "priceUsd": 191400,
+     "from": 175600
+    },
+    {
+     "id": "porsche-taycan_4_black_edition_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4 Black Edition (105 kWh)",
+     "priceUsd": 214000,
+     "from": 196300
+    },
+    {
+     "id": "porsche-taycan_4_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4 Cross Turismo (105 kWh)",
+     "priceUsd": 202900,
+     "from": 186200
+    },
+    {
+     "id": "porsche-taycan_4s_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4S (105 kWh)",
+     "priceUsd": 214700,
+     "from": 197000
+    },
+    {
+     "id": "porsche-taycan_4s_black_edition_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4S Black Edition (105 kWh)",
+     "priceUsd": 226700,
+     "from": 208000
+    },
+    {
+     "id": "porsche-taycan_4s_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4S Cross Turismo (105 kWh)",
+     "priceUsd": 223700,
+     "from": 205200
+    },
+    {
+     "id": "porsche-taycan_89_kwh",
+     "brand": "Porsche",
+     "name": "Taycan (89 kWh)",
+     "priceUsd": 183200,
+     "from": 168100
+    },
+    {
+     "id": "porsche-taycan_black_edition_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Black Edition (105 kWh)",
+     "priceUsd": 204400,
+     "from": 187500
+    },
+    {
+     "id": "porsche-taycan_gts_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan GTS (105 kWh)",
+     "priceUsd": 252300,
+     "from": 231400
+    },
+    {
+     "id": "porsche-taycan_turbo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo (105 kWh)",
+     "priceUsd": 266500,
+     "from": 244500
+    },
+    {
+     "id": "porsche-taycan_turbo_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo Cross Turismo (105 kWh)",
+     "priceUsd": 268300,
+     "from": 246100
+    },
+    {
+     "id": "porsche-taycan_turbo_gt_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo GT (105 kWh)",
+     "priceUsd": 341300,
+     "from": 313100
+    },
+    {
+     "id": "porsche-taycan_turbo_gt_weissach_package_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo GT Weissach Package (105 kWh)",
+     "priceUsd": 341300,
+     "from": 313100
+    },
+    {
+     "id": "porsche-taycan_turbo_s_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo S (105 kWh)",
+     "priceUsd": 311100,
+     "from": 285400
+    }
+   ],
+   "changed": [
+    {
+     "id": "porsche-taycan_4_89_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4 (89 kWh)",
+     "priceUsd": 191400,
+     "fields": {
+      "name": [
+       "Taycan 4 ( 89 kWh )",
+       "Taycan 4 (89 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_4_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4 Cross Turismo (105 kWh)",
+     "priceUsd": 202900,
+     "fields": {
+      "name": [
+       "Taycan 4 Cross Turismo ( 105 kWh )",
+       "Taycan 4 Cross Turismo (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_4s_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4S (105 kWh)",
+     "priceUsd": 214700,
+     "fields": {
+      "name": [
+       "Taycan 4S ( 105 kWh )",
+       "Taycan 4S (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_4s_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4S Cross Turismo (105 kWh)",
+     "priceUsd": 223700,
+     "fields": {
+      "name": [
+       "Taycan 4S Cross Turismo ( 105 kWh )",
+       "Taycan 4S Cross Turismo (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_89_kwh",
+     "brand": "Porsche",
+     "name": "Taycan (89 kWh)",
+     "priceUsd": 183200,
+     "fields": {
+      "name": [
+       "Taycan ( 89 kWh )",
+       "Taycan (89 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_gts_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan GTS (105 kWh)",
+     "priceUsd": 252300,
+     "fields": {
+      "name": [
+       "Taycan GTS ( 105 kWh )",
+       "Taycan GTS (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo (105 kWh)",
+     "priceUsd": 266500,
+     "fields": {
+      "name": [
+       "Taycan Turbo ( 105 kWh )",
+       "Taycan Turbo (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo Cross Turismo (105 kWh)",
+     "priceUsd": 268300,
+     "fields": {
+      "name": [
+       "Taycan Turbo Cross Turismo ( 105 kWh )",
+       "Taycan Turbo Cross Turismo (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_gt_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo GT (105 kWh)",
+     "priceUsd": 341300,
+     "fields": {
+      "name": [
+       "Taycan Turbo GT ( 105 kWh )",
+       "Taycan Turbo GT (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_gt_weissach_package_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo GT Weissach Package (105 kWh)",
+     "priceUsd": 341300,
+     "fields": {
+      "name": [
+       "Taycan Turbo GT Weissach Package ( 105 kWh )",
+       "Taycan Turbo GT Weissach Package (105 kWh)"
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_s_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo S (105 kWh)",
+     "priceUsd": 311100,
+     "fields": {
+      "name": [
+       "Taycan Turbo S ( 105 kWh )",
+       "Taycan Turbo S (105 kWh)"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "audi__rs_6_avant",
+    "gwm__haval_jolion_pro"
+   ],
+   "commit": "0079300"
+  },
+  {
+   "at": "2026-09-16T15:18:10+00:00",
+   "runId": "35114378744",
+   "dataVersion": "e20c7275b2c9",
+   "previousVersion": "723d94c1d718",
+   "sourceUpdatedAt": "17/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1083,
+    "models": 387,
+    "withoutModel": 37
+   },
+   "added": [
+    {
+     "id": "gac_motor-gs4_max_hev_2_0_dht",
+     "brand": "GAC Motor",
+     "name": "GS4 Max HEV 2.0 DHT",
+     "priceUsd": 31990
+    },
+    {
+     "id": "gac_motor-s7_ultra_1_5t_dht_iawd",
+     "brand": "GAC Motor",
+     "name": "S7 Ultra 1.5T DHT iAWD",
+     "priceUsd": 55990
+    },
+    {
+     "id": "nevo-q05_ev_comfort_40_3_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Comfort (40,3 kWh)",
+     "priceUsd": 23990
+    },
+    {
+     "id": "nevo-q05_ev_elite_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Elite (51,9 kWh)",
+     "priceUsd": 28990
+    },
+    {
+     "id": "nevo-q05_ev_luxury_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Luxury (51,9 kWh)",
+     "priceUsd": 26990
+    }
+   ],
+   "removed": [
+    {
+     "id": "gac_motor-emkoo_hev_2_0_ge_dht",
+     "brand": "GAC Motor",
+     "name": "Emkoo HEV 2.0 GE DHT",
+     "priceUsd": 28990
+    }
+   ],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [
+    "NEVO"
+   ],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "NEVO",
+     "name": "Santa Rosa",
+     "status": "added"
+    }
+   ],
+   "modelsRemoved": [],
+   "commit": "e09ed16"
+  },
+  {
+   "at": "2026-09-15T15:25:02+00:00",
+   "runId": "34988277464",
+   "dataVersion": "723d94c1d718",
+   "previousVersion": "55ad532d2c31",
+   "sourceUpdatedAt": "14/09/2026",
+   "totals": {
+    "brands": 73,
+    "importers": 74,
+    "cars": 1079,
+    "models": 387,
+    "withoutModel": 33
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Bestune",
+     "name": "Kaitazoff Motors",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. En NAT y Joy 03: 3 años o 150.000 km (5 años o 400.000 km para la batería). En Xiaoma: 3 años o 100.000 km (5 años o 120.000 km para la batería).",
+       "5 años o 150.000 km. En NAT: 3 años o 150.000 km (5 años o 400.000 km para la batería). En Joy 03: 5 años o 150.000 km (8 años o 150.000 km para la batería). En Xiaoma: 3 años o 100.000 km (5 años o 120.000 km para la batería)."
+      ]
+     }
+    }
+   ],
+   "modelsRemoved": [],
+   "commit": "d1005b8"
+  },
+  {
+   "at": "2026-09-14T16:44:38+00:00",
+   "runId": "34870473029",
+   "dataVersion": "55ad532d2c31",
+   "previousVersion": "d04be7004802",
+   "sourceUpdatedAt": "14/09/2026",
+   "totals": {
+    "brands": 73,
+    "importers": 74,
+    "cars": 1079,
+    "models": 387,
+    "withoutModel": 33
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "kgm-tivoli_dlx_1_5_t_gdi_a_t",
+     "brand": "KGM",
+     "name": "Tivoli DLX 1.5 T-GDI A/T",
+     "priceUsd": 30950,
+     "from": 42950
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "commit": "4129bee"
+  },
+  {
+   "at": "2026-09-13T14:46:35+00:00",
+   "runId": "34763629536",
+   "dataVersion": "d04be7004802",
+   "previousVersion": "4c36f692cb9a",
+   "sourceUpdatedAt": "14/09/2026",
+   "totals": {
+    "brands": 73,
+    "importers": 74,
+    "cars": 1079,
+    "models": 387,
+    "withoutModel": 33
+   },
+   "added": [
+    {
+     "id": "gac_motor-emkoo_hev_2_0_ge_dht",
+     "brand": "GAC Motor",
+     "name": "Emkoo HEV 2.0 GE DHT",
+     "priceUsd": 28990
+    },
+    {
+     "id": "geely-ex5_urban_49_52_kwh",
+     "brand": "Geely",
+     "name": "EX5 Urban (49,52 kWh)",
+     "priceUsd": 28990
+    }
+   ],
+   "removed": [
+    {
+     "id": "gac_motor-emkoo_hev_2_0_t_ge_dht",
+     "brand": "GAC Motor",
+     "name": "Emkoo HEV 2.0 T GE DHT",
+     "priceUsd": 28990
+    }
+   ],
+   "repriced": [
+    {
+     "id": "volkswagen-saveiro_cabina_doble_1_6",
+     "brand": "Volkswagen",
+     "name": "Saveiro Cabina Doble 1.6",
+     "priceUsd": 17990,
+     "from": 19290
+    },
+    {
+     "id": "volkswagen-saveiro_cabina_doble_extreme_1_6",
+     "brand": "Volkswagen",
+     "name": "Saveiro Cabina Doble Extreme 1.6",
+     "priceUsd": 20690,
+     "from": 21890
+    },
+    {
+     "id": "volkswagen-saveiro_cabina_doble_extreme_plus_1_6",
+     "brand": "Volkswagen",
+     "name": "Saveiro Cabina Doble Extreme Plus 1.6",
+     "priceUsd": 21990,
+     "from": 23490
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "gac_motor__emkoo"
+   ],
+   "commit": "3477dc3"
+  },
+  {
+   "at": "2026-09-11T14:48:38+00:00",
+   "runId": "34612337649",
+   "dataVersion": "4c36f692cb9a",
+   "previousVersion": "99175915b9bf",
+   "sourceUpdatedAt": "11/09/2026",
+   "totals": {
+    "brands": 73,
+    "importers": 74,
+    "cars": 1078,
+    "models": 388,
+    "withoutModel": 31
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "honda-zr_v_touring_2_0_i_vtec_2wd_cvt",
+     "brand": "Honda",
+     "name": "ZR-V Touring 2.0 i-VTEC 2WD CVT",
+     "priceUsd": 46900,
+     "from": 44900
+    },
+    {
+     "id": "subaru-crosstrek_2_0i_l_e_boxer_cvt_eyesight_lb",
+     "brand": "Subaru",
+     "name": "Crosstrek 2.0i-L e-Boxer CVT EyeSight (LB)",
+     "priceUsd": 45800,
+     "from": 50800
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Jeep",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "web": [
+       "www.jeep.com.uy",
+       "www.jeep.com/uy"
+      ]
+     }
+    },
+    {
+     "brand": "RAM",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "web": [
+       "www.ramtrucks.com.uy",
+       "www.ram.com/uy"
+      ]
+     }
+    }
+   ],
+   "modelsRemoved": [],
+   "commit": "b1dd597"
+  },
+  {
+   "at": "2026-09-10T15:51:22+00:00",
+   "runId": null,
+   "dataVersion": "99175915b9bf",
+   "previousVersion": "983efbb1c236",
+   "sourceUpdatedAt": "10/09/2026",
+   "totals": {
+    "brands": 73,
+    "importers": 74,
+    "cars": 1078,
+    "models": 388,
+    "withoutModel": 31
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "commit": "9cfe98a",
+   "manual": true,
+   "changedSummary": {
+    "modelKey": 1047
+   }
+  },
+  {
+   "at": "2026-09-10T15:08:34+00:00",
+   "runId": null,
+   "dataVersion": "983efbb1c236",
+   "previousVersion": "3cc94ca9c0b6",
+   "sourceUpdatedAt": "10/09/2026",
+   "totals": {
+    "brands": 73,
+    "importers": 74,
+    "cars": 1078,
+    "models": 388,
+    "withoutModel": 1078
+   },
+   "added": [
+    {
+     "id": "avatr-07_reev_max_rwd_39_05_kwh",
+     "brand": "Avatr",
+     "name": "07 REEV Max RWD (39,05 kWh)",
+     "priceUsd": 59990
+    },
+    {
+     "id": "avatr-07_reev_ultra_awd_39_05_kwh",
+     "brand": "Avatr",
+     "name": "07 REEV Ultra AWD (39,05 kWh)",
+     "priceUsd": 65990
+    },
+    {
+     "id": "avatr-11_long_range_rwd_90_kwh",
+     "brand": "Avatr",
+     "name": "11 Long Range RWD (90 kWh)",
+     "priceUsd": 69990
+    },
+    {
+     "id": "avatr-11_ultra_long_range_4_plazas_awd_116_kwh",
+     "brand": "Avatr",
+     "name": "11 Ultra Long Range 4 plazas AWD (116 kWh)",
+     "priceUsd": 79990
+    },
+    {
+     "id": "avatr-11_ultra_long_range_5_plazas_awd_116_kwh",
+     "brand": "Avatr",
+     "name": "11 Ultra Long Range 5 plazas AWD (116 kWh)",
+     "priceUsd": 78990
+    },
+    {
+     "id": "baic-x55_rehev_1_5t_comfort",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Comfort",
+     "priceUsd": 27990
+    },
+    {
+     "id": "baic-x55_rehev_1_5t_luxury",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Luxury",
+     "priceUsd": 29990
+    },
+    {
+     "id": "bestune-joy_03_exclusive_61_47_kwh",
+     "brand": "Bestune",
+     "name": "Joy 03 Exclusive (61,47 kWh)",
+     "priceUsd": 27900
+    },
+    {
+     "id": "bestune-joy_03_premium_48_35_kwh",
+     "brand": "Bestune",
+     "name": "Joy 03 Premium (48,35 kWh)",
+     "priceUsd": 25900
+    },
+    {
+     "id": "bmw-ix3_40_sdrive_urban_82_6_kwh",
+     "brand": "BMW",
+     "name": "iX3 40 sDrive Urban (82,6 kWh)",
+     "priceUsd": 69990
+    },
+    {
+     "id": "foton-e_tunland_4x2_88_5_kwh",
+     "brand": "Foton",
+     "name": "e-Tunland 4x2 ( 88,5 kWh )",
+     "priceUsd": 59950
+    },
+    {
+     "id": "gwm-haval_h7_phev_1_5_gdit_1dht_2wd",
+     "brand": "GWM",
+     "name": "Haval H7 PHEV 1.5 GDIT 1DHT 2WD",
+     "priceUsd": 38990
+    },
+    {
+     "id": "gwm-haval_h7_phev_1_5_gdit_3dht_4wd",
+     "brand": "GWM",
+     "name": "Haval H7 PHEV 1.5 GDIT 3DHT 4WD",
+     "priceUsd": 43990
+    },
+    {
+     "id": "honda-zr_v_touring_2_0_i_vtec_2wd_cvt",
+     "brand": "Honda",
+     "name": "ZR-V Touring 2.0 i-VTEC 2WD CVT",
+     "priceUsd": 44900
+    },
+    {
+     "id": "jeep-avenger_altitude_t200_hybrid_mhev_1_0_cvt",
+     "brand": "Jeep",
+     "name": "Avenger Altitude T200 Hybrid MHEV 1.0 CVT",
+     "priceUsd": 24990
+    },
+    {
+     "id": "jeep-avenger_limited_t200_hybrid_mhev_1_0_cvt",
+     "brand": "Jeep",
+     "name": "Avenger Limited T200 Hybrid MHEV 1.0 CVT",
+     "priceUsd": 29990
+    },
+    {
+     "id": "jeep-avenger_longitude_t200_hybrid_mhev_1_0_cvt",
+     "brand": "Jeep",
+     "name": "Avenger Longitude T200 Hybrid MHEV 1.0 CVT",
+     "priceUsd": 27990
+    },
+    {
+     "id": "maserati-grecale_folgore_105_kwh",
+     "brand": "Maserati",
+     "name": "Grecale Folgore (105 kWh)",
+     "priceUsd": 134990
+    },
+    {
+     "id": "maserati-grecale_modena_q4_2_0_mhev_a_t",
+     "brand": "Maserati",
+     "name": "Grecale Modena Q4 2.0 MHEV A/T",
+     "priceUsd": 179990
+    },
+    {
+     "id": "maserati-grecale_trofeo_q4_3_0_v6_a_t",
+     "brand": "Maserati",
+     "name": "Grecale Trofeo Q4 3.0 V6 A/T",
+     "priceUsd": 264990
+    },
+    {
+     "id": "mg-mg4_ev_urban_comfort_standard_range_42_8_kwh",
+     "brand": "MG",
+     "name": "MG4 EV Urban Comfort Standard Range (42,8 kWh)",
+     "priceUsd": 21490
+    },
+    {
+     "id": "mg-mg4_ev_urban_deluxe_standard_range_42_8_kwh",
+     "brand": "MG",
+     "name": "MG4 EV Urban Deluxe Standard Range (42,8 kWh)",
+     "priceUsd": 23990
+    },
+    {
+     "id": "ram-rampage_big_horn_2_2_multijet_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage Big Horn 2.2 Multijet AT9 4x4",
+     "priceUsd": 56990
+    },
+    {
+     "id": "ram-rampage_laramie_2_2_multijet_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage Laramie 2.2 Multijet AT9 4x4",
+     "priceUsd": 63490
+    },
+    {
+     "id": "renault-duster_iconic_1_6_sce_cvt",
+     "brand": "Renault",
+     "name": "Duster Iconic 1.6 SCe CVT",
+     "priceUsd": 30800
+    },
+    {
+     "id": "renault-duster_iconic_outsider_1_3_tce_cvt",
+     "brand": "Renault",
+     "name": "Duster Iconic Outsider 1.3 TCe CVT",
+     "priceUsd": 31200
+    },
+    {
+     "id": "renault-kangoo_express_1_6_sce_114_comfort_5_puertas",
+     "brand": "Renault",
+     "name": "Kangoo Express 1.6 SCe 114 Comfort (5 puertas)",
+     "priceUsd": 24500
+    },
+    {
+     "id": "renault-kardian_iconic_c_cuero_1_0_tce_120_edc",
+     "brand": "Renault",
+     "name": "Kardian Iconic (c/cuero) 1.0 TCe 120 EDC",
+     "priceUsd": 29000
+    },
+    {
+     "id": "renault-oroch_cargo_pro_1_6_sce_m_t_2wd",
+     "brand": "Renault",
+     "name": "Oroch Cargo Pro 1.6 SCe M/T 2WD",
+     "priceUsd": 20990
+    },
+    {
+     "id": "smart-5_brabus_awd_100_kwh",
+     "brand": "smart",
+     "name": "#5 Brabus AWD (100 kWh)",
+     "priceUsd": 69990
+    },
+    {
+     "id": "smart-5_pro_rwd_100_kwh",
+     "brand": "smart",
+     "name": "#5 Pro+ RWD (100 kWh)",
+     "priceUsd": 59990
+    }
+   ],
+   "removed": [
+    {
+     "id": "bestune-joy_03_exclusive_48_35_kwh",
+     "brand": "Bestune",
+     "name": "Joy 03 Exclusive (48,35 kWh)",
+     "priceUsd": 26900
+    },
+    {
+     "id": "bestune-joy_03_premium_61_47_kwh",
+     "brand": "Bestune",
+     "name": "Joy 03 Premium (61,47 kWh)",
+     "priceUsd": 28900
+    },
+    {
+     "id": "dongfeng-mage_ev_50_82_kwh",
+     "brand": "Dongfeng",
+     "name": "Mage EV (50,82 kWh)",
+     "priceUsd": 26990
+    },
+    {
+     "id": "foton-e_tunland_88_5_kwh",
+     "brand": "Foton",
+     "name": "e-Tunland (88,5 kWh)",
+     "priceUsd": 59950
+    },
+    {
+     "id": "ram-rampage_big_horn_2_0_multijet_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage Big Horn 2.0 Multijet AT9 4x4",
+     "priceUsd": 54990
+    },
+    {
+     "id": "ram-rampage_laramie_2_0_multijet_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage Laramie 2.0 Multijet AT9 4x4",
+     "priceUsd": 63490
+    },
+    {
+     "id": "renault-duster_iconic_plus_1_3_tce_cvt",
+     "brand": "Renault",
+     "name": "Duster Iconic Plus 1.3 TCe CVT",
+     "priceUsd": 31200
+    },
+    {
+     "id": "renault-duster_iconic_plus_1_6_sce_cvt",
+     "brand": "Renault",
+     "name": "Duster Iconic Plus 1.6 SCe CVT",
+     "priceUsd": 30800
+    }
+   ],
+   "repriced": [
+    {
+     "id": "bmw-ix3_40_sdrive_design_82_6_kwh",
+     "brand": "BMW",
+     "name": "iX3 40 sDrive Design (82,6 kWh)",
+     "priceUsd": 75990,
+     "from": 79990
+    },
+    {
+     "id": "bmw-ix3_40_sdrive_design_plus_82_6_kwh",
+     "brand": "BMW",
+     "name": "iX3 40 sDrive Design Plus (82,6 kWh)",
+     "priceUsd": 79990,
+     "from": 83990
+    },
+    {
+     "id": "bmw-ix3_40_sdrive_luxury_82_6_kwh",
+     "brand": "BMW",
+     "name": "iX3 40 sDrive Luxury (82,6 kWh)",
+     "priceUsd": 87990,
+     "from": 90990
+    },
+    {
+     "id": "bmw-ix3_40_sdrive_m_sport_82_6_kwh",
+     "brand": "BMW",
+     "name": "iX3 40 sDrive M Sport (82,6 kWh)",
+     "priceUsd": 94990,
+     "from": 96990
+    },
+    {
+     "id": "bmw-ix3_40_sdrive_m_sport_pro_82_6_kwh",
+     "brand": "BMW",
+     "name": "iX3 40 sDrive M Sport Pro (82,6 kWh)",
+     "priceUsd": 99990,
+     "from": 101990
+    },
+    {
+     "id": "chevrolet-captiva_ev_premier_60_kwh",
+     "brand": "Chevrolet",
+     "name": "Captiva EV Premier (60 kWh)",
+     "priceUsd": 31990,
+     "from": 33990
+    },
+    {
+     "id": "chevrolet-captiva_phev_premier_1_5_dht",
+     "brand": "Chevrolet",
+     "name": "Captiva PHEV Premier 1.5 DHT",
+     "priceUsd": 37990,
+     "from": 39990
+    },
+    {
+     "id": "chevrolet-spark_euv_activ_41_9_kwh",
+     "brand": "Chevrolet",
+     "name": "Spark EUV Activ (41,9 kWh)",
+     "priceUsd": 21990,
+     "from": 24990
+    },
+    {
+     "id": "fiat-strada_endurance_cabina_plus_1_3_m_t",
+     "brand": "Fiat",
+     "name": "Strada Endurance Cabina Plus 1.3 M/T",
+     "priceUsd": 16490,
+     "from": 16990
+    },
+    {
+     "id": "fiat-strada_freedom_cabina_doble_1_3_m_t",
+     "brand": "Fiat",
+     "name": "Strada Freedom Cabina Doble 1.3 M/T",
+     "priceUsd": 17990,
+     "from": 18990
+    },
+    {
+     "id": "fiat-strada_ultra_cabina_doble_turbo_200_1_0_cvt",
+     "brand": "Fiat",
+     "name": "Strada Ultra Cabina Doble Turbo 200 1.0 CVT",
+     "priceUsd": 22990,
+     "from": 23990
+    },
+    {
+     "id": "fiat-strada_volcano_cabina_doble_1_3_cvt",
+     "brand": "Fiat",
+     "name": "Strada Volcano Cabina Doble 1.3 CVT",
+     "priceUsd": 21290,
+     "from": 22290
+    },
+    {
+     "id": "ford-territory_titanium_hybrid_1_5_t_2dht",
+     "brand": "Ford",
+     "name": "Territory Titanium Hybrid 1.5 T 2DHT",
+     "priceUsd": 42990,
+     "from": 45990
+    },
+    {
+     "id": "hyundai-kona_electric_limited_standard_range_48_4_kwh",
+     "brand": "Hyundai",
+     "name": "Kona Electric Limited Standard Range (48,4 kWh)",
+     "priceUsd": 43990,
+     "from": 45990
+    },
+    {
+     "id": "hyundai-kona_hybrid_limited_1_6_gdi_dct",
+     "brand": "Hyundai",
+     "name": "Kona Hybrid Limited 1.6 GDi DCT",
+     "priceUsd": 43990,
+     "from": 46990
+    },
+    {
+     "id": "kia-ev3_light_2wd_long_range_81_4_kwh",
+     "brand": "Kia",
+     "name": "EV3 Light+ 2WD Long Range (81,4 kWh)",
+     "priceUsd": 44990,
+     "from": 49990
+    },
+    {
+     "id": "kia-ev3_light_2wd_standard_range_58_3_kwh",
+     "brand": "Kia",
+     "name": "EV3 Light 2WD Standard Range (58,3 kWh)",
+     "priceUsd": 39990,
+     "from": 44990
+    },
+    {
+     "id": "kia-ev5_air_2wd_standard_range_64_2_kwh",
+     "brand": "Kia",
+     "name": "EV5 Air 2WD Standard Range (64,2 kWh)",
+     "priceUsd": 49990,
+     "from": 55990
+    },
+    {
+     "id": "kia-ev5_land_2wd_long_range_88_16_kwh",
+     "brand": "Kia",
+     "name": "EV5 Land 2WD Long Range (88,16 kWh)",
+     "priceUsd": 54990,
+     "from": 60990
+    },
+    {
+     "id": "peugeot-boxer_l4h2_2_2_hdi",
+     "brand": "Peugeot",
+     "name": "Boxer L4H2 2.2 HDi",
+     "priceUsd": 43990,
+     "from": 43490
+    },
+    {
+     "id": "peugeot-e_3008_gt_awd_dual_motor_73_kwh",
+     "brand": "Peugeot",
+     "name": "E-3008 GT AWD Dual Motor (73 kWh)",
+     "priceUsd": 59990,
+     "from": 62990
+    },
+    {
+     "id": "ram-dakota_big_horn_2_2_turbodiesel_4x4_at8",
+     "brand": "RAM",
+     "name": "Dakota Big Horn 2.2 Turbodiesel 4x4 AT8",
+     "priceUsd": 59990,
+     "from": 61900
+    },
+    {
+     "id": "renault-arkana_esprit_alpine_e_tech_hybrid_1_3_tce_edc",
+     "brand": "Renault",
+     "name": "Arkana esprit Alpine E-Tech Hybrid 1.3 TCe EDC",
+     "priceUsd": 39990,
+     "from": 37990
+    },
+    {
+     "id": "renault-duster_intens_plus_1_6_sce_cvt",
+     "brand": "Renault",
+     "name": "Duster Intens Plus 1.6 SCe CVT",
+     "priceUsd": 24990,
+     "from": 26800
+    },
+    {
+     "id": "renault-duster_intens_plus_1_6_sce_m_t",
+     "brand": "Renault",
+     "name": "Duster Intens Plus 1.6 SCe M/T",
+     "priceUsd": 24500,
+     "from": 25800
+    },
+    {
+     "id": "renault-kangoo_e_tech_ev45_l2h1_45_kwh",
+     "brand": "Renault",
+     "name": "Kangoo E-Tech EV45 L2H1 (45 kWh)",
+     "priceUsd": 44900,
+     "from": 46000
+    },
+    {
+     "id": "renault-kardian_evolution_1_0_tce_120_edc",
+     "brand": "Renault",
+     "name": "Kardian Evolution 1.0 TCe 120 EDC",
+     "priceUsd": 24800,
+     "from": 25800
+    },
+    {
+     "id": "renault-kardian_iconic_1_0_tce_120_edc",
+     "brand": "Renault",
+     "name": "Kardian Iconic 1.0 TCe 120 EDC",
+     "priceUsd": 28000,
+     "from": 30000
+    },
+    {
+     "id": "renault-kardian_techno_1_0_tce_120_edc",
+     "brand": "Renault",
+     "name": "Kardian Techno 1.0 TCe 120 EDC",
+     "priceUsd": 27000,
+     "from": 27500
+    },
+    {
+     "id": "renault-kwid_bitono_1_0",
+     "brand": "Renault",
+     "name": "Kwid Bitono 1.0",
+     "priceUsd": 13990,
+     "from": 15500
+    },
+    {
+     "id": "renault-kwid_intens_1_0",
+     "brand": "Renault",
+     "name": "Kwid Intens 1.0",
+     "priceUsd": 13400,
+     "from": 14800
+    },
+    {
+     "id": "renault-kwid_outsider_1_0",
+     "brand": "Renault",
+     "name": "Kwid Outsider 1.0",
+     "priceUsd": 14200,
+     "from": 15500
+    },
+    {
+     "id": "renault-kwid_zen_1_0",
+     "brand": "Renault",
+     "name": "Kwid Zen 1.0",
+     "priceUsd": 12990,
+     "from": 13800
+    },
+    {
+     "id": "renault-master_l1h1_2_3_dci",
+     "brand": "Renault",
+     "name": "Master L1H1 2.3 dCi",
+     "priceUsd": 38990,
+     "from": 38000
+    },
+    {
+     "id": "renault-master_l2h2_2_3_dci",
+     "brand": "Renault",
+     "name": "Master L2H2 2.3 dCi",
+     "priceUsd": 43990,
+     "from": 42700
+    },
+    {
+     "id": "renault-master_l3h2_2_3_dci",
+     "brand": "Renault",
+     "name": "Master L3H2 2.3 dCi",
+     "priceUsd": 45490,
+     "from": 45000
+    },
+    {
+     "id": "renault-master_l3h2_minibus_2_3_dci",
+     "brand": "Renault",
+     "name": "Master L3H2 Minibus 2.3 dCi",
+     "priceUsd": 53490,
+     "from": 53000
+    },
+    {
+     "id": "renault-oroch_cargo_1_6_sce_m_t_2wd",
+     "brand": "Renault",
+     "name": "Oroch Cargo 1.6 SCe M/T 2WD",
+     "priceUsd": 19990,
+     "from": 19800
+    },
+    {
+     "id": "renault-oroch_intens_1_3_tce_cvt_2wd",
+     "brand": "Renault",
+     "name": "Oroch Intens 1.3 TCe CVT 2WD",
+     "priceUsd": 25990,
+     "from": 25800
+    },
+    {
+     "id": "renault-oroch_intens_outsider_1_3_tce_cvt_2wd",
+     "brand": "Renault",
+     "name": "Oroch Intens Outsider 1.3 TCe CVT 2WD",
+     "priceUsd": 27490,
+     "from": 27200
+    },
+    {
+     "id": "renault-oroch_intens_outsider_1_3_tce_m_t_4wd",
+     "brand": "Renault",
+     "name": "Oroch Intens Outsider 1.3 TCe M/T 4WD",
+     "priceUsd": 28990,
+     "from": 28800
+    },
+    {
+     "id": "renault-oroch_intens_outsider_1_6_sce_m_t_2wd",
+     "brand": "Renault",
+     "name": "Oroch Intens Outsider 1.6 SCe M/T 2WD",
+     "priceUsd": 24490,
+     "from": 23800
+    }
+   ],
+   "changed": [
+    {
+     "id": "foton-e_view_connect_7_0_m3_50_23_kwh",
+     "brand": "Foton",
+     "name": "e-View Connect 7,0 m³ ( 50,23 kWh )",
+     "priceUsd": 33950,
+     "fields": {
+      "name": [
+       "e-View Connect 7,0 m³ (50,23 kWh)",
+       "e-View Connect 7,0 m³ ( 50,23 kWh )"
+      ],
+      "category": [
+       "Utilitario",
+       "Auto / SUV"
+      ],
+      "modelKey": [
+       "foton__view",
+       null
+      ]
+     }
+    },
+    {
+     "id": "foton-e_view_connect_8_0_m3_50_23_kwh",
+     "brand": "Foton",
+     "name": "e-View Connect 8,0 m³ ( 50,23 kWh )",
+     "priceUsd": 35450,
+     "fields": {
+      "name": [
+       "e-View Connect 8,0 m³ (50,23 kWh)",
+       "e-View Connect 8,0 m³ ( 50,23 kWh )"
+      ],
+      "category": [
+       "Utilitario",
+       "Auto / SUV"
+      ],
+      "modelKey": [
+       "foton__view",
+       null
+      ]
+     }
+    },
+    {
+     "id": "foton-e_wonder_box_41_86_kwh",
+     "brand": "Foton",
+     "name": "E Wonder Box ( 41,86 kWh )",
+     "priceUsd": 31950,
+     "fields": {
+      "name": [
+       "E Wonder Box (41,86 kWh)",
+       "E Wonder Box ( 41,86 kWh )"
+      ],
+      "modelKey": [
+       "foton__wonder",
+       null
+      ]
+     }
+    },
+    {
+     "id": "foton-e_wonder_pick_up_41_86_kwh",
+     "brand": "Foton",
+     "name": "E Wonder Pick-Up ( 41,86 kWh )",
+     "priceUsd": 29950,
+     "fields": {
+      "name": [
+       "E Wonder Pick-Up (41,86 kWh)",
+       "E Wonder Pick-Up ( 41,86 kWh )"
+      ],
+      "category": [
+       "Utilitario",
+       "Pick-up"
+      ],
+      "modelKey": [
+       "foton__wonder",
+       null
+      ]
+     }
+    },
+    {
+     "id": "jac-e_s1_30_2_kwh",
+     "brand": "JAC",
+     "name": "e-S1 ( 30,2 kWh )",
+     "priceUsd": 17990,
+     "fields": {
+      "name": [
+       "e-S1 (30,2 kWh)",
+       "e-S1 ( 30,2 kWh )"
+      ],
+      "modelKey": [
+       "jac__e_s1",
+       null
+      ]
+     }
+    },
+    {
+     "id": "karry-kq53_furgon_ev_38_64_kwh",
+     "brand": "Karry",
+     "name": "KQ53 Furgón EV ( 38,64 kWh )",
+     "priceUsd": 27990,
+     "fields": {
+      "name": [
+       "KQ53 Furgón EV (38,64 kWh)",
+       "KQ53 Furgón EV ( 38,64 kWh )"
+      ],
+      "modelKey": [
+       "karry__kq53",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_4_89_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4 ( 89 kWh )",
+     "priceUsd": 175600,
+     "fields": {
+      "name": [
+       "Taycan 4 (89 kWh)",
+       "Taycan 4 ( 89 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_4_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4 Cross Turismo ( 105 kWh )",
+     "priceUsd": 186200,
+     "fields": {
+      "name": [
+       "Taycan 4 Cross Turismo (105 kWh)",
+       "Taycan 4 Cross Turismo ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan_cross_turismo",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_4s_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4S ( 105 kWh )",
+     "priceUsd": 197000,
+     "fields": {
+      "name": [
+       "Taycan 4S (105 kWh)",
+       "Taycan 4S ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_4s_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan 4S Cross Turismo ( 105 kWh )",
+     "priceUsd": 205200,
+     "fields": {
+      "name": [
+       "Taycan 4S Cross Turismo (105 kWh)",
+       "Taycan 4S Cross Turismo ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan_cross_turismo",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_89_kwh",
+     "brand": "Porsche",
+     "name": "Taycan ( 89 kWh )",
+     "priceUsd": 168100,
+     "fields": {
+      "name": [
+       "Taycan (89 kWh)",
+       "Taycan ( 89 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_gts_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan GTS ( 105 kWh )",
+     "priceUsd": 231400,
+     "fields": {
+      "name": [
+       "Taycan GTS (105 kWh)",
+       "Taycan GTS ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo ( 105 kWh )",
+     "priceUsd": 244500,
+     "fields": {
+      "name": [
+       "Taycan Turbo (105 kWh)",
+       "Taycan Turbo ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_cross_turismo_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo Cross Turismo ( 105 kWh )",
+     "priceUsd": 246100,
+     "fields": {
+      "name": [
+       "Taycan Turbo Cross Turismo (105 kWh)",
+       "Taycan Turbo Cross Turismo ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan_cross_turismo",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_gt_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo GT ( 105 kWh )",
+     "priceUsd": 313100,
+     "fields": {
+      "name": [
+       "Taycan Turbo GT (105 kWh)",
+       "Taycan Turbo GT ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_gt_weissach_package_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo GT Weissach Package ( 105 kWh )",
+     "priceUsd": 313100,
+     "fields": {
+      "name": [
+       "Taycan Turbo GT Weissach Package (105 kWh)",
+       "Taycan Turbo GT Weissach Package ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    },
+    {
+     "id": "porsche-taycan_turbo_s_105_kwh",
+     "brand": "Porsche",
+     "name": "Taycan Turbo S ( 105 kWh )",
+     "priceUsd": 285400,
+     "fields": {
+      "name": [
+       "Taycan Turbo S (105 kWh)",
+       "Taycan Turbo S ( 105 kWh )"
+      ],
+      "modelKey": [
+       "porsche__taycan",
+       null
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [
+    "Avatr",
+    "Maserati"
+   ],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Arcfox",
+     "name": "Homero de León",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km (8 años o 200.000 km para la batería)",
+       "5 años o 150.000 km (8 años o 200.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Audi",
+     "name": "Lestido",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 100.000 km",
+       "5 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Avantier",
+     "name": "Gadaplus S.A",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "4 años o 60.000 km. (6 años o 100.000 km para la batería)",
+       "4 años o 60.000 km. (6 años o 100.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Avatr",
+     "name": "Santa Rosa",
+     "status": "added"
+    },
+    {
+     "brand": "BAIC",
+     "name": "Gadaplus S.A",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "6 años o 120.000 km. (8 años o 150.000 km para la batería y motor eléctrico)",
+       "6 años o 120.000 km. ( 8 años o 150.000 km para la batería y motor eléctrico)."
+      ]
+     }
+    },
+    {
+     "brand": "BAW",
+     "name": "Autoboulevard",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 50.000 km (Pony, L7 y Truck) o 3 años o 100.000 km (V70). Batería: 5 años sin límite de kilometraje (Pony, L7 y Truck) o 6 años o 120.000 km (V70)",
+       "3 años o 50.000 km (Pony, L7 y Truck) o 3 años o 100.000 km (V70). Batería: 5 años sin límite de kilometraje (Pony, L7 y Truck) o 6 años o 120.000 km (V70 )."
+      ]
+     }
+    },
+    {
+     "brand": "Bestune",
+     "name": "Kaitazoff Motors",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. En NAT y Joy 03: 3 años o 150.000 km (5 años o 400.000 km para la batería). En Xiaoma: 3 años o 100.000 km (5 años o 120.000 km para la batería)",
+       "5 años o 150.000 km. En NAT y Joy 03: 3 años o 150.000 km (5 años o 400.000 km para la batería). En Xiaoma: 3 años o 100.000 km (5 años o 120.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "BMW",
+     "name": "Magna",
+     "status": "changed",
+     "fields": {
+      "address": [
+       "María L. Saldún de Rodriguez 2119 ",
+       "María L. Saldún de Rodriguez 2119"
+      ],
+      "phone": [
+       "26018011 ",
+       "26018011"
+      ],
+      "warranty": [
+       "3 años o 200.000 km (+ 6 años sin límite de kilometraje para la batería en los modelos híbridos)",
+       "3 años o 200.000 km (+ 6 años sin límite de kilometraje para la batería en los modelos híbridos)."
+      ]
+     }
+    },
+    {
+     "brand": "BYD",
+     "name": "Sadar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 150.000 km (8 años o 150.000 km para la batería)",
+       "3 años o 150.000 km (8 años o 150.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Changan",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "4 años o 100.000 km (8 años o 120.000-150.000 km para la batería en modelos electrificados) ",
+       "4 años o 100.000 km (8 años o 120.000-150.000 km para la batería en modelos electrificados) ."
+      ]
+     }
+    },
+    {
+     "brand": "Chery",
+     "name": "Grupo Fidocar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. (8 años o 150.000 km para la batería en modelos electrificados) ",
+       "5 años o 150.000 km. (8 años o 150.000 km para la batería en modelos electrificados)."
+      ]
+     }
+    },
+    {
+     "brand": "Chevrolet",
+     "name": "General Motors Uruguay",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Citroën",
+     "name": "Oversil",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km. En híbridos y eléctricos (8 años o 160.000 km para la batería). En Ami ëlectric: 2 años o 20.000 km",
+       "3 años o 100.000 km. En híbridos y eléctricos ( 8 años o 160.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Deepal",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 kilómetros (8 años o 150.000 km en motor eléctrico y batería)",
+       "5 años o 150.000 kilómetros (8 años o 150.000 km en motor eléctrico y batería)."
+      ]
+     }
+    },
+    {
+     "brand": "DFSK",
+     "name": "Homero de León",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "2 años o 50.000 km (Utilitarios a Combustión), 5 años o 120.000 km para baterías y 3 años o 60.000 km para el vehículo (Utilitarios Eléctricos) y 6 años o 150.000 km para baterías (híbridos) y 3 años o 100.000 km para el vehículo. 3 años o 100 km en vehículos de pasajeros",
+       "2 años o 50.000 km ( Utilitarios a Combustión), 5 años o 120.000 km para baterías y 3 años o 60.000 km para el vehículo ( Utilitarios Eléctricos) y 6 años o 150.000 km para baterías (híbridos) y 3 años o 100.000 km para el vehículo. 3 años o 100 km en vehículos de pasajeros."
+      ]
+     }
+    },
+    {
+     "brand": "Dongfeng",
+     "name": "Grupo Barriola",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (conjunto mecánico)",
+       "3 años o 100.000 km (conjunto mecánico)."
+      ]
+     }
+    },
+    {
+     "brand": "Dongfeng",
+     "name": "Grupo Fidocar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "7 años o 300.000 km (10 años sin límite de kilometraje para la batería) ",
+       "7 años o 300.000 km (10 años sin límite de kilometraje para la batería) ."
+      ]
+     }
+    },
+    {
+     "brand": "Farizon",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "4 años o 100.000 km (5 años o 200.000 km para batería)",
+       "4 años o 100.000 km (5 años o 200.000 km para batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Fiat",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km. (8 años o 160.000 km para la batería en modelos electrificados) ",
+       "3 años o 100.000 km. (8 años o 160.000 km para la batería en modelos electrificados) ."
+      ]
+     }
+    },
+    {
+     "brand": "Ford",
+     "name": "Multimotors",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 (Territory, Bronco Sport y Maverick)/5 años o 150.000 km (Ranger)/ 2 años o 50.000 km (F-150)",
+       "3 años o 100.000 (Territory, Bronco Sport y Maverick)/5 años o 150.000 km (Ranger)/ 2 años o 50.000 km (F-150)."
+      ]
+     }
+    },
+    {
+     "brand": "Forthing",
+     "name": "Noderal S.A",
+     "status": "changed",
+     "fields": {
+      "phone": [
+       "26148299 ",
+       "26148299"
+      ]
+     }
+    },
+    {
+     "brand": "Foton",
+     "name": "Homero de León",
+     "status": "changed",
+     "fields": {
+      "address": [
+       "Av. del Libertador 1777",
+       "Camino de Las Tropas 2591"
+      ],
+      "phone": [
+       "29247575/29240858",
+       "23134341"
+      ],
+      "warranty": [
+       "5 años o 150.000 km/ 3 años o 100.000 (en Wonder). (5 años o 200.000 km para los modelos eléctricos)",
+       "5 años o 150.000 km/ 3 años o 100.000 (en Wonder). (5 años o 200.000 km para los modelos eléctricos )."
+      ]
+     }
+    },
+    {
+     "brand": "GAC Motor",
+     "name": "Lestido (Piornedo SAS)",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. (8 años o 160.000 km para los modelos eléctricos)",
+       "5 años o 150.000 km. (8 años o 160.000 km para los modelos eléctricos )."
+      ]
+     }
+    },
+    {
+     "brand": "Geely",
+     "name": "Grupo Fiancar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. (8 años o 150.000 km para los modelos electrificados)",
+       "5 años o 150.000 km. (8 años o 150.000 km para los modelos electrificados )."
+      ]
+     }
+    },
+    {
+     "brand": "GWM",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "web": [
+       "www.gwm.com.uy",
+       null
+      ],
+      "warranty": [
+       "5 años o 150.000 km (6 años o 150.000 km y 8 años o 150.000 km para la batería en ORA 5)",
+       "5 años o 150.000 km (6 años o 150.000 km y 8 años o 150.000 km para la batería en ORA 5)."
+      ]
+     }
+    },
+    {
+     "brand": "Honda",
+     "name": "Honda Automóviles Uruguay",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (extensible a 5 años o 140.000 km)",
+       "3 años o 100.000 km (extensible a 5 años o 140.000 km)."
+      ]
+     }
+    },
+    {
+     "brand": "Hudson",
+     "name": "Kaitazoff Motors",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "2 años o 50.000 km (5 años o 150.000 km para la batería)",
+       "2 años o 50.000 km (5 años o 150.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Hyundai",
+     "name": "Grupo Fidocar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años sin límite de kilometraje (En hibrídos y eléctricos: 8 años o 160.000 km para las baterías)",
+       "5 años sin límite de kilometraje (En hibrídos y eléctricos: 8 años o 160.000 km para las baterías)."
+      ]
+     }
+    },
+    {
+     "brand": "Iveco",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "1 año o 100.000 km",
+       "1 año o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "JAC",
+     "name": "Grupo Fiancar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. En E-S3 Ytterby: 6 años o 150.000 km. (+ 8 años o 150.000 km para la batería en los modelos electrificados)",
+       "5 años o 150.000 km. En E-S3 Ytterby: 6 años o 150.000 km. (+ 8 años o 150.000 km para la batería en los modelos electrificados)."
+      ]
+     }
+    },
+    {
+     "brand": "Jeep",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (8 años o 160.000 km para la batería en modelos electrificados) ",
+       "3 años o 100.000 km (8 años o 160.000 km para la batería en modelos electrificados) ."
+      ]
+     }
+    },
+    {
+     "brand": "Jetour",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 100.000 km (X50, Dashing, X70, X70 Plus, X90 Plus y T2), 7 años o 200.000 km (T1). (7 años o 150.000 km para la batería en los modelos electrificados. 8 años o 160.000 km en G700)",
+       "5 años o 100.000 km (X50, Dashing, X70, X70 Plus, X90 Plus y T2), 7 años o 200.000 km (T1). (7 años o 150.000 km para la batería en los modelos electrificados. 8 años o 160.000 km en G700 )."
+      ]
+     }
+    },
+    {
+     "brand": "JMC",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km. (5 años o 150.000 km para la batería en JMEV GSE y 3 años u 80.000 km y 8 años o 120.000 km para la batería en JMEV 2 y 3)",
+       "3 años o 100.000 km. (5 años o 150.000 km para la batería en JMEV GSE y 3 años u 80.000 km y 8 años o 120.000 km para la batería en JMEV 2 y 3)."
+      ]
+     }
+    },
+    {
+     "brand": "Kaiyi",
+     "name": "Alfalider",
+     "status": "changed",
+     "fields": {
+      "address": [
+       "Pascual Gattas y San Francisco, Punta del Este ",
+       "Pascual Gattas y San Francisco, Punta del Este"
+      ],
+      "warranty": [
+       "5 años o 150.000 km (8 años o 150.000 km para la batería)",
+       "5 años o 150.000 km (8 años o 150.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Karry",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (5 años o 200.000 km para la batería en los modelos eléctricos) ",
+       "3 años o 100.000 km (5 años o 200.000 km para la batería en los modelos eléctricos) ."
+      ]
+     }
+    },
+    {
+     "brand": "Keyton",
+     "name": "Mobility",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (5 años o 100.000 km para batería)",
+       "3 años o 100.000 km (5 años o 100.000 km para batería)."
+      ]
+     }
+    },
+    {
+     "brand": "KGM",
+     "name": "Homero de León",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km. (10 años o 1.000.000 km en batería para Torres EVX)",
+       "3 años o 100.000 km. (10 años o 1.000.000 km en batería para Torres EVX)."
+      ]
+     }
+    },
+    {
+     "brand": "Kia",
+     "name": "Kia Motors Uruguay",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 100.000 km (8 años o 160.000 km para la batería en los modelos híbridos y eléctricos)",
+       "5 años o 100.000 km (8 años o 160.000 km para la batería en los modelos híbridos y eléctricos)."
+      ]
+     }
+    },
+    {
+     "brand": "KYC",
+     "name": "Gadaplus S.A",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 100.000 km",
+       "5 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Land Rover",
+     "name": "Grupo Eximar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Leapmotor",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 kilómetros (5 años o 100.000 km en motor eléctrico y batería)",
+       "3 años o 100.000 kilómetros (5 años o 100.000 km en motor eléctrico y batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Lynk & Co",
+     "name": "Grupo Fiancar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 kilómetros (8 años o 150.000 km en motor eléctrico y batería)",
+       "5 años o 150.000 kilómetros (8 años o 150.000 km en motor eléctrico y batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Maserati",
+     "name": "Alfalider",
+     "status": "added"
+    },
+    {
+     "brand": "Maxus",
+     "name": "Abriley",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (8 años o 200.000 km para batería en modelos eléctricos)",
+       "3 años o 100.000 km (8 años o 200.000 km para batería en modelos eléctricos)."
+      ]
+     }
+    },
+    {
+     "brand": "Mazda",
+     "name": "Magna",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Mercedes-Benz",
+     "name": "Inchcape Uruguay",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "2 años sin límite de kilometraje (+ 8 años o 160.000 km para la batería y motor eléctrico en los modelos híbridos o eléctricos)",
+       "2 años sin límite de kilometraje (+ 8 años o 160.000 km para la batería y motor eléctrico en los modelos híbridos o eléctricos)."
+      ]
+     }
+    },
+    {
+     "brand": "MG",
+     "name": "Grupo Eximar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "6 años o 120.000 km (8 años o 160.000 km para la batería en MG4 y Cyberster o 7 años o 150.000 km en MG3 Hybrid+)",
+       "6 años o 120.000 km (8 años o 160.000 km para la batería en MG4 y Cyberster o 7 años o 150.000 km en MG3 Hybrid+)."
+      ]
+     }
+    },
+    {
+     "brand": "Microlino",
+     "name": "Signature Garage",
+     "status": "added"
+    },
+    {
+     "brand": "Microlino",
+     "name": "Signature Garage ",
+     "status": "removed"
+    },
+    {
+     "brand": "MINI",
+     "name": "Magna",
+     "status": "changed",
+     "fields": {
+      "phone": [
+       "26018011 ",
+       "26018011"
+      ],
+      "warranty": [
+       "3 años o 200.000 km . (+ 7 años sin límite de kilometraje para la batería en los modelos híbridos o eléctricos)",
+       "3 años o 200.000 km . (+ 7 años sin límite de kilometraje para la batería en los modelos híbridos o eléctricos)."
+      ]
+     }
+    },
+    {
+     "brand": "Mitsubishi",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "New Gonow",
+     "name": "Noderal S.A",
+     "status": "changed",
+     "fields": {
+      "phone": [
+       "26148299 ",
+       "26148299"
+      ]
+     }
+    },
+    {
+     "brand": "Nissan",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Omoda & Jaecoo",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km (8 años o 150.000 km para la batería)",
+       "5 años o 150.000 km ( 8 años o 150.000 km para la batería )."
+      ]
+     }
+    },
+    {
+     "brand": "Opel",
+     "name": "Auto Germany (Sadar)",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km. En eléctricos (8 años o 160.000 km para la batería)",
+       "3 años o 100.000 km. En eléctricos ( 8 años o 160.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Peugeot",
+     "name": "AFSA-Sadar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km. En híbridos y eléctricos (8 años o 160.000 km para la batería)",
+       "3 años o 100.000 km. En híbridos y eléctricos ( 8 años o 160.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Porsche",
+     "name": "Nordenwagen Uruguay",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "6 años o 200.000 kilómetros (con posibilidad de renovarla hasta 15 años con Porsche Approved)",
+       "6 años o 200.000 kilómetros ( con posibilidad de renovarla hasta 15 años con Porsche Approved)."
+      ]
+     }
+    },
+    {
+     "brand": "RAM",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Rely",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 200.000 km ",
+       "5 años o 200.000 km ."
+      ]
+     }
+    },
+    {
+     "brand": "Renault",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Riddara",
+     "name": "Sadar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "4 años o 100.000 km (8 años o 200.000 km para la batería)",
+       "4 años o 100.000 km (8 años o 200.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "ROX",
+     "name": "Mobility",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 200.000 km (8 años o 250.000 km para la batería)",
+       "5 años o 200.000 km (8 años o 250.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "SEAT",
+     "name": "Homero de León",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 100.000 km",
+       "5 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "Soueast",
+     "name": "Grupo Sevel",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 100.000 km (en S07 y S09). 7 años o 150.000 km (en S06)",
+       "5 años o 100.000 km (en S07 y S09). 7 años o 150.000 km ( en S06)."
+      ]
+     }
+    },
+    {
+     "brand": "Suzuki",
+     "name": "Curcio Capital",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (extensible a 4 años o 120.000 km). (+ 5 años o 140.000 km para el sistema en los modelos híbridos)",
+       "3 años o 100.000 km (extensible a 4 años o 120.000 km). (+ 5 años o 140.000 km para el sistema en los modelos híbridos)."
+      ]
+     }
+    },
+    {
+     "brand": "Tesla",
+     "name": "Tesla Uruguay SAS",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "4 años u 80.000 km (8 años o 160.000 km para la batería)",
+       "4 años u 80.000 km (8 años o 160.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Toyota",
+     "name": "Curcio Capital",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (extensible a 4 años o 120.000 km). (+ 8 años o 160.000 km para la batería en los modelos híbridos)",
+       "3 años o 100.000 km (extensible a 4 años o 120.000 km). (+ 8 años o 160.000 km para la batería en los modelos híbridos)."
+      ]
+     }
+    },
+    {
+     "brand": "Victory",
+     "name": "Noderal S.A",
+     "status": "changed",
+     "fields": {
+      "phone": [
+       "26148299 ",
+       "26148299"
+      ],
+      "warranty": [
+       "2 años o 70.000 km (5 años para batería en eléctricos)",
+       "2 años o 70.000 km (5 años para batería en eléctricos)."
+      ]
+     }
+    },
+    {
+     "brand": "Volkswagen",
+     "name": "Lestido",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "2 años sin límite de kilometraje (Saveiro). 3 años o 100.000 km (Polo, Virtus, Tera, Nivus, T-Cross, Vento, Taos, Tiguan Allspace y Amarok)",
+       "2 años sin límite de kilometraje (Saveiro). 3 años o 100.000 km (Polo, Virtus, Tera, Nivus, T-Cross, Vento, Taos, Tiguan Allspace y Amarok)."
+      ]
+     }
+    },
+    {
+     "brand": "Volvo",
+     "name": "Grupo Eximar",
+     "status": "changed",
+     "fields": {
+      "address": [
+       "Av. Libertador 2079 ",
+       "Av. Libertador 2079"
+      ],
+      "phone": [
+       "27066690 ",
+       "27066690"
+      ],
+      "warranty": [
+       "2 años o 100.000 kilómetros o 3 años o 100.000 km (8 años o 160.000 km para la batería, en EX30) ",
+       "2 años o 100.000 kilómetros o 3 años o 100.000 km (8 años o 160.000 km para la batería, en EX30) ."
+      ]
+     }
+    },
+    {
+     "brand": "Wuling",
+     "name": "Abriley",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km (3 años o 100.000 km en batería)",
+       "3 años o 100.000 km (3 años o 100.000 km en batería)."
+      ]
+     }
+    },
+    {
+     "brand": "XPeng",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 120.000 kilómetros (8 años o 160.000 km en motor eléctrico y batería)",
+       "5 años o 120.000 kilómetros (8 años o 160.000 km en motor eléctrico y batería)."
+      ]
+     }
+    },
+    {
+     "brand": "Zeekr",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "address": [
+       "Euclides Peluffo 1609 ",
+       "Euclides Peluffo 1609"
+      ],
+      "phone": [
+       "22880023 ",
+       "22880023"
+      ],
+      "warranty": [
+       "4 años o 100.000 kilómetros (8 años o 160.000 km en motor eléctrico y batería)",
+       "4 años o 100.000 kilómetros (8 años o 160.000 km en motor eléctrico y batería)."
+      ]
+     }
+    }
+   ],
+   "modelsRemoved": [
+    "bestune__joy_03",
+    "dongfeng__mage",
+    "foton__e_tunland"
+   ],
+   "commit": "8349b88",
+   "manual": true,
+   "changedSummary": {
+    "modelKey": 1047,
+    "category": 194,
+    "name": 17
+   }
+  },
+  {
+   "at": "2026-09-10T15:08:11+00:00",
+   "runId": null,
+   "dataVersion": "3cc94ca9c0b6",
+   "previousVersion": null,
+   "sourceUpdatedAt": "18/08/2026",
+   "totals": {
+    "brands": 71,
+    "importers": 72,
+    "cars": 1055,
+    "models": 391,
+    "withoutModel": 0
+   },
+   "initial": true,
+   "commit": "b32c64a"
+  }
+ ]
+}

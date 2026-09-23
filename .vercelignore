@@ -1,0 +1,7 @@
+# Vercel sólo necesita el panel (public/) y su API (api/). El catálogo y el
+# changelog se leen en vivo desde GitHub, no del deploy.
+catalog.json
+changelog.json
+tools
+.github
+README.md
