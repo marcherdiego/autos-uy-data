@@ -167,13 +167,15 @@ class handler(BaseHTTPRequestHandler):  # noqa: N801 (nombre que exige Vercel)
     def do_GET(self):  # noqa: N802
         if not authorized(self.headers.get("Authorization")):
             return self.reply(401, {"error": "No autorizado"})
+        query = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+        # Una corrida dry es una prueba a mano: no alerta ni anota nada.
+        dry = query.get("dry") == ["1"]
         token = os.environ.get("GITHUB_TOKEN")
         if not token:
-            alert("Autos UY: el catálogo no corrió", "Falta la variable GITHUB_TOKEN en Vercel.")
+            if not dry:
+                alert("Autos UY: el catálogo no corrió", "Falta la variable GITHUB_TOKEN en Vercel.")
             return self.reply(503, {"error": "Falta GITHUB_TOKEN"})
 
-        query = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
-        dry = query.get("dry") == ["1"]
         started = time.time()
         run_id = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         github = GitHub(token)
@@ -189,7 +191,8 @@ class handler(BaseHTTPRequestHandler):  # noqa: N801 (nombre que exige Vercel)
             if isinstance(error, scrape_catalog.PageChanged):
                 reason = f"La página de precios cambió de estructura: {error}"
             run.update(conclusion="failure", error=reason[:500])
-            alert("Autos UY: falló la actualización del catálogo", reason[:300])
+            if not dry:
+                alert("Autos UY: falló la actualización del catálogo", reason[:300])
             status = 500
         run["durationMs"] = int((time.time() - started) * 1000)
         if dry:
