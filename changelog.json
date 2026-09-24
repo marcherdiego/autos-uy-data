@@ -1,6 +1,2468 @@
 {
  "entries": [
   {
+   "at": "2026-09-24T01:11:35+00:00",
+   "runId": null,
+   "dataVersion": "d65b758aeaaa",
+   "previousVersion": "084b428ecdf1",
+   "sourceUpdatedAt": "22/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 385,
+    "withoutModel": 38
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [
+    {
+     "id": "baw-v70_ev_41_86_kwh",
+     "brand": "BAW",
+     "name": "V70 EV (41,86 kWh)",
+     "priceUsd": 29900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "bestune-nat_luxury_55_kwh",
+     "brand": "Bestune",
+     "name": "NAT Luxury (55 kWh)",
+     "priceUsd": 25990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "byd-atto_8_dm_p_1_5t_gs_awd_35_6_kwh",
+     "brand": "BYD",
+     "name": "Atto 8 DM-p 1.5T GS AWD (35,6 kWh)",
+     "priceUsd": 73990,
+     "fields": {
+      "fuel": [
+       "Eléctrico",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "byd-shark_1_5_t_dmo_gl_a_t_4wd",
+     "brand": "BYD",
+     "name": "Shark 1.5 T DMO GL A/T 4WD",
+     "priceUsd": 69490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "byd-shark_1_5_t_dmo_gs_a_t_4wd",
+     "brand": "BYD",
+     "name": "Shark 1.5 T DMO GS A/T 4WD",
+     "priceUsd": 72990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "changan-hunter_reev_2_0t_elite_4x4_a_t",
+     "brand": "Changan",
+     "name": "Hunter REEV 2.0T Elite 4x4 A/T",
+     "priceUsd": 46348,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "changan-hunter_reev_2_0t_luxury_4x2_a_t",
+     "brand": "Changan",
+     "name": "Hunter REEV 2.0T Luxury 4x2 A/T",
+     "priceUsd": 39028,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chery-himla_2_3_4x2_m_t",
+     "brand": "Chery",
+     "name": "Himla 2.3 4x2 M/T",
+     "priceUsd": 31990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chery-himla_2_3_4x4_a_t",
+     "brand": "Chery",
+     "name": "Himla 2.3 4x4 A/T",
+     "priceUsd": 39990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chery-himla_2_3_4x4_m_t",
+     "brand": "Chery",
+     "name": "Himla 2.3 4x4 M/T",
+     "priceUsd": 35990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-montana_lt_1_2_turbo_a_t",
+     "brand": "Chevrolet",
+     "name": "Montana LT 1.2 Turbo A/T",
+     "priceUsd": 21990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-montana_ltz_1_2_turbo_a_t",
+     "brand": "Chevrolet",
+     "name": "Montana LTZ 1.2 Turbo A/T",
+     "priceUsd": 24990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-montana_premier_1_2_turbo_a_t",
+     "brand": "Chevrolet",
+     "name": "Montana Premier 1.2 Turbo A/T",
+     "priceUsd": 26990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-montana_rs_1_2_turbo_a_t",
+     "brand": "Chevrolet",
+     "name": "Montana RS 1.2 Turbo A/T",
+     "priceUsd": 27490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-n400_max_1_5_m_t",
+     "brand": "Chevrolet",
+     "name": "N400 Max 1.5 M/T",
+     "priceUsd": 18990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-s10_high_country_2_8_ctdi_4x4_at8",
+     "brand": "Chevrolet",
+     "name": "S10 High Country 2.8 CTDI 4x4 AT8",
+     "priceUsd": 67990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-s10_ltz_2_8_ctdi_4x4_at8",
+     "brand": "Chevrolet",
+     "name": "S10 LTZ 2.8 CTDI 4x4 AT8",
+     "priceUsd": 65990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-s10_wt_2_8_ctdi_4x2_m_t",
+     "brand": "Chevrolet",
+     "name": "S10 WT 2.8 CTDI 4x2 M/T",
+     "priceUsd": 47568,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-s10_wt_2_8_ctdi_4x4_at8",
+     "brand": "Chevrolet",
+     "name": "S10 WT 2.8 CTDI 4x4 AT8",
+     "priceUsd": 55990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-s10_wt_2_8_ctdi_4x4_m_t",
+     "brand": "Chevrolet",
+     "name": "S10 WT 2.8 CTDI 4x4 M/T",
+     "priceUsd": 51990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-s10_z71_2_8_ctdi_4x4_at8",
+     "brand": "Chevrolet",
+     "name": "S10 Z71 2.8 CTDI 4x4 AT8",
+     "priceUsd": 59990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-silverado_lt_trail_boss_z71_5_3_v8_4x4_a_t",
+     "brand": "Chevrolet",
+     "name": "Silverado LT Trail Boss Z71 5.3 V8 4x4 A/T",
+     "priceUsd": 73990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "citroen-jumpy_n1_pack_2_2_hdi_150_l3h1",
+     "brand": "Citroën",
+     "name": "Jumpy N1 Pack 2.2 HDI 150 L3H1",
+     "priceUsd": 37900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "dfsk-serie_k01s_1_2_box_largo",
+     "brand": "DFSK",
+     "name": "Serie K01S 1.2 Box Largo",
+     "priceUsd": 14990,
+     "fields": {
+      "category": [
+       "Utilitario",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "dfsk-serie_k01s_1_2_box_reefer_18c_c_equipo",
+     "brand": "DFSK",
+     "name": "Serie K01S 1.2 Box Reefer -18°C (c/equipo)",
+     "priceUsd": 19500,
+     "fields": {
+      "category": [
+       "Utilitario",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "dfsk-serie_k01s_1_2_box_reefer_5c_c_equipo",
+     "brand": "DFSK",
+     "name": "Serie K01S 1.2 Box Reefer -5°C (c/equipo)",
+     "priceUsd": 17990,
+     "fields": {
+      "category": [
+       "Utilitario",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "dongfeng-rich_6_2_4_4x2_m_t",
+     "brand": "Dongfeng",
+     "name": "Rich 6 2.4 4x2 M/T",
+     "priceUsd": 21490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "dongfeng-rich_6_2_5_4x2_m_t_full",
+     "brand": "Dongfeng",
+     "name": "Rich 6 2.5 4x2 M/T Full",
+     "priceUsd": 31900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "dongfeng-z9_2_0t_at8_4x4",
+     "brand": "Dongfeng",
+     "name": "Z9 2.0T AT8 4x4",
+     "priceUsd": 41990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "dongfeng-z9_2_3td_at8_4x4",
+     "brand": "Dongfeng",
+     "name": "Z9 2.3TD AT8 4x4",
+     "priceUsd": 56990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "farizon-supervan_11_22_m3_88_82_kwh",
+     "brand": "Farizon",
+     "name": "SuperVan 11,22 m³ (88,82 kWh)",
+     "priceUsd": 78068,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "farizon-supervan_7_92_m3_88_82_kwh",
+     "brand": "Farizon",
+     "name": "SuperVan 7,92 m³ (88,82 kWh)",
+     "priceUsd": 68310,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "farizon-v6e_ssta_39_9_kwh",
+     "brand": "Farizon",
+     "name": "V6E -SSTA (39,9 kWh)",
+     "priceUsd": 37990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "fiat-600e_54_kwh",
+     "brand": "Fiat",
+     "name": "600e (54 kWh)",
+     "priceUsd": 37990,
+     "fields": {
+      "fuel": [
+       "PHEV",
+       "Eléctrico"
+      ]
+     }
+    },
+    {
+     "id": "fiat-fiorino_endurance_1_3",
+     "brand": "Fiat",
+     "name": "Fiorino Endurance 1.3",
+     "priceUsd": 17490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "fiat-toro_freedom_1_3_t270_at6_fwd",
+     "brand": "Fiat",
+     "name": "Toro Freedom 1.3 T270 AT6 FWD",
+     "priceUsd": 29990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "fiat-toro_ultra_1_3_t270_at6_fwd",
+     "brand": "Fiat",
+     "name": "Toro Ultra 1.3 T270 AT6 FWD",
+     "priceUsd": 35990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "fiat-toro_volcano_1_3_t270_at6_fwd",
+     "brand": "Fiat",
+     "name": "Toro Volcano 1.3 T270 AT6 FWD",
+     "priceUsd": 32990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-f_150_3_5_v6_ecoboost_lariat_selectshift",
+     "brand": "Ford",
+     "name": "F-150 3.5 V6 EcoBoost Lariat SelectShift",
+     "priceUsd": 109900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-f_150_raptor_3_5_v6_ecoboost_high_output_selectshift",
+     "brand": "Ford",
+     "name": "F-150 Raptor 3.5 V6 EcoBoost High-Output SelectShift",
+     "priceUsd": 159900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-maverick_lariat_2_0_ecoboost_awd_at8",
+     "brand": "Ford",
+     "name": "Maverick Lariat 2.0 EcoBoost AWD AT8",
+     "priceUsd": 49990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-maverick_lariat_2_5_hybrid_awd_ecvt",
+     "brand": "Ford",
+     "name": "Maverick Lariat 2.5 Hybrid AWD eCVT",
+     "priceUsd": 53490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-maverick_tremor_2_0_ecoboost_4wd_at8",
+     "brand": "Ford",
+     "name": "Maverick Tremor 2.0 EcoBoost 4WD AT8",
+     "priceUsd": 56990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-maverick_xlt_2_0_ecoboost_awd_at8",
+     "brand": "Ford",
+     "name": "Maverick XLT 2.0 EcoBoost AWD AT8",
+     "priceUsd": 44990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_limited_v6_3_0_4wd_at10",
+     "brand": "Ford",
+     "name": "Ranger Limited+ V6 3.0 4WD AT10",
+     "priceUsd": 82990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_raptor_v6_3_0_ecoboost_4x4_at10",
+     "brand": "Ford",
+     "name": "Ranger Raptor V6 3.0 EcoBoost 4x4 AT10",
+     "priceUsd": 99900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xl_sit_2_0_4x4_m_t",
+     "brand": "Ford",
+     "name": "Ranger XL SiT 2.0 4x4 M/T",
+     "priceUsd": 58900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xls_sit_2_0_4x4_m_t",
+     "brand": "Ford",
+     "name": "Ranger XLS SiT 2.0 4x4 M/T",
+     "priceUsd": 62900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xls_v6_3_0_4wd_at10",
+     "brand": "Ford",
+     "name": "Ranger XLS V6 3.0 4WD AT10",
+     "priceUsd": 71990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xlt_bit_2_0_4x4_at10",
+     "brand": "Ford",
+     "name": "Ranger XLT BiT 2.0 4x4 AT10",
+     "priceUsd": 71990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-e_toano_pro_bj5048xxy_eve_77_kwh",
+     "brand": "Foton",
+     "name": "e-Toano Pro BJ5048XXY-EVE (77 kWh)",
+     "priceUsd": 57950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "foton-e_view_connect_7_0_m3_50_23_kwh",
+     "brand": "Foton",
+     "name": "e-View Connect 7,0 m³ ( 50,23 kWh )",
+     "priceUsd": 33950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "foton-e_view_connect_8_0_m3_50_23_kwh",
+     "brand": "Foton",
+     "name": "e-View Connect 8,0 m³ ( 50,23 kWh )",
+     "priceUsd": 35450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "foton-e_wonder_pick_up_41_86_kwh",
+     "brand": "Foton",
+     "name": "E Wonder Pick-Up ( 41,86 kWh )",
+     "priceUsd": 29950,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_g7_2_0_t_4x2_m_t",
+     "brand": "Foton",
+     "name": "Tunland G7 2.0 T 4x2 M/T",
+     "priceUsd": 29990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_g7_2_0_t_4x4_m_t",
+     "brand": "Foton",
+     "name": "Tunland G7 2.0 T 4x4 M/T",
+     "priceUsd": 32990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v7_elite_2_0_crdi_4x2_m_t",
+     "brand": "Foton",
+     "name": "Tunland V7 Elite 2.0 CRDI 4x2 M/T",
+     "priceUsd": 37450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v7_elite_2_0_crdi_4x4_m_t",
+     "brand": "Foton",
+     "name": "Tunland V7 Elite 2.0 CRDI 4x4 M/T",
+     "priceUsd": 40450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v7_luxury_2_0_crdi_4x2_m_t",
+     "brand": "Foton",
+     "name": "Tunland V7 Luxury 2.0 CRDI 4x2 M/T",
+     "priceUsd": 41450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v7_luxury_2_0_crdi_4x4_a_t",
+     "brand": "Foton",
+     "name": "Tunland V7 Luxury 2.0 CRDI 4x4 A/T",
+     "priceUsd": 48950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v7_luxury_2_0_crdi_4x4_m_t",
+     "brand": "Foton",
+     "name": "Tunland V7 Luxury 2.0 CRDI 4x4 M/T",
+     "priceUsd": 44450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v7_standard_2_0_crdi_4x2_m_t",
+     "brand": "Foton",
+     "name": "Tunland V7 Standard 2.0 CRDI 4x2 M/T",
+     "priceUsd": 34450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v7_standard_2_0_crdi_4x4_m_t",
+     "brand": "Foton",
+     "name": "Tunland V7 Standard 2.0 CRDI 4x4 M/T",
+     "priceUsd": 38450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v9_flagship_2_0_crdi_4x2_at8",
+     "brand": "Foton",
+     "name": "Tunland V9 Flagship 2.0 CRDI 4x2 AT8",
+     "priceUsd": 45450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v9_ultimate_2_0_crdi_4x2_at8",
+     "brand": "Foton",
+     "name": "Tunland V9 Ultimate 2.0 CRDI 4x2 AT8",
+     "priceUsd": 49450,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v9_ultimate_2_0_crdi_4x4_at8",
+     "brand": "Foton",
+     "name": "Tunland V9 Ultimate 2.0 CRDI 4x4 AT8",
+     "priceUsd": 52950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v9_ultimate_2_0t_4x4_at8",
+     "brand": "Foton",
+     "name": "Tunland V9 Ultimate 2.0T 4x4 AT8",
+     "priceUsd": 43950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "foton-wonder_cabina_doble_1_6",
+     "brand": "Foton",
+     "name": "Wonder Cabina Doble 1.6",
+     "priceUsd": 17950,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "geely-ex5_em_i_max_1_5_e_dht",
+     "brand": "Geely",
+     "name": "EX5 EM-i Max 1.5 E-DHT",
+     "priceUsd": 38990,
+     "fields": {
+      "fuel": [
+       "Híbrido",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "geely-ex5_em_i_pro_1_5_e_dht",
+     "brand": "Geely",
+     "name": "EX5 EM-i Pro 1.5 E-DHT",
+     "priceUsd": 34990,
+     "fields": {
+      "fuel": [
+       "Híbrido",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "gwm-ora_5_middle_58_3_kwh",
+     "brand": "GWM",
+     "name": "ORA 5 Middle (58,3 kWh)",
+     "priceUsd": 24990,
+     "fields": {
+      "fuel": [
+       "PHEV",
+       "Eléctrico"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_t_family_deluxe_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Family Deluxe 4x4 A/T",
+     "priceUsd": 34990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_t_family_deluxe_4x4_a_t-2",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Family Deluxe 4x4 A/T",
+     "priceUsd": 39990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_t_family_elite_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Family Elite 4x4 A/T",
+     "priceUsd": 33990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_t_tool_elite_4x2_m_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Tool Elite 4x2 M/T",
+     "priceUsd": 24990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_t_tool_elite_4x4_m_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Tool Elite 4x4 M/T",
+     "priceUsd": 27990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_t_tool_elite_4x4_m_t-2",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Tool Elite 4x4 M/T",
+     "priceUsd": 41990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_family_deluxe_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Family Deluxe 4x4 A/T",
+     "priceUsd": 44990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_family_elite_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Family Elite 4x4 A/T",
+     "priceUsd": 43990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_family_luxury_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Family Luxury 4x4 A/T",
+     "priceUsd": 42990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_tool_elite_4x2_m_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Tool Elite 4x2 M/T",
+     "priceUsd": 38990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_tool_elite_4x2_m_t_cs",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Tool Elite 4x2 M/T CS",
+     "priceUsd": 37990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-wingle_5_dignity_2_4_4x2_cd",
+     "brand": "GWM",
+     "name": "Wingle 5 Dignity 2.4 4x2 CD",
+     "priceUsd": 22990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-wingle_5_luxury_2_4_4x2_cd",
+     "brand": "GWM",
+     "name": "Wingle 5 Luxury 2.4 4x2 CD",
+     "priceUsd": 21990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-wingle_7_luxury_2_0_tdi_4x2_cd",
+     "brand": "GWM",
+     "name": "Wingle 7 Luxury 2.0 TDI 4x2 CD",
+     "priceUsd": 33990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "gwm-wingle_7_luxury_2_0_tdi_4x4_cd",
+     "brand": "GWM",
+     "name": "Wingle 7 Luxury 2.0 TDI 4x4 CD",
+     "priceUsd": 35990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "honda-ridgeline_rtl_3_5_v6_awd_a_t",
+     "brand": "Honda",
+     "name": "Ridgeline RTL 3.5 V6 AWD A/T",
+     "priceUsd": 69198,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "hudson-ebuddy_pick_up_15_4_kwh",
+     "brand": "Hudson",
+     "name": "eBuddy Pick-Up (15,4 kWh)",
+     "priceUsd": 13990,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "hyundai-staria_hev_limited_1_6_t_gdi_a_t",
+     "brand": "Hyundai",
+     "name": "Staria HEV Limited 1.6 T-GDi A/T",
+     "priceUsd": 67990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "hyundai-staria_hev_safe_1_6_t_gdi_a_t",
+     "brand": "Hyundai",
+     "name": "Staria HEV Safe 1.6 T-GDi A/T",
+     "priceUsd": 59990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "hyundai-staria_hev_ultimate_1_6_t_gdi_a_t",
+     "brand": "Hyundai",
+     "name": "Staria HEV Ultimate 1.6 T-GDi A/T",
+     "priceUsd": 72990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "jac-m3_ev_50_23_kwh",
+     "brand": "JAC",
+     "name": "M3 EV (50,23 kWh)",
+     "priceUsd": 39990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "jac-sunray_ev_92_16_kwh",
+     "brand": "JAC",
+     "name": "Sunray EV (92,16 kWh)",
+     "priceUsd": 59990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "jac-t6_2_0_luxury",
+     "brand": "JAC",
+     "name": "T6 2.0 Luxury",
+     "priceUsd": 22990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jac-t8_pro_comfort_2_4_cti_4x4_m_t",
+     "brand": "JAC",
+     "name": "T8 Pro Comfort 2.4 CTI 4x4 M/T",
+     "priceUsd": 41990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jac-t8_pro_luxury_2_0_cti_4x4_a_t",
+     "brand": "JAC",
+     "name": "T8 Pro Luxury 2.0 CTI 4x4 A/T",
+     "priceUsd": 49990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jac-t8_pro_luxury_2_4_cti_4x4_m_t",
+     "brand": "JAC",
+     "name": "T8 Pro Luxury 2.4 CTI 4x4 M/T",
+     "priceUsd": 45990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jmc-grand_avenue_gl_2_3_tdci_4x2_m_t",
+     "brand": "JMC",
+     "name": "Grand Avenue GL 2.3 TDCi 4x2 M/T",
+     "priceUsd": 36588,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jmc-grand_avenue_gl_2_3_tdci_4x4_a_t",
+     "brand": "JMC",
+     "name": "Grand Avenue GL 2.3 TDCi 4x4 A/T",
+     "priceUsd": 45140,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jmc-grand_avenue_gl_2_3_tdci_4x4_m_t",
+     "brand": "JMC",
+     "name": "Grand Avenue GL 2.3 TDCi 4x4 M/T",
+     "priceUsd": 39882,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jmc-grand_avenue_pro_luxury_2_3_gtdi_4x4_a_t",
+     "brand": "JMC",
+     "name": "Grand Avenue Pro Luxury 2.3 GTDi 4x4 A/T",
+     "priceUsd": 45018,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jmc-grand_avenue_pro_luxury_2_3_tdci_4x4_a_t",
+     "brand": "JMC",
+     "name": "Grand Avenue Pro Luxury 2.3 TDCi 4x4 A/T",
+     "priceUsd": 62098,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "jmc-l536_touring_swb_2_0_tdi_jx5045xxytda_l6",
+     "brand": "JMC",
+     "name": "L536 Touring SWB 2.0 TDi JX5045XXYTDA-L6",
+     "priceUsd": 35368,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "jmc-vigus_work_1_8_gtdi_4x2_m_t",
+     "brand": "JMC",
+     "name": "Vigus Work 1.8 GTDi 4x2 M/T",
+     "priceUsd": 22990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "karry-q22b_cabina_simple_1_1",
+     "brand": "Karry",
+     "name": "Q22B Cabina Simple 1.1",
+     "priceUsd": 11190,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "karry-q22e_cabina_doble_1_3",
+     "brand": "Karry",
+     "name": "Q22E Cabina Doble 1.3",
+     "priceUsd": 12590,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "keyton-q2_ev_pick_up_41_86_kwh",
+     "brand": "Keyton",
+     "name": "Q2 EV Pick-Up (41,86 kWh)",
+     "priceUsd": 34770,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_dlx_2_0_t_gdi_4x2_m_t",
+     "brand": "KGM",
+     "name": "Musso Grand DLX 2.0 T-GDI 4x2 M/T",
+     "priceUsd": 42950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_dlx_2_2_e_xdi_4x2_m_t",
+     "brand": "KGM",
+     "name": "Musso Grand DLX 2.2 e-XDi 4x2 M/T",
+     "priceUsd": 65950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_entry_2_0_t_gdi_4x2_m_t",
+     "brand": "KGM",
+     "name": "Musso Grand Entry 2.0 T-GDI 4x2 M/T",
+     "priceUsd": 39950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_high_2_0_t_gdi_4x4_m_t",
+     "brand": "KGM",
+     "name": "Musso Grand High 2.0 T-GDI 4x4 M/T",
+     "priceUsd": 46950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_high_2_2_e_xdi_4x4_m_t",
+     "brand": "KGM",
+     "name": "Musso Grand High 2.2 e-XDi 4x4 M/T",
+     "priceUsd": 69950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_limited_2_0_t_gdi_4x4_a_t",
+     "brand": "KGM",
+     "name": "Musso Grand Limited 2.0 T-GDI 4x4 A/T",
+     "priceUsd": 53950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_limited_2_2_e_xdi_4x4_a_t",
+     "brand": "KGM",
+     "name": "Musso Grand Limited 2.2 e-XDi 4x4 A/T",
+     "priceUsd": 76950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "kyc-t1_cabina_doble_1_2",
+     "brand": "KYC",
+     "name": "T1 Cabina Doble 1.2",
+     "priceUsd": 15490,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "kyc-t1_cabina_simple_1_2",
+     "brand": "KYC",
+     "name": "T1 Cabina Simple 1.2",
+     "priceUsd": 13690,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "maxus-deliver_9_l2h2_2_0_vgt",
+     "brand": "Maxus",
+     "name": "Deliver 9 L2H2 2.0 VGT",
+     "priceUsd": 47567,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "maxus-deliver_9_l3h2_2_0_vgt",
+     "brand": "Maxus",
+     "name": "Deliver 9 L3H2 2.0 VGT",
+     "priceUsd": 50007,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "maxus-edeliver_5_swb_l1h1_64_kwh",
+     "brand": "Maxus",
+     "name": "eDeliver 5 SWB L1H1 (64 kWh)",
+     "priceUsd": 51227,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "maxus-edeliver_5_swb_l2h2_64_kwh",
+     "brand": "Maxus",
+     "name": "eDeliver 5 SWB L2H2 (64 kWh)",
+     "priceUsd": 57328,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "maxus-edeliver_9_lwb_l3h2_88_5_kwh",
+     "brand": "Maxus",
+     "name": "eDeliver 9 LWB L3H2 (88,5 kWh)",
+     "priceUsd": 76847,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "maxus-edeliver_9_swb_l2h2_51_5_kwh",
+     "brand": "Maxus",
+     "name": "eDeliver 9 SWB L2H2 (51,5 kWh)",
+     "priceUsd": 63307,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "maxus-eterron_9_luxury_awd_102_kwh",
+     "brand": "Maxus",
+     "name": "eTerron 9 Luxury AWD (102 kWh)",
+     "priceUsd": 60987,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "maxus-eterron_9_premium_awd_102_kwh",
+     "brand": "Maxus",
+     "name": "eTerron 9 Premium AWD (102 kWh)",
+     "priceUsd": 77977,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "maxus-terron_9_premium_2_5_tdi_4x4_a_t",
+     "brand": "Maxus",
+     "name": "Terron 9 Premium 2.5 TDi 4x4 A/T",
+     "priceUsd": 79990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-esprinter_314_81_kwh",
+     "brand": "Mercedes-Benz",
+     "name": "eSprinter 314 (81 kWh)",
+     "priceUsd": 95038,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-esprinter_414_81_kwh",
+     "brand": "Mercedes-Benz",
+     "name": "eSprinter 414 (81 kWh)",
+     "priceUsd": 96136,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "mitsubishi-l200_gls_2_4_di_d_high_power_a_t_4wd",
+     "brand": "Mitsubishi",
+     "name": "L200 GLS 2.4 DI-D High Power A/T 4WD",
+     "priceUsd": 68308,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "mitsubishi-l200_gls_2_4_di_d_high_power_m_t_4wd",
+     "brand": "Mitsubishi",
+     "name": "L200 GLS 2.4 DI-D High Power M/T 4WD",
+     "priceUsd": 60988,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "mitsubishi-l200_glx_2_4_di_d_m_t_2wd",
+     "brand": "Mitsubishi",
+     "name": "L200 GLX 2.4 DI-D M/T 2WD",
+     "priceUsd": 51228,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "mitsubishi-l200_glx_2_4_mpi_m_t_2wd",
+     "brand": "Mitsubishi",
+     "name": "L200 GLX 2.4 MPI M/T 2WD",
+     "priceUsd": 35368,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "new_gonow-e_lcv_sy00_53_58_kwh",
+     "brand": "New Gonow",
+     "name": "e-LCV SY00 (53,58 kWh)",
+     "priceUsd": 35500,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "new_gonow-e_mcv_dm20_53_58_kwh",
+     "brand": "New Gonow",
+     "name": "e-MCV DM20 (53,58 kWh)",
+     "priceUsd": 29500,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_le_4x4_2_3_ddtti_a_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D LE 4x4 2.3 DDTTi A/T",
+     "priceUsd": 62990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_pro_4x_4x4_2_3_ddtti_a_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D PRO-4X 4x4 2.3 DDTTi A/T",
+     "priceUsd": 61990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_pro_4x_4x4_2_5_a_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D PRO-4X 4x4 2.5 A/T",
+     "priceUsd": 44990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_s_4x2_2_3_ddtti_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D S 4x2 2.3 DDTTi M/T",
+     "priceUsd": 45990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_s_4x2_2_5_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D S 4x2 2.5 M/T",
+     "priceUsd": 34990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_se_4x2_2_5_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D SE 4x2 2.5 M/T",
+     "priceUsd": 37990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_se_4x4_2_3_ddtti_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D SE 4x4 2.3 DDTTi M/T",
+     "priceUsd": 54990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_xe_4x2_2_5_a_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D XE 4x2 2.5 A/T",
+     "priceUsd": 38990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_xe_4x4_2_3_ddtti_a_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D XE 4x4 2.3 DDTTi A/T",
+     "priceUsd": 59990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_xe_4x4_2_3_ddtti_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D XE 4x4 2.3 DDTTi M/T",
+     "priceUsd": 56990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_s_s_4x2_2_5_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/S S 4x2 2.5 M/T",
+     "priceUsd": 32990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-e_expert_l3h1_75_kwh",
+     "brand": "Peugeot",
+     "name": "E-Expert L3H1 (75 kWh)",
+     "priceUsd": 47990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-e_partner_l1_50_kwh",
+     "brand": "Peugeot",
+     "name": "e-Partner L1 (50 kWh)",
+     "priceUsd": 39990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-expert_n1_pack_1_5_bluehdi_l3h1",
+     "brand": "Peugeot",
+     "name": "Expert N1 Pack 1.5 BlueHDI L3H1",
+     "priceUsd": 33490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-landtrek_2_2_bluehdi_action_4x4_bva6",
+     "brand": "Peugeot",
+     "name": "Landtrek 2.2 BlueHDi Action 4x4 BVA6",
+     "priceUsd": 58990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-landtrek_2_2_bluehdi_active_4x2_bvm6",
+     "brand": "Peugeot",
+     "name": "Landtrek 2.2 BlueHDi Active 4x2 BVM6",
+     "priceUsd": 46990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-landtrek_2_2_bluehdi_active_4x4_bva6",
+     "brand": "Peugeot",
+     "name": "Landtrek 2.2 BlueHDi Active 4x4 BVA6",
+     "priceUsd": 53990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-landtrek_2_2_bluehdi_active_4x4_bvm6",
+     "brand": "Peugeot",
+     "name": "Landtrek 2.2 BlueHDi Active 4x4 BVM6",
+     "priceUsd": 51990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-partner_1_6_hdi_92_l2",
+     "brand": "Peugeot",
+     "name": "Partner 1.6 HDI 92 L2",
+     "priceUsd": 35990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-partner_m69_confort_1_6",
+     "brand": "Peugeot",
+     "name": "Partner M69 Confort 1.6",
+     "priceUsd": 15990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-partner_m69_confort_1_6_hdi",
+     "brand": "Peugeot",
+     "name": "Partner M69 Confort 1.6 HDi",
+     "priceUsd": 22490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "ram-1500_big_horn_black_edition_3_6_v6_etorque_a_t_4x4",
+     "brand": "RAM",
+     "name": "1500 Big Horn Black Edition 3.6 V6 eTorque A/T 4x4",
+     "priceUsd": 92500,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ram-1500_laramie_3_0_hurricane_sst_so_a_t_4x4",
+     "brand": "RAM",
+     "name": "1500 Laramie 3.0 Hurricane SST SO A/T 4x4",
+     "priceUsd": 114900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ram-1500_rho_3_0_hurricane_sst_ho_a_t_4x4",
+     "brand": "RAM",
+     "name": "1500 RHO 3.0 Hurricane SST HO A/T 4x4",
+     "priceUsd": 182900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ram-dakota_big_horn_2_2_turbodiesel_4x4_at8",
+     "brand": "RAM",
+     "name": "Dakota Big Horn 2.2 Turbodiesel 4x4 AT8",
+     "priceUsd": 59990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ram-rampage_r_t_2_0_gme_t4_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage R/T 2.0 GME T4 AT9 4x4",
+     "priceUsd": 58490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "ram-rampage_rebel_2_0_gme_t4_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage Rebel 2.0 GME T4 AT9 4x4",
+     "priceUsd": 48490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "rely-r8_2_3td_at8_4wd_limited",
+     "brand": "Rely",
+     "name": "R8 2.3TD AT8 4WD Limited",
+     "priceUsd": 44990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "rely-r8_2_3td_mt6_4wd_luxury",
+     "brand": "Rely",
+     "name": "R8 2.3TD MT6 4WD Luxury",
+     "priceUsd": 37990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "rely-r8_2_4_mt5_2wd_comfort",
+     "brand": "Rely",
+     "name": "R8 2.4 MT5 2WD Comfort",
+     "priceUsd": 24990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "rely-r8_2_4_mt5_2wd_luxury",
+     "brand": "Rely",
+     "name": "R8 2.4 MT5 2WD Luxury",
+     "priceUsd": 29990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "renault-kangoo_e_tech_ev45_l2h1_45_kwh",
+     "brand": "Renault",
+     "name": "Kangoo E-Tech EV45 L2H1 (45 kWh)",
+     "priceUsd": 44900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "renault-kangoo_express_1_6_sce_114_comfort",
+     "brand": "Renault",
+     "name": "Kangoo Express 1.6 SCe 114 Comfort",
+     "priceUsd": 22500,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "renault-master_l1h1_2_3_dci",
+     "brand": "Renault",
+     "name": "Master L1H1 2.3 dCi",
+     "priceUsd": 38990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "renault-master_l2h2_2_3_dci",
+     "brand": "Renault",
+     "name": "Master L2H2 2.3 dCi",
+     "priceUsd": 43990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "renault-master_l3h2_2_3_dci",
+     "brand": "Renault",
+     "name": "Master L3H2 2.3 dCi",
+     "priceUsd": 45490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "renault-oroch_cargo_1_6_sce_m_t_2wd",
+     "brand": "Renault",
+     "name": "Oroch Cargo 1.6 SCe M/T 2WD",
+     "priceUsd": 19990,
+     "fields": {
+      "category": [
+       "Utilitario",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "renault-oroch_intens_1_3_tce_cvt_2wd",
+     "brand": "Renault",
+     "name": "Oroch Intens 1.3 TCe CVT 2WD",
+     "priceUsd": 25990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "renault-oroch_intens_outsider_1_3_tce_cvt_2wd",
+     "brand": "Renault",
+     "name": "Oroch Intens Outsider 1.3 TCe CVT 2WD",
+     "priceUsd": 27490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "renault-oroch_intens_outsider_1_3_tce_m_t_4wd",
+     "brand": "Renault",
+     "name": "Oroch Intens Outsider 1.3 TCe M/T 4WD",
+     "priceUsd": 28990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "renault-oroch_intens_outsider_1_6_sce_m_t_2wd",
+     "brand": "Renault",
+     "name": "Oroch Intens Outsider 1.6 SCe M/T 2WD",
+     "priceUsd": 24490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "renault-oroch_zen_1_6_sce_m_t_2wd",
+     "brand": "Renault",
+     "name": "Oroch Zen 1.6 SCe M/T 2WD",
+     "priceUsd": 21900,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "riddara-horizon_pro_4wd_73_kwh",
+     "brand": "Riddara",
+     "name": "Horizon Pro 4WD (73 kWh)",
+     "priceUsd": 49990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "riddara-horizon_ultra_4wd_86_kwh",
+     "brand": "Riddara",
+     "name": "Horizon Ultra 4WD (86 kWh)",
+     "priceUsd": 55990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "riddara-rd6_eco_4wd_73_kwh",
+     "brand": "Riddara",
+     "name": "RD6 Eco 4WD (73 kWh)",
+     "priceUsd": 36990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "riddara-rd6_eco_rwd_63_kwh",
+     "brand": "Riddara",
+     "name": "RD6 Eco RWD (63 kWh)",
+     "priceUsd": 32000,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "riddara-rd6_luxury_550_rwd_86_kwh",
+     "brand": "Riddara",
+     "name": "RD6 Luxury 550 RWD (86 kWh)",
+     "priceUsd": 49990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "rox-01_awd_6s_56_01_kwh",
+     "brand": "ROX",
+     "name": "01 AWD 6S (56,01 kWh)",
+     "priceUsd": 82990,
+     "fields": {
+      "fuel": [
+       "Eléctrico",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "rox-01_awd_7s_56_01_kwh",
+     "brand": "ROX",
+     "name": "01 AWD 7S (56,01 kWh)",
+     "priceUsd": 79990,
+     "fields": {
+      "fuel": [
+       "Eléctrico",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "rox-adamas_awd_6s_56_01_kwh",
+     "brand": "ROX",
+     "name": "Adamas AWD 6S (56,01 kWh)",
+     "priceUsd": 92990,
+     "fields": {
+      "fuel": [
+       "Eléctrico",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "rox-adamas_awd_7s_56_01_kwh",
+     "brand": "ROX",
+     "name": "Adamas AWD 7S (56,01 kWh)",
+     "priceUsd": 89990,
+     "fields": {
+      "fuel": [
+       "Eléctrico",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_4_d_4d_dx_4x2",
+     "brand": "Toyota",
+     "name": "Hilux 2.4 D-4D DX 4x2",
+     "priceUsd": 52490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_4_d_4d_dx_4x4",
+     "brand": "Toyota",
+     "name": "Hilux 2.4 D-4D DX 4x4",
+     "priceUsd": 58990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_4_d_4d_sr_4x2",
+     "brand": "Toyota",
+     "name": "Hilux 2.4 D-4D SR 4x2",
+     "priceUsd": 57490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_4_d_4d_sr_4x4",
+     "brand": "Toyota",
+     "name": "Hilux 2.4 D-4D SR 4x4",
+     "priceUsd": 62990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_4_d_4d_sr_4x4_a_t",
+     "brand": "Toyota",
+     "name": "Hilux 2.4 D-4D SR 4x4 A/T",
+     "priceUsd": 65990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_7_vvt_i_sr_4x2",
+     "brand": "Toyota",
+     "name": "Hilux 2.7 VVT-i SR 4x2",
+     "priceUsd": 37990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_7_vvt_i_srv_4x2",
+     "brand": "Toyota",
+     "name": "Hilux 2.7 VVT-i SRV 4x2",
+     "priceUsd": 41990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_7_vvt_i_srv_4x4",
+     "brand": "Toyota",
+     "name": "Hilux 2.7 VVT-i SRV 4x4",
+     "priceUsd": 46990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_8_d_4d_gr_sport_4x4_a_t_tss",
+     "brand": "Toyota",
+     "name": "Hilux 2.8 D-4D GR Sport 4x4 A/T TSS",
+     "priceUsd": 85990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_8_d_4d_srv_4x2",
+     "brand": "Toyota",
+     "name": "Hilux 2.8 D-4D SRV 4x2",
+     "priceUsd": 61490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_8_d_4d_srv_4x4_a_t",
+     "brand": "Toyota",
+     "name": "Hilux 2.8 D-4D SRV 4x4 A/T",
+     "priceUsd": 71490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_8_d_4d_srv_4x4_m_t",
+     "brand": "Toyota",
+     "name": "Hilux 2.8 D-4D SRV 4x4 M/T",
+     "priceUsd": 68490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_8_d_4d_srv_plus_4x4_a_t",
+     "brand": "Toyota",
+     "name": "Hilux 2.8 D-4D SRV Plus 4x4 A/T",
+     "priceUsd": 76490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_8_d_4d_srx_4x4_a_t_tss",
+     "brand": "Toyota",
+     "name": "Hilux 2.8 D-4D SRX 4x4 A/T TSS",
+     "priceUsd": 82990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "victory-ght1025d_1_2_pick_up_cabina_simple_con_a_a",
+     "brand": "Victory",
+     "name": "GHT1025D 1.2 Pick-Up Cabina Simple (con a/a)",
+     "priceUsd": 10390,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "victory-ght1025s_1_2_pick_up_cabina_doble_con_a_a",
+     "brand": "Victory",
+     "name": "GHT1025S 1.2 Pick-Up Cabina Doble (con a/a)",
+     "priceUsd": 12290,
+     "fields": {
+      "category": [
+       "Pick-up",
+       "Utilitario"
+      ]
+     }
+    },
+    {
+     "id": "volkswagen-amarok_2_0_tdi_highline_4x2_a_t",
+     "brand": "Volkswagen",
+     "name": "Amarok 2.0 TDI Highline 4x2 A/T",
+     "priceUsd": 61690,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "volkswagen-amarok_2_0_tdi_highline_4x2_m_t",
+     "brand": "Volkswagen",
+     "name": "Amarok 2.0 TDI Highline 4x2 M/T",
+     "priceUsd": 57490,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    },
+    {
+     "id": "volkswagen-amarok_3_0_v6_tdi_highline_4x4_a_t",
+     "brand": "Volkswagen",
+     "name": "Amarok 3.0 V6 TDI Highline 4x4 A/T",
+     "priceUsd": 79990,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "manual": true,
+   "note": "Fichas corregidas y completadas: baterías, potencias y versiones eléctricas que faltaban; WLTP verificado con fuentes oficiales; combustible y categoría corregidos.",
+   "modelsChanged": 45
+  },
+  {
    "at": "2026-09-23T23:41:11+00:00",
    "runId": null,
    "dataVersion": "084b428ecdf1",

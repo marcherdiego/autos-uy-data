@@ -48,6 +48,14 @@ El panel lo muestra junto con el estado de cada corrida del job:
   opcional, `GITHUB_TOKEN` para no depender del cupo sin autenticar de la API de
   GitHub. Si ese cupo se agota, el panel pide las corridas desde el navegador.
 
+## Correcciones que vienen de la app
+
+`overrides.json` corrige lo que el scraper no puede deducir del nombre de una
+versión: el combustible de los enchufables que no lo dicen (un ROX de autonomía
+extendida, un BYD DM-p) y la categoría que sale de la carrocería de la ficha
+(pick-up, utilitario). Lo escribe `tools/publicar_fichas.py` del repo de la app al
+publicar fichas; el scraper sólo lo aplica en cada corrida. No se edita a mano.
+
 ## Qué actualiza y qué no
 
 | | |

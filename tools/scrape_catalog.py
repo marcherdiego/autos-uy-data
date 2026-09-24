@@ -47,6 +47,11 @@ BRAND_ALIASES = {
 }
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "catalog.json")
+# Lo que la app sabe mejor que el nombre de la versión: el combustible que
+# relevó para cada enchufable (un ROX de autonomía extendida no lo dice en el
+# nombre) y la carrocería de la ficha (pick-up, utilitario). Lo escribe
+# tools/publicar_fichas.py del repo de la app; acá sólo se aplica.
+OVERRIDES = os.path.join(ROOT, "overrides.json")
 
 PICKUP_RE = re.compile(r"(?<![\w-])(?:pick[- ]?up|cabina (?:simple|doble|plus)|crew cab|"
                        r"doble cabina)(?![\w-])", re.I)
@@ -92,9 +97,16 @@ DIESEL_ONLY = ("himla", "daily", "sunray", "toano", "view cargo", "view travelle
 def fuel_of(name):
     raw, low = name, name.lower()
     ev = "kwh" in low
-    plug = (any(k in low for k in ["phev", "dm-i", "plug-in", "plugin", "e-hybrid", "ehybrid",
-                                   "reev", "4xe", "e performance", "idd"])
-            or bool(re.search(r"\b\d{3}\s?e\b", raw))
+    battery = battery_of(name) or 0
+    # "330e" / "350 e" es un enchufable alemán, pero "600e (54 kWh)" es el Fiat
+    # eléctrico: con una batería de eléctrico, el patrón no alcanza.
+    german_phev = bool(re.search(r"\b\d{3}\s?e\b", raw)) and battery < 40
+    plug = (any(k in low for k in ["phev", "dm-i", "dm-p", "dm-o", "dmo", "em-i", "em-p",
+                                   "plug-in", "plugin", "e-hybrid", "ehybrid", "reev", "erev",
+                                   "4xe", "e performance"])
+            # "iDD" (Changan) como palabra: "Middle" también lo contiene.
+            or bool(re.search(r"(?<![a-z])idd(?![a-z])", low))
+            or german_phev
             or ("recharge" in low and "t8" in low))
     hybrid = any(k in low for k in [" hev", "hybrid", "híbrid", "e-power", "dht", "mhev", "shev",
                                     "e-cvt", "ecvt", " shs", "dhi", " hyb", "eq boost", "e-boxer"])
@@ -241,6 +253,16 @@ def build_catalog(html, previous):
                 # muestra precio, importador y poco más.
                 "modelKey": model_of.get(car_id),
             })
+
+    overrides = {}
+    if os.path.exists(OVERRIDES):
+        with open(OVERRIDES, encoding="utf-8") as handle:
+            overrides = json.load(handle)
+    for car in cars:
+        for field in ("fuel", "category"):
+            value = overrides.get(field, {}).get(car["id"])
+            if value:
+                car[field] = value
 
     text = body.get_text(" ", strip=True)
     match = re.search(r"(\d{2}/\d{2}/\d{4})", re.sub(r"\s*/\s*", "/", text))
