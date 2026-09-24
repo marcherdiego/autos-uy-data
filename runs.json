@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20260924T192256Z",
+   "at": "2026-09-24T19:22:56+00:00",
+   "event": "manual",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "e6da4123e830",
+   "previousVersion": "ee783ec23db6",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1079 | fichas: 386 | sin ficha: 26 | actualizado: 24/09/2026\ncambios (1):\n  ~ gac_motor-hyptec_ht_rwd_72_7_kwh — 45990 -> 39990",
+   "commit": "2779ce5b1fa44879ca711a90f705fa5bcabb18d1",
+   "durationMs": 6038
+  },
+  {
    "id": "20260924T145730Z",
    "at": "2026-09-24T14:57:30+00:00",
    "event": "manual",
