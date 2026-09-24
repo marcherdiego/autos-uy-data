@@ -1,6 +1,113 @@
 {
  "entries": [
   {
+   "at": "2026-09-24T14:57:32+00:00",
+   "runId": "20260924T145730Z",
+   "dataVersion": "9777b4d9dc69",
+   "previousVersion": "d65b758aeaaa",
+   "sourceUpdatedAt": "24/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 384,
+    "withoutModel": 42
+   },
+   "added": [
+    {
+     "id": "renault-kwid_bitono_1_0_sce",
+     "brand": "Renault",
+     "name": "Kwid Bitono 1.0 SCe",
+     "priceUsd": 15600
+    },
+    {
+     "id": "renault-kwid_evolution_1_0_sce",
+     "brand": "Renault",
+     "name": "Kwid Evolution 1.0 SCe",
+     "priceUsd": 14500
+    },
+    {
+     "id": "renault-kwid_outsider_1_0_sce",
+     "brand": "Renault",
+     "name": "Kwid Outsider 1.0 SCe",
+     "priceUsd": 15900
+    },
+    {
+     "id": "renault-kwid_techno_1_0_sce",
+     "brand": "Renault",
+     "name": "Kwid Techno 1.0 SCe",
+     "priceUsd": 15200
+    }
+   ],
+   "removed": [
+    {
+     "id": "renault-kwid_bitono_1_0",
+     "brand": "Renault",
+     "name": "Kwid Bitono 1.0",
+     "priceUsd": 13990
+    },
+    {
+     "id": "renault-kwid_intens_1_0",
+     "brand": "Renault",
+     "name": "Kwid Intens 1.0",
+     "priceUsd": 13400
+    },
+    {
+     "id": "renault-kwid_outsider_1_0",
+     "brand": "Renault",
+     "name": "Kwid Outsider 1.0",
+     "priceUsd": 14200
+    },
+    {
+     "id": "renault-kwid_zen_1_0",
+     "brand": "Renault",
+     "name": "Kwid Zen 1.0",
+     "priceUsd": 12990
+    }
+   ],
+   "repriced": [
+    {
+     "id": "citroen-ami_electric_tonic_5_4_kwh",
+     "brand": "Citroën",
+     "name": "Ami ëlectric Tonic (5,4 kWh)",
+     "priceUsd": 6990,
+     "from": 12990
+    }
+   ],
+   "changed": [
+    {
+     "id": "byd-shark_1_5_t_dmo_gl_a_t_4wd",
+     "brand": "BYD",
+     "name": "Shark 1.5 T DMO GL A/T 4WD",
+     "priceUsd": 69490,
+     "fields": {
+      "fuel": [
+       "Nafta",
+       "PHEV"
+      ]
+     }
+    },
+    {
+     "id": "byd-shark_1_5_t_dmo_gs_a_t_4wd",
+     "brand": "BYD",
+     "name": "Shark 1.5 T DMO GS A/T 4WD",
+     "priceUsd": 72990,
+     "fields": {
+      "fuel": [
+       "Nafta",
+       "PHEV"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "renault__kwid"
+   ]
+  },
+  {
    "at": "2026-09-24T01:11:35+00:00",
    "runId": null,
    "dataVersion": "d65b758aeaaa",
