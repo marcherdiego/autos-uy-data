@@ -1,6 +1,53 @@
 {
  "entries": [
   {
+   "at": "2026-09-24T19:34:35+00:00",
+   "runId": "20260924T193434Z",
+   "dataVersion": "f93392898627",
+   "previousVersion": "bc02ea2225c4",
+   "sourceUpdatedAt": "24/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 399,
+    "withoutModel": 0
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [
+    {
+     "id": "baic-x55_rehev_1_5t_comfort",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Comfort",
+     "priceUsd": 27990,
+     "fields": {
+      "fuel": [
+       "Nafta",
+       "Híbrido"
+      ]
+     }
+    },
+    {
+     "id": "baic-x55_rehev_1_5t_luxury",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Luxury",
+     "priceUsd": 29990,
+     "fields": {
+      "fuel": [
+       "Nafta",
+       "Híbrido"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-09-24T19:34:20+00:00",
    "runId": null,
    "dataVersion": "bc02ea2225c4",
