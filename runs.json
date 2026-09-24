@@ -1,0 +1,16 @@
+{
+ "runs": [
+  {
+   "id": "20260924T145730Z",
+   "at": "2026-09-24T14:57:30+00:00",
+   "event": "manual",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "9777b4d9dc69",
+   "previousVersion": "d65b758aeaaa",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1079 | fichas: 384 | sin ficha: 42 | actualizado: 24/09/2026\ncambios (9):\n  + renault-kwid_bitono_1_0_sce — U$S 15.600\n  + renault-kwid_evolution_1_0_sce — U$S 14.500\n  + renault-kwid_outsider_1_0_sce — U$S 15.900\n  + renault-kwid_techno_1_0_sce — U$S 15.200\n  - renault-kwid_bitono_1_0\n  - renault-kwid_intens_1_0\n  - renault-kwid_outsider_1_0\n  - renault-kwid_zen_1_0\n  ~ citroen-ami_electric_tonic_5_4_kwh — 12990 -> 6990",
+   "commit": "8b5ed5bbe27c76e3282e7877d79932f545447d59",
+   "durationMs": 4943
+  }
+ ]
+}
