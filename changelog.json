@@ -1,6 +1,352 @@
 {
  "entries": [
   {
+   "at": "2026-09-24T19:34:20+00:00",
+   "runId": null,
+   "dataVersion": "bc02ea2225c4",
+   "previousVersion": "e6da4123e830",
+   "sourceUpdatedAt": "24/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 399,
+    "withoutModel": 0
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [
+    {
+     "id": "avatr-07_reev_max_rwd_39_05_kwh",
+     "brand": "Avatr",
+     "name": "07 REEV Max RWD (39,05 kWh)",
+     "priceUsd": 59990,
+     "fields": {
+      "modelKey": [
+       null,
+       "avatr__07"
+      ]
+     }
+    },
+    {
+     "id": "avatr-07_reev_ultra_awd_39_05_kwh",
+     "brand": "Avatr",
+     "name": "07 REEV Ultra AWD (39,05 kWh)",
+     "priceUsd": 65990,
+     "fields": {
+      "modelKey": [
+       null,
+       "avatr__07"
+      ]
+     }
+    },
+    {
+     "id": "avatr-11_long_range_rwd_90_kwh",
+     "brand": "Avatr",
+     "name": "11 Long Range RWD (90 kWh)",
+     "priceUsd": 69990,
+     "fields": {
+      "modelKey": [
+       null,
+       "avatr__11"
+      ]
+     }
+    },
+    {
+     "id": "avatr-11_ultra_long_range_4_plazas_awd_116_kwh",
+     "brand": "Avatr",
+     "name": "11 Ultra Long Range 4 plazas AWD (116 kWh)",
+     "priceUsd": 79990,
+     "fields": {
+      "modelKey": [
+       null,
+       "avatr__11"
+      ]
+     }
+    },
+    {
+     "id": "avatr-11_ultra_long_range_5_plazas_awd_116_kwh",
+     "brand": "Avatr",
+     "name": "11 Ultra Long Range 5 plazas AWD (116 kWh)",
+     "priceUsd": 78990,
+     "fields": {
+      "modelKey": [
+       null,
+       "avatr__11"
+      ]
+     }
+    },
+    {
+     "id": "baic-x55_rehev_1_5t_comfort",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Comfort",
+     "priceUsd": 27990,
+     "fields": {
+      "modelKey": [
+       null,
+       "baic__x55"
+      ]
+     }
+    },
+    {
+     "id": "baic-x55_rehev_1_5t_luxury",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Luxury",
+     "priceUsd": 29990,
+     "fields": {
+      "modelKey": [
+       null,
+       "baic__x55"
+      ]
+     }
+    },
+    {
+     "id": "byd-sealion_blue_ev_rwd_71_8_kwh",
+     "brand": "BYD",
+     "name": "Sealion Blue EV RWD (71,8 kWh)",
+     "priceUsd": 36490,
+     "fields": {
+      "modelKey": [
+       null,
+       "byd__sealion_blue"
+      ]
+     }
+    },
+    {
+     "id": "foton-e_tunland_4x2_88_5_kwh",
+     "brand": "Foton",
+     "name": "e-Tunland 4x2 ( 88,5 kWh )",
+     "priceUsd": 59950,
+     "fields": {
+      "category": [
+       "Auto / SUV",
+       "Pick-up"
+      ],
+      "modelKey": [
+       null,
+       "foton__e_tunland"
+      ]
+     }
+    },
+    {
+     "id": "gac_motor-gs4_max_hev_2_0_dht",
+     "brand": "GAC Motor",
+     "name": "GS4 Max HEV 2.0 DHT",
+     "priceUsd": 31990,
+     "fields": {
+      "modelKey": [
+       null,
+       "gac_motor__gs4_max"
+      ]
+     }
+    },
+    {
+     "id": "gac_motor-s7_ultra_1_5t_dht_iawd",
+     "brand": "GAC Motor",
+     "name": "S7 Ultra 1.5T DHT iAWD",
+     "priceUsd": 55990,
+     "fields": {
+      "fuel": [
+       "Híbrido",
+       "PHEV"
+      ],
+      "modelKey": [
+       null,
+       "gac_motor__s7"
+      ]
+     }
+    },
+    {
+     "id": "gwm-haval_h7_phev_1_5_gdit_1dht_2wd",
+     "brand": "GWM",
+     "name": "Haval H7 PHEV 1.5 GDIT 1DHT 2WD",
+     "priceUsd": 38990,
+     "fields": {
+      "modelKey": [
+       null,
+       "gwm__haval_h7"
+      ]
+     }
+    },
+    {
+     "id": "gwm-haval_h7_phev_1_5_gdit_3dht_4wd",
+     "brand": "GWM",
+     "name": "Haval H7 PHEV 1.5 GDIT 3DHT 4WD",
+     "priceUsd": 43990,
+     "fields": {
+      "modelKey": [
+       null,
+       "gwm__haval_h7"
+      ]
+     }
+    },
+    {
+     "id": "jeep-avenger_altitude_t200_hybrid_mhev_1_0_cvt",
+     "brand": "Jeep",
+     "name": "Avenger Altitude T200 Hybrid MHEV 1.0 CVT",
+     "priceUsd": 24990,
+     "fields": {
+      "modelKey": [
+       null,
+       "jeep__avenger_hybrid"
+      ]
+     }
+    },
+    {
+     "id": "jeep-avenger_limited_t200_hybrid_mhev_1_0_cvt",
+     "brand": "Jeep",
+     "name": "Avenger Limited T200 Hybrid MHEV 1.0 CVT",
+     "priceUsd": 29990,
+     "fields": {
+      "modelKey": [
+       null,
+       "jeep__avenger_hybrid"
+      ]
+     }
+    },
+    {
+     "id": "jeep-avenger_longitude_t200_hybrid_mhev_1_0_cvt",
+     "brand": "Jeep",
+     "name": "Avenger Longitude T200 Hybrid MHEV 1.0 CVT",
+     "priceUsd": 27990,
+     "fields": {
+      "modelKey": [
+       null,
+       "jeep__avenger_hybrid"
+      ]
+     }
+    },
+    {
+     "id": "maserati-grecale_folgore_105_kwh",
+     "brand": "Maserati",
+     "name": "Grecale Folgore (105 kWh)",
+     "priceUsd": 134990,
+     "fields": {
+      "modelKey": [
+       null,
+       "maserati__grecale"
+      ]
+     }
+    },
+    {
+     "id": "maserati-grecale_modena_q4_2_0_mhev_a_t",
+     "brand": "Maserati",
+     "name": "Grecale Modena Q4 2.0 MHEV A/T",
+     "priceUsd": 179990,
+     "fields": {
+      "modelKey": [
+       null,
+       "maserati__grecale"
+      ]
+     }
+    },
+    {
+     "id": "maserati-grecale_trofeo_q4_3_0_v6_a_t",
+     "brand": "Maserati",
+     "name": "Grecale Trofeo Q4 3.0 V6 A/T",
+     "priceUsd": 264990,
+     "fields": {
+      "modelKey": [
+       null,
+       "maserati__grecale"
+      ]
+     }
+    },
+    {
+     "id": "mg-mg4_ev_urban_comfort_standard_range_42_8_kwh",
+     "brand": "MG",
+     "name": "MG4 EV Urban Comfort Standard Range (42,8 kWh)",
+     "priceUsd": 21490,
+     "fields": {
+      "modelKey": [
+       null,
+       "mg__mg4_urban"
+      ]
+     }
+    },
+    {
+     "id": "mg-mg4_ev_urban_deluxe_standard_range_42_8_kwh",
+     "brand": "MG",
+     "name": "MG4 EV Urban Deluxe Standard Range (42,8 kWh)",
+     "priceUsd": 23990,
+     "fields": {
+      "modelKey": [
+       null,
+       "mg__mg4_urban"
+      ]
+     }
+    },
+    {
+     "id": "nevo-q05_ev_comfort_40_3_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Comfort (40,3 kWh)",
+     "priceUsd": 23990,
+     "fields": {
+      "modelKey": [
+       null,
+       "nevo__q05"
+      ]
+     }
+    },
+    {
+     "id": "nevo-q05_ev_elite_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Elite (51,9 kWh)",
+     "priceUsd": 28990,
+     "fields": {
+      "modelKey": [
+       null,
+       "nevo__q05"
+      ]
+     }
+    },
+    {
+     "id": "nevo-q05_ev_luxury_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Luxury (51,9 kWh)",
+     "priceUsd": 26990,
+     "fields": {
+      "modelKey": [
+       null,
+       "nevo__q05"
+      ]
+     }
+    },
+    {
+     "id": "smart-5_brabus_awd_100_kwh",
+     "brand": "smart",
+     "name": "#5 Brabus AWD (100 kWh)",
+     "priceUsd": 69990,
+     "fields": {
+      "modelKey": [
+       null,
+       "smart__5"
+      ]
+     }
+    },
+    {
+     "id": "smart-5_pro_rwd_100_kwh",
+     "brand": "smart",
+     "name": "#5 Pro+ RWD (100 kWh)",
+     "priceUsd": 59990,
+     "fields": {
+      "modelKey": [
+       null,
+       "smart__5"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "manual": true,
+   "note": "Fichas nuevas: Sealion Blue, MG4 Urban, smart #5, NEVO Q05, Avatr 07 y 11, BAIC X55, Haval H7, Grecale, GS4 Max, S7 y Avenger Hybrid; Rampage 2.2 y EX5 Urban al día",
+   "modelsChanged": 15
+  },
+  {
    "at": "2026-09-24T19:22:59+00:00",
    "runId": "20260924T192256Z",
    "dataVersion": "e6da4123e830",
