@@ -127,8 +127,10 @@ def fuel_of(name):
             or bool(re.search(r"(?<![a-z])idd(?![a-z])", low))
             or german_phev
             or ("recharge" in low and "t8" in low))
+    # "REHEV" (BAIC X55): extensor de autonomía sin enchufe, como el e-Power.
     hybrid = any(k in low for k in [" hev", "hybrid", "híbrid", "e-power", "dht", "mhev", "shev",
-                                    "e-cvt", "ecvt", " shs", "dhi", " hyb", "eq boost", "e-boxer"])
+                                    "e-cvt", "ecvt", " shs", "dhi", " hyb", "eq boost", "e-boxer",
+                                    "rehev"])
     if plug:
         return "PHEV"
     if ev and hybrid:
