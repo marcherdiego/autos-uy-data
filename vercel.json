@@ -1,5 +1,12 @@
 {
   "buildCommand": "",
   "outputDirectory": "public",
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- public api vercel.json package.json"
+  "ignoreCommand": "[ \"$VERCEL_GIT_COMMIT_REF\" = \"corridas\" ] || git diff --quiet HEAD^ HEAD -- public api vercel.json package.json requirements.txt tools/scrape_catalog.py",
+  "functions": {
+    "api/cron/catalogo.py": { "includeFiles": "tools/scrape_catalog.py", "maxDuration": 60 }
+  },
+  "crons": [
+    { "path": "/api/cron/catalogo", "schedule": "0 11 * * *" },
+    { "path": "/api/cron/vigia", "schedule": "0 13 * * *" }
+  ]
 }

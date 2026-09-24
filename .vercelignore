@@ -1,7 +1,9 @@
-# Vercel sólo necesita el panel (public/) y su API (api/). El catálogo y el
-# changelog se leen en vivo desde GitHub, no del deploy.
+# Vercel sólo necesita el panel (public/), su API y los crons (api/), y el
+# scraper que usa el cron del catálogo (tools/scrape_catalog.py). El catálogo y
+# el changelog se leen en vivo desde GitHub, no del deploy.
 catalog.json
 changelog.json
-tools
+overrides.json
 .github
 README.md
+tools/__pycache__

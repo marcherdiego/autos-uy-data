@@ -7,6 +7,11 @@ Regenera el catálogo de autos 0km desde la página de precios de Autoblog.
 Escribe `catalog.json` en la raíz del repo: marcas, importadores y versiones con
 su precio. Es el archivo que consume la app Autos UY.
 
+La corrida diaria no usa este `main()`: la hace el cron de Vercel
+(`api/cron/catalogo.py`), que llama a `run()` con los archivos leídos de GitHub
+y commitea el resultado por la API. `main()` es la misma corrida contra el
+repo local.
+
 Sobre el parseo: la página ("PRECIOS 0 KM REDISEÑADO V1") trae cada marca en un
 `<section class="ab-price-brand" data-brand="...">`, con el importador en
 `.ab-price-meta` y las versiones en `.ab-price-models li`. La versión anterior de
@@ -27,9 +32,10 @@ import hashlib
 import json
 import os
 import re
-import subprocess
+import ssl
 import sys
 import unicodedata
+import urllib.request
 
 from bs4 import BeautifulSoup
 
@@ -70,10 +76,23 @@ def category_of(name):
     return "Auto / SUV"
 
 
+class PageChanged(Exception):
+    """La página de precios no tiene la estructura que el parser espera."""
+
+
+def tls_context():
+    # El Python de python.org en macOS no trae certificados raíz hasta correr
+    # "Install Certificates.command": ahí se usan los del sistema.
+    context = ssl.create_default_context()
+    if not context.cert_store_stats()["x509_ca"] and os.path.exists("/etc/ssl/cert.pem"):
+        context.load_verify_locations("/etc/ssl/cert.pem")
+    return context
+
+
 def fetch_html():
-    return subprocess.run(
-        ["curl", "-sL", "-A", "Mozilla/5.0", URL], capture_output=True, check=True
-    ).stdout.decode("utf-8", "replace")
+    request = urllib.request.Request(URL, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(request, timeout=30, context=tls_context()) as response:
+        return response.read().decode("utf-8", "replace")
 
 
 def slug(name):
@@ -176,13 +195,20 @@ def previous_catalog():
         return json.load(handle)
 
 
-def build_catalog(html, previous):
+def read_overrides():
+    if not os.path.exists(OVERRIDES):
+        return {}
+    with open(OVERRIDES, encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def build_catalog(html, previous, overrides):
     body = BeautifulSoup(html, "html.parser").select_one(".post-body")
     if body is None:
-        sys.exit("No se encontró .post-body: la página cambió de estructura.")
+        raise PageChanged("No se encontró .post-body: la página cambió de estructura.")
     sections = body.select("section.ab-price-brand[data-brand]")
     if not sections:
-        sys.exit("No se encontró ninguna marca: la página cambió de estructura.")
+        raise PageChanged("No se encontró ninguna marca: la página cambió de estructura.")
 
     previous_names = {slug(b["name"]): b["name"] for b in previous.get("brands", [])}
     previous_logos = {b["id"]: b for b in previous.get("brands", [])}
@@ -254,10 +280,6 @@ def build_catalog(html, previous):
                 "modelKey": model_of.get(car_id),
             })
 
-    overrides = {}
-    if os.path.exists(OVERRIDES):
-        with open(OVERRIDES, encoding="utf-8") as handle:
-            overrides = json.load(handle)
     for car in cars:
         for field in ("fuel", "category"):
             value = overrides.get(field, {}).get(car["id"])
@@ -376,15 +398,19 @@ def changelog_entry(previous, catalog, at, run_id=None):
     }
 
 
-def append_changelog(entry):
-    entries = []
-    if os.path.exists(CHANGELOG):
-        with open(CHANGELOG, encoding="utf-8") as handle:
-            entries = json.load(handle).get("entries", [])
+def merge_changelog(entries, entry):
+    """La entrada nueva primero; una versión que ya estaba no se repite."""
     entries = [entry] + [e for e in entries if e["dataVersion"] != entry["dataVersion"]]
-    with open(CHANGELOG, "w", encoding="utf-8") as handle:
-        json.dump({"entries": entries[:CHANGELOG_MAX_ENTRIES]}, handle, ensure_ascii=False, indent=1)
-        handle.write("\n")
+    return entries[:CHANGELOG_MAX_ENTRIES]
+
+
+def catalog_text(catalog):
+    """catalog.json tal como se publica: compacto, sin salto de línea al final."""
+    return json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
+
+
+def changelog_text(entries):
+    return json.dumps({"entries": entries}, ensure_ascii=False, indent=1) + "\n"
 
 
 def summary_lines(diff):
@@ -399,43 +425,72 @@ def summary_lines(diff):
     return lines
 
 
+def report(previous, catalog, new_brands, diff):
+    """El resumen de la corrida: va al commit, a los logs y al panel."""
+    changes = summary_lines(diff)
+    sin_ficha = sum(1 for car in catalog["cars"] if not car.get("modelKey"))
+    lines = [f"marcas: {len(catalog['brands'])} | importadores: {len(catalog['importers'])} | "
+             f"versiones: {len(catalog['cars'])} | fichas: {len(catalog['models'])} | "
+             f"sin ficha: {sin_ficha} | actualizado: {catalog['updatedAt']}"]
+    if new_brands:
+        lines.append("marcas nuevas: " + ", ".join(new_brands))
+    if changes:
+        lines.append(f"cambios ({len(changes)}):")
+        lines.extend("  " + line for line in changes[:60])
+        if len(changes) > 60:
+            lines.append(f"  … y {len(changes) - 60} más")
+    elif previous.get("dataVersion") == catalog["dataVersion"]:
+        lines.append("sin cambios respecto del catálogo anterior")
+    else:
+        lines.append("sin altas, bajas ni cambios de precio, pero el contenido cambió")
+    return "\n".join(lines)
+
+
+def run(html, previous, overrides, changelog_entries, run_id=None, now=None):
+    """Una corrida completa, sin tocar el disco ni la red.
+
+    Devuelve (catalog, entries, resumen, changed): `entries` es el changelog
+    nuevo, o None si el catálogo no cambió (una corrida sin cambios no escribe
+    nada).
+    """
+    catalog, new_brands = build_catalog(html, previous, overrides)
+    diff = diff_catalogs(previous, catalog)
+    summary = report(previous, catalog, new_brands, diff)
+    changed = previous.get("dataVersion") != catalog["dataVersion"]
+    entries = None
+    if changed:
+        now = now or datetime.datetime.now(datetime.timezone.utc)
+        at = now.isoformat(timespec="seconds")
+        entries = merge_changelog(changelog_entries, changelog_entry(previous, catalog, at, run_id))
+    return catalog, entries, summary, changed
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true",
                         help="no escribe catalog.json, solo informa qué cambiaría")
     args = parser.parse_args()
 
-    previous = previous_catalog()
-    catalog, new_brands = build_catalog(fetch_html(), previous)
-
-    diff = diff_catalogs(previous, catalog)
-    changes = summary_lines(diff)
-    sin_ficha = sum(1 for car in catalog["cars"] if not car.get("modelKey"))
-    print(f"marcas: {len(catalog['brands'])} | importadores: {len(catalog['importers'])} | "
-          f"versiones: {len(catalog['cars'])} | fichas: {len(catalog['models'])} | "
-          f"sin ficha: {sin_ficha} | actualizado: {catalog['updatedAt']}")
-    if new_brands:
-        print("marcas nuevas: " + ", ".join(new_brands))
-    if changes:
-        print(f"cambios ({len(changes)}):")
-        for line in changes[:60]:
-            print("  " + line)
-        if len(changes) > 60:
-            print(f"  … y {len(changes) - 60} más")
-    elif previous.get("dataVersion") == catalog["dataVersion"]:
-        print("sin cambios respecto del catálogo anterior")
-    else:
-        print("sin altas, bajas ni cambios de precio, pero el contenido cambió")
+    changelog_entries = []
+    if os.path.exists(CHANGELOG):
+        with open(CHANGELOG, encoding="utf-8") as handle:
+            changelog_entries = json.load(handle).get("entries", [])
+    try:
+        catalog, entries, summary, _ = run(
+            fetch_html(), previous_catalog(), read_overrides(), changelog_entries)
+    except PageChanged as error:
+        sys.exit(str(error))
+    print(summary)
 
     if args.dry_run:
         return
     with open(CATALOG, "w", encoding="utf-8") as handle:
-        json.dump(catalog, handle, ensure_ascii=False, separators=(",", ":"))
+        handle.write(catalog_text(catalog))
     # Cada versión publicada deja su entrada en changelog.json, que es lo que lee
     # el panel de monitoreo. Una corrida sin cambios no escribe nada.
-    if previous.get("dataVersion") != catalog["dataVersion"]:
-        at = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
-        append_changelog(changelog_entry(previous, catalog, at, os.environ.get("GITHUB_RUN_ID")))
+    if entries is not None:
+        with open(CHANGELOG, "w", encoding="utf-8") as handle:
+            handle.write(changelog_text(entries))
 
 
 if __name__ == "__main__":

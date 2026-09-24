@@ -150,10 +150,9 @@
 (() => {
   const STORAGE_KEY = 'autosuy.panel.secret';
   const REPO = 'marcherdiego/autos-uy-data';
-  const WORKFLOW = 'actualizar-catalogo.yml';
   const TZ = 'America/Montevideo';
-  // Un día sin corrida exitosa es normal (GitHub larga el cron de las 08:00
-  // horas tarde); más de 30 h ya es que algo se trabó.
+  // El cron corre una vez por día (Vercel lo larga dentro de la hora de las
+  // 08:00); más de 30 h sin una corrida exitosa ya es que algo se trabó.
   const STALE_HOURS = 30;
   const PAGE_ROWS = 25;
 
@@ -192,19 +191,6 @@
       if (r.status === 503) { state.fatal = 'El panel está deshabilitado: falta la variable ADMIN_SECRET en Vercel.'; state.loading = false; return render(); }
       if (!r.ok) throw new Error(`El servidor respondió ${r.status}`);
       const data = await r.json();
-      // Si la API de GitHub se quedó sin cupo desde Vercel, las corridas se
-      // piden desde el navegador (el repo es público; el cupo es por IP).
-      if (!data.runs) {
-        try {
-          const g = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW}/runs?per_page=60`);
-          if (g.ok) {
-            data.runs = (await g.json()).workflow_runs.map((run) => ({ id: String(run.id), status: run.status,
-              conclusion: run.conclusion, event: run.event, createdAt: run.created_at, updatedAt: run.updated_at,
-              startedAt: run.run_started_at, url: run.html_url }));
-            data.runsError = null;
-          }
-        } catch {}
-      }
       state.data = data; state.error = null;
     } catch (e) {
       state.error = String(e.message || e);
@@ -241,16 +227,16 @@
 
   function statusOf(runs, entries) {
     if (!runs) return { cls: 'info', icon: 'ℹ️', title: 'No se pudieron leer las corridas',
-      text: `GitHub: ${state.data.runsError || 'sin respuesta'}. El changelog de abajo sí está al día.` };
+      text: `${state.data.runsError || 'sin respuesta'}. El changelog de abajo sí está al día.` };
     const last = runs[0];
     const lastOk = runs.find((r) => r.conclusion === 'success');
     if (!last) return { cls: 'warn', icon: '⚠️', title: 'Todavía no hay corridas', text: '' };
     if (last.status !== 'completed') return { cls: 'info', icon: '⏳', title: 'Corriendo ahora', text: `Empezó ${ago(last.createdAt)}.` };
     const staleH = lastOk ? (Date.now() - new Date(lastOk.updatedAt)) / 3.6e6 : Infinity;
     if (last.conclusion !== 'success') return { cls: 'bad', icon: '✖', title: 'La última corrida falló',
-      text: `${fmtDate(last.createdAt)} (${ago(last.createdAt)}). ${lastOk ? `La última que salió bien fue ${ago(lastOk.updatedAt)}.` : ''} Mirá el log en GitHub: si la página de precios cambió de estructura, el scraper corta antes de publicar.`, url: last.url };
+      text: `${fmtDate(last.createdAt)} (${ago(last.createdAt)}). ${lastOk ? `La última que salió bien fue ${ago(lastOk.updatedAt)}.` : ''} ${last.error ? `Error: ${esc(last.error)}. ` : ''}Si la página de precios cambió de estructura, el scraper corta antes de publicar; el detalle está en los logs de la función en Vercel.` };
     if (staleH > STALE_HOURS) return { cls: 'warn', icon: '⚠️', title: `Sin corridas exitosas hace ${Math.round(staleH)} h`,
-      text: 'El job diario no está corriendo. En repos públicos GitHub pausa los crons después de 60 días sin actividad en el repo.' };
+      text: 'El cron diario de Vercel no está corriendo. El vigía de Cargadores UY también lo avisa por ntfy.' };
     const lastEntry = entries && entries[0];
     const published = lastEntry && lastEntry.runId === last.id;
     return { cls: 'ok', icon: '✔', title: published ? 'La última corrida publicó cambios' : 'Todo en orden',
@@ -391,7 +377,8 @@
 
   function links(e) {
     const out = [];
-    if (e.runId) out.push(`<a class="small" href="https://github.com/${REPO}/actions/runs/${esc(e.runId)}" target="_blank" rel="noopener">corrida</a>`);
+    // Las corridas viejas eran de GitHub Actions (id numérico) y tienen log allá.
+    if (/^\d+$/.test(e.runId || '')) out.push(`<a class="small" href="https://github.com/${REPO}/actions/runs/${esc(e.runId)}" target="_blank" rel="noopener">corrida</a>`);
     if (e.commit) out.push(`<a class="small" href="https://github.com/${REPO}/commit/${esc(e.commit)}" target="_blank" rel="noopener">commit</a>`);
     return out.join(' · ');
   }
@@ -420,12 +407,12 @@
   }
 
   function runsView(runs, entries) {
-    if (!runs) return errorBox(`No se pudieron leer las corridas de GitHub: ${state.data.runsError}`);
+    if (!runs) return errorBox(`No se pudieron leer las corridas: ${state.data.runsError}`);
     if (!runs.length) return '<div class="card empty">Todavía no hay corridas.</div>';
     const byRun = new Map(entries.filter((e) => e.runId).map((e) => [e.runId, e]));
     const ok = runs.filter((r) => r.conclusion === 'success').length;
     const withChanges = runs.filter((r) => byRun.has(r.id)).length;
-    return `<p class="small muted">Últimas ${runs.length} corridas de <code>${WORKFLOW}</code>: ${ok} salieron bien, ${withChanges} publicaron cambios. Corre todos los días a las 08:00 (GitHub suele largarla entre las 10 y las 14).</p>
+    return `<p class="small muted">Últimas ${runs.length} corridas del cron de Vercel (<code>api/cron/catalogo.py</code>): ${ok} salieron bien, ${withChanges} publicaron cambios. Corre todos los días a las 08:00.</p>
       <div class="card table-wrap"><table class="runs"><thead><tr><th>Cuándo</th><th>Resultado</th><th class="what">Qué hizo</th><th>Disparo</th><th class="num">Duración</th><th></th></tr></thead><tbody>
       ${runs.map((r) => {
         const e = byRun.get(r.id);
@@ -435,10 +422,10 @@
           pill = '<span class="pill ok">✔ OK</span>';
           if (e) what = `Publicó: ${describe(e)} · <a href="#" data-goto="${esc(e.dataVersion)}">ver</a>`;
           else what = '<span class="muted">Sin cambios</span>';
-        } else { pill = `<span class="pill bad">✖ ${r.conclusion === 'cancelled' ? 'Cancelada' : 'Falló'}</span>`; what = '<span class="muted">No publicó nada</span>'; }
+        } else { pill = `<span class="pill bad">✖ ${r.conclusion === 'cancelled' ? 'Cancelada' : 'Falló'}</span>`; what = `<span class="muted">No publicó nada${r.error ? `: ${esc(r.error)}` : ''}</span>`; }
         return `<tr><td>${fmtDate(r.createdAt)}</td><td>${pill}</td><td class="what">${what}</td>
-          <td>${r.event === 'schedule' ? 'programada' : r.event === 'workflow_dispatch' ? 'a mano' : esc(r.event)}</td>
-          <td class="num">${duration(r)}</td><td><a class="small" href="${esc(r.url)}" target="_blank" rel="noopener">log</a></td></tr>`;
+          <td>${r.event === 'schedule' ? 'programada' : r.event === 'manual' ? 'a mano' : esc(r.event)}</td>
+          <td class="num">${duration(r)}</td><td>${r.url ? `<a class="small" href="${esc(r.url)}" target="_blank" rel="noopener">commit</a>` : ''}</td></tr>`;
       }).join('')}
       </tbody></table></div>`;
   }
