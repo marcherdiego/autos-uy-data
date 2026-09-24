@@ -1,6 +1,36 @@
 {
  "entries": [
   {
+   "at": "2026-09-24T19:22:59+00:00",
+   "runId": "20260924T192256Z",
+   "dataVersion": "e6da4123e830",
+   "previousVersion": "ee783ec23db6",
+   "sourceUpdatedAt": "24/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 386,
+    "withoutModel": 26
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "gac_motor-hyptec_ht_rwd_72_7_kwh",
+     "brand": "GAC Motor",
+     "name": "Hyptec HT RWD (72,7 kWh)",
+     "priceUsd": 39990,
+     "from": 45990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-09-24T19:13:15+00:00",
    "runId": null,
    "dataVersion": "ee783ec23db6",
