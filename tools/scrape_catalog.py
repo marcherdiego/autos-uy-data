@@ -290,12 +290,21 @@ def build_catalog(html, previous, overrides):
     match = re.search(r"(\d{2}/\d{2}/\d{4})", re.sub(r"\s*/\s*", "/", text))
     updated = match.group(1) if match else previous.get("updatedAt", "")
 
+    # Una versión renombrada cambia de id y perdería su ficha: se la vuelve a
+    # enlazar sola (ver link_renamed). Lo que no es un renombre queda sin ficha
+    # hasta que se arme a mano.
+    linked = link_renamed(cars, previous)
+    for car in cars:
+        if car["id"] in linked:
+            car["modelKey"] = linked[car["id"]]
+
     # Las fichas se conservan, sin las versiones que ya no se venden. Un modelo
     # que se quedó sin ninguna versión sale del catálogo.
     car_ids = {car["id"] for car in cars}
     models = []
     for model in previous.get("models", []):
         kept = [v for v in model.get("versionIds", []) if v in car_ids]
+        kept += [v for v, key in linked.items() if key == model["modelKey"] and v not in kept]
         if kept:
             models.append({**model, "versionIds": kept})
 
@@ -307,6 +316,37 @@ def build_catalog(html, previous, overrides):
     payload = json.dumps(catalog, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
     catalog["dataVersion"] = hashlib.sha256(payload.encode("utf-8")).hexdigest()[:12]
     return catalog, new_brands
+
+
+def link_renamed(cars, previous):
+    """Versiones nuevas que son un renombre de otras de un modelo con ficha.
+
+    Autoblog a veces cambia el nombre de las versiones ("Kwid Intens 1.0" pasa
+    a "Kwid Techno 1.0 SCe"): el id cambia y la versión perdería su ficha. Se
+    enlaza sola sólo si es un renombre claro: la versión es nueva, su nombre
+    empieza con el nombre del modelo, y ese modelo perdió versiones en esta
+    misma corrida. Un modelo que no perdió nada no absorbe versiones nuevas: el
+    "MG4 EV Urban" es otro auto que el MG4, y el Avenger nafta no es el
+    eléctrico. Si varios modelos calzan, gana el nombre más largo ("Haval H6
+    GT" antes que "Haval H6").
+
+    Devuelve {id de la versión: modelKey}.
+    """
+    current = {car["id"] for car in cars}
+    old_ids = {car["id"] for car in previous.get("cars", [])}
+    shrunk = [m for m in previous.get("models", [])
+              if any(v not in current for v in m.get("versionIds", []))]
+    linked = {}
+    for car in cars:
+        if car.get("modelKey") or car["id"] in old_ids:
+            continue
+        name = car["name"].lower()
+        matches = [m for m in shrunk
+                   if m.get("brandId") == car["brandId"]
+                   and re.match(re.escape(m["model"].lower()) + r"(?:\s|$)", name)]
+        if matches:
+            linked[car["id"]] = max(matches, key=lambda m: len(m["model"]))["modelKey"]
+    return linked
 
 
 # Campos de una versión que, si cambian, entran al changelog. `importerId` queda
@@ -434,6 +474,11 @@ def report(previous, catalog, new_brands, diff):
              f"sin ficha: {sin_ficha} | actualizado: {catalog['updatedAt']}"]
     if new_brands:
         lines.append("marcas nuevas: " + ", ".join(new_brands))
+    added = {car["id"] for car in diff["added"]}
+    relinked = [car for car in catalog["cars"] if car["id"] in added and car.get("modelKey")]
+    if relinked:
+        lines.append(f"renombradas, enlazadas a su ficha ({len(relinked)}):")
+        lines.extend(f"  {car['id']} → {car['modelKey']}" for car in relinked[:30])
     if changes:
         lines.append(f"cambios ({len(changes)}):")
         lines.extend("  " + line for line in changes[:60])

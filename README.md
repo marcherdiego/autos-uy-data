@@ -95,6 +95,7 @@ publicar fichas; el scraper sólo lo aplica en cada corrida. No se edita a mano.
 | Precios, versiones nuevas y versiones que salieron de lista | ✅ automático |
 | Marcas nuevas (nombre, importador, garantía) | ✅ automático |
 | Logo de una marca nueva | ❌ la app le dibuja sus iniciales hasta la próxima release |
+| Versión renombrada de un modelo con ficha (mismo auto, otro nombre) | ✅ se enlaza sola a la ficha si el modelo perdió versiones en la misma corrida |
 | Ficha técnica de un modelo nuevo (motor, dimensiones, a favor/en contra) | ❌ se arma aparte, leyendo las notas del modelo |
 
 Las fichas (`models`) **se conservan** entre corridas: el job nunca las borra,
