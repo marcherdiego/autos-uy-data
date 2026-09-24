@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20260924T193434Z",
+   "at": "2026-09-24T19:34:34+00:00",
+   "event": "manual",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "f93392898627",
+   "previousVersion": "bc02ea2225c4",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1079 | fichas: 399 | sin ficha: 0 | actualizado: 24/09/2026\nsin altas, bajas ni cambios de precio, pero el contenido cambió",
+   "commit": "709bea3778b664c5003efed60375c274fb168d1e",
+   "durationMs": 5421
+  },
+  {
    "id": "20260924T192256Z",
    "at": "2026-09-24T19:22:56+00:00",
    "event": "manual",
