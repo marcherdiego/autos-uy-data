@@ -1,6 +1,31 @@
 {
  "entries": [
   {
+   "at": "2026-09-25T13:41:46+00:00",
+   "runId": null,
+   "dataVersion": "770cc511c709",
+   "previousVersion": "b433977a5d02",
+   "sourceUpdatedAt": "24/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 399,
+    "withoutModel": 0
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "manual": true,
+   "note": "Tesla Model Y: asistencias de seguridad activa de serie",
+   "modelsChanged": 1
+  },
+  {
    "at": "2026-09-25T11:00:25+00:00",
    "runId": "20260925T110023Z",
    "dataVersion": "b433977a5d02",
