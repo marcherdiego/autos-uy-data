@@ -1,6 +1,99 @@
 {
  "entries": [
   {
+   "at": "2026-09-25T11:00:25+00:00",
+   "runId": "20260925T110023Z",
+   "dataVersion": "b433977a5d02",
+   "previousVersion": "f93392898627",
+   "sourceUpdatedAt": "24/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 399,
+    "withoutModel": 0
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "chery-himla_2_3_4x2_m_t",
+     "brand": "Chery",
+     "name": "Himla 2.3 4x2 M/T",
+     "priceUsd": 33990,
+     "from": 31990
+    },
+    {
+     "id": "chery-himla_2_3_4x4_a_t",
+     "brand": "Chery",
+     "name": "Himla 2.3 4x4 A/T",
+     "priceUsd": 44990,
+     "from": 39990
+    },
+    {
+     "id": "chery-himla_2_3_4x4_m_t",
+     "brand": "Chery",
+     "name": "Himla 2.3 4x4 M/T",
+     "priceUsd": 37990,
+     "from": 35990
+    },
+    {
+     "id": "chery-m7_1_5t_dct",
+     "brand": "Chery",
+     "name": "M7 1.5T DCT",
+     "priceUsd": 29990,
+     "from": 26990
+    },
+    {
+     "id": "chery-m7_1_5t_m_t",
+     "brand": "Chery",
+     "name": "M7 1.5T M/T",
+     "priceUsd": 26990,
+     "from": 23990
+    },
+    {
+     "id": "dongfeng-huge_hev_1_5td_e_cvt",
+     "brand": "Dongfeng",
+     "name": "Huge HEV 1.5TD e-CVT",
+     "priceUsd": 34990,
+     "from": 33990
+    },
+    {
+     "id": "mg-mg4_deluxe_awd_64_kwh",
+     "brand": "MG",
+     "name": "MG4 Deluxe AWD (64 kWh)",
+     "priceUsd": 32900,
+     "from": 39900
+    },
+    {
+     "id": "mg-mg4_deluxe_extended_range_2wd_77_kwh",
+     "brand": "MG",
+     "name": "MG4 Deluxe Extended Range 2WD (77 kWh)",
+     "priceUsd": 34900,
+     "from": 37900
+    },
+    {
+     "id": "mg-mg4_standard_2wd_51_kwh",
+     "brand": "MG",
+     "name": "MG4 Standard 2WD (51 kWh)",
+     "priceUsd": 24900,
+     "from": 29900
+    },
+    {
+     "id": "mg-zs_standard_1_5_a_t_2wd",
+     "brand": "MG",
+     "name": "ZS Standard 1.5 A/T 2WD",
+     "priceUsd": 20990,
+     "from": 21900
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-09-24T19:34:35+00:00",
    "runId": "20260924T193434Z",
    "dataVersion": "f93392898627",
