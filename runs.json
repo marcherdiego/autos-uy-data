@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20260925T110023Z",
+   "at": "2026-09-25T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "b433977a5d02",
+   "previousVersion": "f93392898627",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1079 | fichas: 399 | sin ficha: 0 | actualizado: 24/09/2026\ncambios (10):\n  ~ chery-himla_2_3_4x2_m_t — 31990 -> 33990\n  ~ chery-himla_2_3_4x4_a_t — 39990 -> 44990\n  ~ chery-himla_2_3_4x4_m_t — 35990 -> 37990\n  ~ chery-m7_1_5t_dct — 26990 -> 29990\n  ~ chery-m7_1_5t_m_t — 23990 -> 26990\n  ~ dongfeng-huge_hev_1_5td_e_cvt — 33990 -> 34990\n  ~ mg-mg4_deluxe_awd_64_kwh — 39900 -> 32900\n  ~ mg-mg4_deluxe_extended_range_2wd_77_kwh — 37900 -> 34900\n  ~ mg-mg4_standard_2wd_51_kwh — 29900 -> 24900\n  ~ mg-zs_standard_1_5_a_t_2wd — 21900 -> 20990",
+   "commit": "6277b4005b73e31a8e8c3fe3f36c3a7d68b62de8",
+   "durationMs": 5285
+  },
+  {
    "id": "20260924T193434Z",
    "at": "2026-09-24T19:34:34+00:00",
    "event": "manual",
