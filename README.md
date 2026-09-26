@@ -27,7 +27,12 @@ GitHub no lo largaba (el 23 y el 24/09 no corrió) y se reemplazó por el cron.
 - Cada corrida, con o sin cambios, o fallida, queda en `runs.json` de la rama
   **`corridas`**, que sólo tiene ese archivo: así `main` no se llena de commits.
 - Si una corrida falla (la página cambió de estructura, GitHub no responde…),
-  manda un **push por ntfy**. Si el cron directamente no corre, lo avisa el vigía de
+  manda un **push por ntfy**.
+- **Autoblog a veces responde 429** a la IP de Vercel (está en Blogger y Google frena
+  datacenters; pasó el 26/09/2026). El scraper reintenta tres veces en la misma
+  corrida (5, 12 y 20 s, o lo que diga `Retry-After`). Si igual falla, la corrida de
+  las 11 UTC queda con `retryPending` y **no avisa**: el vigía de las 13 UTC la relanza
+  (`?retry=1`), y recién si ese reintento falla llega el push. Si el cron directamente no corre, lo avisa el vigía de
   `cargadores-server`, que mira `runs.json` todos los días.
 - A mano, con el `CRON_SECRET` de Vercel:
 

@@ -180,7 +180,8 @@ class handler(BaseHTTPRequestHandler):  # noqa: N801 (nombre que exige Vercel)
         run_id = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         github = GitHub(token)
         run = {"id": run_id, "at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
-               "event": "manual" if query.get("manual") == ["1"] else "schedule"}
+               "event": ("retry" if query.get("retry") == ["1"]
+                         else "manual" if query.get("manual") == ["1"] else "schedule")}
         try:
             result = publish(github, run_id, dry)
             run.update(conclusion="success", **result)
@@ -191,7 +192,14 @@ class handler(BaseHTTPRequestHandler):  # noqa: N801 (nombre que exige Vercel)
             if isinstance(error, scrape_catalog.PageChanged):
                 reason = f"La página de precios cambió de estructura: {error}"
             run.update(conclusion="failure", error=reason[:500])
-            if not dry:
+            # Un 429 de Autoblog en la corrida de las 11 es un freno pasajero de Google
+            # a la IP de Vercel: el vigía la relanza a las 13 UTC y alerta él si vuelve
+            # a fallar. Cualquier otra falla, o el reintento mismo, avisa ya.
+            transient = (isinstance(error, urllib.error.HTTPError) and error.code == 429
+                         and run["event"] == "schedule")
+            if transient:
+                run["retryPending"] = True
+            if not dry and not transient:
                 alert("Autos UY: falló la actualización del catálogo", reason[:300])
             status = 500
         run["durationMs"] = int((time.time() - started) * 1000)

@@ -35,6 +35,8 @@ import re
 import ssl
 import sys
 import unicodedata
+import time
+import urllib.error
 import urllib.request
 
 from bs4 import BeautifulSoup
@@ -89,10 +91,30 @@ def tls_context():
     return context
 
 
+# Autoblog está en Blogger, y Google a veces frena con 429 a las IPs de datacenter
+# (el cron corre en Vercel): el 26/09/2026 la corrida de las 11 UTC falló así en el
+# primer pedido. Casi siempre se destraba en segundos, así que se reintenta; si
+# no, el vigía de las 13 UTC relanza la corrida entera (api/cron/vigia.js).
+RETRY_STATUSES = {429, 500, 502, 503, 504}
+RETRY_WAITS_S = (5, 12, 20)          # entra en los 60 s de la función, con margen
+MAX_RETRY_AFTER_S = 25
+
+
 def fetch_html():
     request = urllib.request.Request(URL, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(request, timeout=30, context=tls_context()) as response:
-        return response.read().decode("utf-8", "replace")
+    for attempt, backoff in enumerate((*RETRY_WAITS_S, None)):
+        try:
+            with urllib.request.urlopen(request, timeout=30, context=tls_context()) as response:
+                return response.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as error:
+            if error.code not in RETRY_STATUSES or backoff is None:
+                raise
+            wait = backoff
+            retry_after = error.headers.get("Retry-After") if error.headers else None
+            if retry_after and retry_after.isdigit():
+                wait = min(int(retry_after), MAX_RETRY_AFTER_S)
+            print(f"autoblog respondió {error.code}; reintento {attempt + 1} en {wait} s", file=sys.stderr)
+            time.sleep(wait)
 
 
 def slug(name):
