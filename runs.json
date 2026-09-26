@@ -1,6 +1,14 @@
 {
  "runs": [
   {
+   "id": "20260926T110023Z",
+   "at": "2026-09-26T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "failure",
+   "error": "HTTP Error 429: Too Many Requests",
+   "durationMs": 520
+  },
+  {
    "id": "20260925T110023Z",
    "at": "2026-09-25T11:00:23+00:00",
    "event": "schedule",
