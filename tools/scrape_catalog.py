@@ -133,6 +133,9 @@ DIESEL_RE = re.compile(
 )
 # Utilitarios que sólo se ofrecen con motor diésel y no lo dicen en el nombre.
 DIESEL_ONLY = ("himla", "daily", "sunray", "toano", "view cargo", "view traveller")
+# Versiones diésel que el nombre no delata. La Ranger V6 3.0 argentina (XLS V6,
+# Limited+ V6) es el Lion turbodiésel; la única V6 nafta es la Raptor, y dice EcoBoost.
+DIESEL_NAME_RE = re.compile(r"\branger\b(?!.*\b(?:ecoboost|raptor)\b).*\bv6\b", re.I)
 
 
 def fuel_of(name):
@@ -161,7 +164,7 @@ def fuel_of(name):
         return "Eléctrico"
     if hybrid:
         return "Híbrido"
-    if DIESEL_RE.search(name) or any(k in low for k in DIESEL_ONLY):
+    if DIESEL_RE.search(name) or DIESEL_NAME_RE.search(name) or any(k in low for k in DIESEL_ONLY):
         return "Diésel"
     return "Nafta"
 

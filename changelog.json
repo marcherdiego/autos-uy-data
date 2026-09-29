@@ -1,6 +1,1724 @@
 {
  "entries": [
   {
+   "at": "2026-09-29T01:33:34+00:00",
+   "runId": null,
+   "dataVersion": "da01cbb6725e",
+   "previousVersion": "770cc511c709",
+   "sourceUpdatedAt": "24/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1079,
+    "models": 476,
+    "withoutModel": 0
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [
+    {
+     "id": "audi-q5_s_line_plus_2_0_tfsi_e_hybrid_quattro_s_tronic",
+     "brand": "Audi",
+     "name": "Q5 S line Plus 2.0 TFSI e-hybrid quattro S tronic",
+     "priceUsd": 116000,
+     "fields": {
+      "modelKey": [
+       "audi__q5",
+       "audi__q5__phev"
+      ]
+     }
+    },
+    {
+     "id": "audi-rs_q8_performance_4_0_tfsi_tiptronic_quattro",
+     "brand": "Audi",
+     "name": "RS Q8 Performance 4.0 TFSI tiptronic quattro",
+     "priceUsd": 312000,
+     "fields": {
+      "modelKey": [
+       "audi__q8",
+       "audi__q8__nafta"
+      ]
+     }
+    },
+    {
+     "id": "bmw-m340i_xdrive_3_0_t_steptronic_sport",
+     "brand": "BMW",
+     "name": "M340i xDrive 3.0 T Steptronic Sport",
+     "priceUsd": 151990,
+     "fields": {
+      "modelKey": [
+       "bmw__serie_3",
+       "bmw__serie_3__nafta"
+      ]
+     }
+    },
+    {
+     "id": "bmw-m3_competition_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M3 Competition 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 233990,
+     "fields": {
+      "modelKey": [
+       "bmw__serie_3",
+       "bmw__serie_3__nafta"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x1_m35i_xdrive_2_0_t_dkg_steptronic",
+     "brand": "BMW",
+     "name": "X1 M35i xDrive 2.0 T DKG Steptronic",
+     "priceUsd": 119990,
+     "fields": {
+      "modelKey": [
+       "bmw__x1",
+       "bmw__x1__nafta"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x1_sdrive18i_xline_plus_1_5_t_dkg_steptronic",
+     "brand": "BMW",
+     "name": "X1 sDrive18i xLine Plus 1.5 T DKG Steptronic",
+     "priceUsd": 80990,
+     "fields": {
+      "modelKey": [
+       "bmw__x1",
+       "bmw__x1__nafta"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_20d_xdrive_2_0_t_m_sport_pro_steptronic",
+     "brand": "BMW",
+     "name": "X3 20d xDrive 2.0 T M Sport Pro Steptronic",
+     "priceUsd": 112990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__diesel"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_20d_xdrive_2_0_t_urban_steptronic",
+     "brand": "BMW",
+     "name": "X3 20d xDrive 2.0 T Urban Steptronic",
+     "priceUsd": 86990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__diesel"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_20d_xdrive_2_0_t_xline_plus_steptronic",
+     "brand": "BMW",
+     "name": "X3 20d xDrive 2.0 T xLine Plus Steptronic",
+     "priceUsd": 102990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__diesel"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_20d_xdrive_2_0_t_xline_steptronic",
+     "brand": "BMW",
+     "name": "X3 20d xDrive 2.0 T xLine Steptronic",
+     "priceUsd": 89990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__diesel"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_30e_xdrive_2_0_t_m_sport_pro_steptronic",
+     "brand": "BMW",
+     "name": "X3 30e xDrive 2.0 T M Sport Pro Steptronic",
+     "priceUsd": 116990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__phev"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_30e_xdrive_2_0_t_m_sport_steptronic",
+     "brand": "BMW",
+     "name": "X3 30e xDrive 2.0 T M Sport Steptronic",
+     "priceUsd": 112990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__phev"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_30e_xdrive_2_0_t_xline_plus_steptronic",
+     "brand": "BMW",
+     "name": "X3 30e xDrive 2.0 T xLine Plus Steptronic",
+     "priceUsd": 106990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__phev"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x3_30e_xdrive_2_0_t_xline_steptronic",
+     "brand": "BMW",
+     "name": "X3 30e xDrive 2.0 T xLine Steptronic",
+     "priceUsd": 93990,
+     "fields": {
+      "modelKey": [
+       "bmw__x3",
+       "bmw__x3__phev"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x5_xdrive50e_m_sport_3_0_t_steptronic",
+     "brand": "BMW",
+     "name": "X5 xDrive50e M Sport 3.0 T Steptronic",
+     "priceUsd": 203990,
+     "fields": {
+      "modelKey": [
+       "bmw__x5",
+       "bmw__x5__phev"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x5_xdrive50e_xline_3_0_t_steptronic",
+     "brand": "BMW",
+     "name": "X5 xDrive50e xLine 3.0 T Steptronic",
+     "priceUsd": 188990,
+     "fields": {
+      "modelKey": [
+       "bmw__x5",
+       "bmw__x5__phev"
+      ]
+     }
+    },
+    {
+     "id": "bmw-x5_xdrive50e_xline_plus_3_0_t_steptronic",
+     "brand": "BMW",
+     "name": "X5 xDrive50e xLine Plus 3.0 T Steptronic",
+     "priceUsd": 197990,
+     "fields": {
+      "modelKey": [
+       "bmw__x5",
+       "bmw__x5__phev"
+      ]
+     }
+    },
+    {
+     "id": "byd-song_plus_ev_gs_71_8_kwh",
+     "brand": "BYD",
+     "name": "Song Plus EV GS (71,8 kWh)",
+     "priceUsd": 41990,
+     "fields": {
+      "modelKey": [
+       "byd__song_plus",
+       "byd__song_plus__electrico"
+      ]
+     }
+    },
+    {
+     "id": "byd-yuan_pro_dm_i_1_5_gl_ehs",
+     "brand": "BYD",
+     "name": "Yuan Pro DM-i 1.5 GL EHS",
+     "priceUsd": 29990,
+     "fields": {
+      "modelKey": [
+       "byd__yuan_pro",
+       "byd__yuan_pro__phev"
+      ]
+     }
+    },
+    {
+     "id": "byd-yuan_pro_dm_i_1_5_gs_ehs",
+     "brand": "BYD",
+     "name": "Yuan Pro DM-i 1.5 GS EHS",
+     "priceUsd": 32990,
+     "fields": {
+      "modelKey": [
+       "byd__yuan_pro",
+       "byd__yuan_pro__phev"
+      ]
+     }
+    },
+    {
+     "id": "chevrolet-silverado_1500_crew_cab_ltz_3_0td_l6_duramax_4x4_a_t",
+     "brand": "Chevrolet",
+     "name": "Silverado 1500 Crew Cab LTZ 3.0TD L6 Duramax 4x4 A/T",
+     "priceUsd": 93990,
+     "fields": {
+      "modelKey": [
+       "chevrolet__silverado",
+       "chevrolet__silverado__diesel"
+      ]
+     }
+    },
+    {
+     "id": "citroen-berlingo_van_1_6_hdi_92_l2",
+     "brand": "Citroën",
+     "name": "Berlingo Van 1.6 HDI 92 L2",
+     "priceUsd": 35990,
+     "fields": {
+      "modelKey": [
+       "citroen__berlingo",
+       "citroen__berlingo__diesel"
+      ]
+     }
+    },
+    {
+     "id": "deepal-s5_reev_27_28_kwh",
+     "brand": "Deepal",
+     "name": "S5 REEV (27,28 kWh)",
+     "priceUsd": 34990,
+     "fields": {
+      "modelKey": [
+       "deepal__s5",
+       "deepal__s5__phev"
+      ]
+     }
+    },
+    {
+     "id": "deepal-s7_reev_31_7_kwh",
+     "brand": "Deepal",
+     "name": "S7 REEV (31,7 kWh)",
+     "priceUsd": 42990,
+     "fields": {
+      "modelKey": [
+       "deepal__s7",
+       "deepal__s7__phev"
+      ]
+     }
+    },
+    {
+     "id": "dongfeng-rich_6_2_5_4x2_m_t_full",
+     "brand": "Dongfeng",
+     "name": "Rich 6 2.5 4x2 M/T Full",
+     "priceUsd": 31900,
+     "fields": {
+      "modelKey": [
+       "dongfeng__rich_6",
+       "dongfeng__rich_6__diesel"
+      ]
+     }
+    },
+    {
+     "id": "dongfeng-z9_2_3td_at8_4x4",
+     "brand": "Dongfeng",
+     "name": "Z9 2.3TD AT8 4x4",
+     "priceUsd": 56990,
+     "fields": {
+      "modelKey": [
+       "dongfeng__z9",
+       "dongfeng__z9__diesel"
+      ]
+     }
+    },
+    {
+     "id": "ford-maverick_lariat_2_5_hybrid_awd_ecvt",
+     "brand": "Ford",
+     "name": "Maverick Lariat 2.5 Hybrid AWD eCVT",
+     "priceUsd": 53490,
+     "fields": {
+      "modelKey": [
+       "ford__maverick",
+       "ford__maverick__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_limited_v6_3_0_4wd_at10",
+     "brand": "Ford",
+     "name": "Ranger Limited+ V6 3.0 4WD AT10",
+     "priceUsd": 82990,
+     "fields": {
+      "modelKey": [
+       "ford__ranger",
+       "ford__ranger__diesel"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xl_sit_2_0_4x4_m_t",
+     "brand": "Ford",
+     "name": "Ranger XL SiT 2.0 4x4 M/T",
+     "priceUsd": 58900,
+     "fields": {
+      "modelKey": [
+       "ford__ranger",
+       "ford__ranger__diesel"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xls_sit_2_0_4x4_m_t",
+     "brand": "Ford",
+     "name": "Ranger XLS SiT 2.0 4x4 M/T",
+     "priceUsd": 62900,
+     "fields": {
+      "modelKey": [
+       "ford__ranger",
+       "ford__ranger__diesel"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xls_v6_3_0_4wd_at10",
+     "brand": "Ford",
+     "name": "Ranger XLS V6 3.0 4WD AT10",
+     "priceUsd": 71990,
+     "fields": {
+      "modelKey": [
+       "ford__ranger",
+       "ford__ranger__diesel"
+      ]
+     }
+    },
+    {
+     "id": "ford-ranger_xlt_bit_2_0_4x4_at10",
+     "brand": "Ford",
+     "name": "Ranger XLT BiT 2.0 4x4 AT10",
+     "priceUsd": 71990,
+     "fields": {
+      "modelKey": [
+       "ford__ranger",
+       "ford__ranger__diesel"
+      ]
+     }
+    },
+    {
+     "id": "foton-toano_cargo_van_2_8_bj5038xxy_cc",
+     "brand": "Foton",
+     "name": "Toano Cargo Van 2.8 BJ5038XXY-CC",
+     "priceUsd": 44950,
+     "fields": {
+      "modelKey": [
+       "foton__toano",
+       "foton__toano__diesel"
+      ]
+     }
+    },
+    {
+     "id": "foton-tunland_v9_ultimate_2_0t_4x4_at8",
+     "brand": "Foton",
+     "name": "Tunland V9 Ultimate 2.0T 4x4 AT8",
+     "priceUsd": 43950,
+     "fields": {
+      "modelKey": [
+       "foton__tunland_v9",
+       "foton__tunland_v9__nafta"
+      ]
+     }
+    },
+    {
+     "id": "foton-view_cargo_van_2_8_bj6549b1pda_1",
+     "brand": "Foton",
+     "name": "View Cargo Van 2.8 BJ6549B1PDA-1",
+     "priceUsd": 27950,
+     "fields": {
+      "modelKey": [
+       "foton__view",
+       "foton__view__diesel"
+      ]
+     }
+    },
+    {
+     "id": "foton-wonder_cabina_doble_1_6",
+     "brand": "Foton",
+     "name": "Wonder Cabina Doble 1.6",
+     "priceUsd": 17950,
+     "fields": {
+      "modelKey": [
+       "foton__wonder",
+       "foton__wonder__nafta"
+      ]
+     }
+    },
+    {
+     "id": "geely-ex5_em_i_max_1_5_e_dht",
+     "brand": "Geely",
+     "name": "EX5 EM-i Max 1.5 E-DHT",
+     "priceUsd": 38990,
+     "fields": {
+      "modelKey": [
+       "geely__ex5",
+       "geely__ex5__phev"
+      ]
+     }
+    },
+    {
+     "id": "geely-ex5_em_i_pro_1_5_e_dht",
+     "brand": "Geely",
+     "name": "EX5 EM-i Pro 1.5 E-DHT",
+     "priceUsd": 34990,
+     "fields": {
+      "modelKey": [
+       "geely__ex5",
+       "geely__ex5__phev"
+      ]
+     }
+    },
+    {
+     "id": "gwm-haval_h6_hev_deluxe_1_5_gdit_dht",
+     "brand": "GWM",
+     "name": "Haval H6 HEV Deluxe 1.5 GDIT DHT",
+     "priceUsd": 36990,
+     "fields": {
+      "modelKey": [
+       "gwm__haval_h6",
+       "gwm__haval_h6__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "gwm-haval_h6_hev_elite_1_5_gdit_dht",
+     "brand": "GWM",
+     "name": "Haval H6 HEV Elite 1.5 GDIT DHT",
+     "priceUsd": 33990,
+     "fields": {
+      "modelKey": [
+       "gwm__haval_h6",
+       "gwm__haval_h6__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_family_deluxe_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Family Deluxe 4x4 A/T",
+     "priceUsd": 44990,
+     "fields": {
+      "modelKey": [
+       "gwm__poer",
+       "gwm__poer__diesel"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_family_elite_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Family Elite 4x4 A/T",
+     "priceUsd": 43990,
+     "fields": {
+      "modelKey": [
+       "gwm__poer",
+       "gwm__poer__diesel"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_family_luxury_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Family Luxury 4x4 A/T",
+     "priceUsd": 42990,
+     "fields": {
+      "modelKey": [
+       "gwm__poer",
+       "gwm__poer__diesel"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_tool_elite_4x2_m_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Tool Elite 4x2 M/T",
+     "priceUsd": 38990,
+     "fields": {
+      "modelKey": [
+       "gwm__poer",
+       "gwm__poer__diesel"
+      ]
+     }
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_tool_elite_4x2_m_t_cs",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Tool Elite 4x2 M/T CS",
+     "priceUsd": 37990,
+     "fields": {
+      "modelKey": [
+       "gwm__poer",
+       "gwm__poer__diesel"
+      ]
+     }
+    },
+    {
+     "id": "hyundai-kona_electric_limited_standard_range_48_4_kwh",
+     "brand": "Hyundai",
+     "name": "Kona Electric Limited Standard Range (48,4 kWh)",
+     "priceUsd": 43990,
+     "fields": {
+      "modelKey": [
+       "hyundai__kona",
+       "hyundai__kona__electrico"
+      ]
+     }
+    },
+    {
+     "id": "hyundai-staria_hev_limited_1_6_t_gdi_a_t",
+     "brand": "Hyundai",
+     "name": "Staria HEV Limited 1.6 T-GDi A/T",
+     "priceUsd": 67990,
+     "fields": {
+      "modelKey": [
+       "hyundai__staria",
+       "hyundai__staria__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "hyundai-staria_hev_safe_1_6_t_gdi_a_t",
+     "brand": "Hyundai",
+     "name": "Staria HEV Safe 1.6 T-GDi A/T",
+     "priceUsd": 59990,
+     "fields": {
+      "modelKey": [
+       "hyundai__staria",
+       "hyundai__staria__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "hyundai-staria_hev_ultimate_1_6_t_gdi_a_t",
+     "brand": "Hyundai",
+     "name": "Staria HEV Ultimate 1.6 T-GDi A/T",
+     "priceUsd": 72990,
+     "fields": {
+      "modelKey": [
+       "hyundai__staria",
+       "hyundai__staria__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "jac-sunray_ev_92_16_kwh",
+     "brand": "JAC",
+     "name": "Sunray EV (92,16 kWh)",
+     "priceUsd": 59990,
+     "fields": {
+      "modelKey": [
+       "jac__sunray",
+       "jac__sunray__electrico"
+      ]
+     }
+    },
+    {
+     "id": "jetour-t1_1_5t_290t_gdi_7dct_fwd",
+     "brand": "Jetour",
+     "name": "T1 1.5T 290T GDI 7DCT FWD",
+     "priceUsd": 37990,
+     "fields": {
+      "modelKey": [
+       "jetour__t1",
+       "jetour__t1__nafta"
+      ]
+     }
+    },
+    {
+     "id": "jetour-t2_traveller_2_0t_390t_gdi_7dct_xwd",
+     "brand": "Jetour",
+     "name": "T2 Traveller 2.0T 390T GDI 7DCT XWD",
+     "priceUsd": 52990,
+     "fields": {
+      "modelKey": [
+       "jetour__t2",
+       "jetour__t2__nafta"
+      ]
+     }
+    },
+    {
+     "id": "jmc-grand_avenue_pro_luxury_2_3_gtdi_4x4_a_t",
+     "brand": "JMC",
+     "name": "Grand Avenue Pro Luxury 2.3 GTDi 4x4 A/T",
+     "priceUsd": 45018,
+     "fields": {
+      "modelKey": [
+       "jmc__grand_avenue",
+       "jmc__grand_avenue__nafta"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_dlx_2_2_e_xdi_4x2_m_t",
+     "brand": "KGM",
+     "name": "Musso Grand DLX 2.2 e-XDi 4x2 M/T",
+     "priceUsd": 65950,
+     "fields": {
+      "modelKey": [
+       "kgm__musso_grand",
+       "kgm__musso_grand__diesel"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_high_2_2_e_xdi_4x4_m_t",
+     "brand": "KGM",
+     "name": "Musso Grand High 2.2 e-XDi 4x4 M/T",
+     "priceUsd": 69950,
+     "fields": {
+      "modelKey": [
+       "kgm__musso_grand",
+       "kgm__musso_grand__diesel"
+      ]
+     }
+    },
+    {
+     "id": "kgm-musso_grand_limited_2_2_e_xdi_4x4_a_t",
+     "brand": "KGM",
+     "name": "Musso Grand Limited 2.2 e-XDi 4x4 A/T",
+     "priceUsd": 76950,
+     "fields": {
+      "modelKey": [
+       "kgm__musso_grand",
+       "kgm__musso_grand__diesel"
+      ]
+     }
+    },
+    {
+     "id": "kgm-torres_evx_2wd_73_4_kwh",
+     "brand": "KGM",
+     "name": "Torres EVX 2WD (73,4 kWh)",
+     "priceUsd": 54950,
+     "fields": {
+      "modelKey": [
+       "kgm__torres",
+       "kgm__torres__electrico"
+      ]
+     }
+    },
+    {
+     "id": "kia-carnival_ex_plus_3_5_v6_a_t",
+     "brand": "Kia",
+     "name": "Carnival EX Plus 3.5 V6 A/T",
+     "priceUsd": 114990,
+     "fields": {
+      "modelKey": [
+       "kia__carnival",
+       "kia__carnival__nafta"
+      ]
+     }
+    },
+    {
+     "id": "land_rover-defender_octa_p635_mhev_awd_4_4_v8_a_t",
+     "brand": "Land Rover",
+     "name": "Defender OCTA P635 MHEV AWD 4.4 V8 A/T",
+     "priceUsd": 485000,
+     "fields": {
+      "modelKey": [
+       "land_rover__defender",
+       "land_rover__defender__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "leapmotor-c10_reev_28_4_kwh",
+     "brand": "Leapmotor",
+     "name": "C10 REEV (28,4 kWh)",
+     "priceUsd": 33990,
+     "fields": {
+      "modelKey": [
+       "leapmotor__c10",
+       "leapmotor__c10__phev"
+      ]
+     }
+    },
+    {
+     "id": "leapmotor-c16_reev_28_4_kwh",
+     "brand": "Leapmotor",
+     "name": "C16 REEV (28,4 kWh)",
+     "priceUsd": 43990,
+     "fields": {
+      "modelKey": [
+       "leapmotor__c16",
+       "leapmotor__c16__phev"
+      ]
+     }
+    },
+    {
+     "id": "maserati-grecale_modena_q4_2_0_mhev_a_t",
+     "brand": "Maserati",
+     "name": "Grecale Modena Q4 2.0 MHEV A/T",
+     "priceUsd": 179990,
+     "fields": {
+      "modelKey": [
+       "maserati__grecale",
+       "maserati__grecale__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "maserati-grecale_trofeo_q4_3_0_v6_a_t",
+     "brand": "Maserati",
+     "name": "Grecale Trofeo Q4 3.0 V6 A/T",
+     "priceUsd": 264990,
+     "fields": {
+      "modelKey": [
+       "maserati__grecale",
+       "maserati__grecale__nafta"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-c_350e_amg_line_9g_tronic_plus",
+     "brand": "Mercedes-Benz",
+     "name": "C 350e AMG Line 9G-TRONIC PLUS",
+     "priceUsd": 117990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__clase_c",
+       "mercedes_benz__clase_c__phev"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-c_43_4matic_amg_speedshift_mct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "C 43 4MATIC AMG SPEEDSHIFT MCT 9G",
+     "priceUsd": 134990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__clase_c",
+       "mercedes_benz__clase_c__nafta"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-c_63_s_e_performance_amg_speedshift_mct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "C 63 S E Performance AMG SPEEDSHIFT MCT 9G",
+     "priceUsd": 214990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__clase_c",
+       "mercedes_benz__clase_c__phev"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-cle_53_4matic_cabrio_amg_speedshift_tct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "CLE 53 4MATIC+ Cabrio AMG SPEEDSHIFT TCT 9G",
+     "priceUsd": 214990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__cle",
+       "mercedes_benz__cle__nafta"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-cle_53_4matic_coupe_amg_speedshift_tct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "CLE 53 4MATIC+ Coupé AMG SPEEDSHIFT TCT 9G",
+     "priceUsd": 199990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__cle",
+       "mercedes_benz__cle__nafta"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-e_350e_avantgarde_9g_tronic",
+     "brand": "Mercedes-Benz",
+     "name": "E 350e Avantgarde 9G-TRONIC",
+     "priceUsd": 122990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__clase_e",
+       "mercedes_benz__clase_e__phev"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_350e_4matic_avantgarde_9g_tronic_plus",
+     "brand": "Mercedes-Benz",
+     "name": "GLC 350e 4MATIC Avantgarde 9G-TRONIC PLUS",
+     "priceUsd": 127990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc",
+       "mercedes_benz__glc__phev"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_400_4matic_con_tecnologia_eq_amg_line_94_0_kwh",
+     "brand": "Mercedes-Benz",
+     "name": "GLC 400 4MATIC con tecnología EQ AMG Line (94,0 kWh)",
+     "priceUsd": 121990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc",
+       "mercedes_benz__glc__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_400_4matic_con_tecnologia_eq_avantgarde_94_0_kwh",
+     "brand": "Mercedes-Benz",
+     "name": "GLC 400 4MATIC con tecnología EQ Avantgarde (94,0 kWh)",
+     "priceUsd": 102990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc",
+       "mercedes_benz__glc__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_43_4matic_amg_speedshift_mct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "GLC 43 4MATIC AMG SPEEDSHIFT MCT 9G",
+     "priceUsd": 157990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc",
+       "mercedes_benz__glc__nafta"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_43_coupe_4matic_amg_speedshift_mct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "GLC 43 Coupé 4MATIC AMG SPEEDSHIFT MCT 9G",
+     "priceUsd": 162990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc_coupe",
+       "mercedes_benz__glc_coupe__nafta"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_63_s_e_performance_amg_speedshift_mct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "GLC 63 S E Performance AMG SPEEDSHIFT MCT 9G",
+     "priceUsd": 229990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc",
+       "mercedes_benz__glc__phev"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_63_s_e_performance_coupe_amg_speedshift_mct_9g",
+     "brand": "Mercedes-Benz",
+     "name": "GLC 63 S E Performance Coupé AMG SPEEDSHIFT MCT 9G",
+     "priceUsd": 239990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc_coupe",
+       "mercedes_benz__glc_coupe__phev"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-glc_coupe_350e_4matic_amg_line_9g_tronic_plus",
+     "brand": "Mercedes-Benz",
+     "name": "GLC Coupé 350e 4MATIC AMG Line 9G-TRONIC PLUS",
+     "priceUsd": 137990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__glc_coupe",
+       "mercedes_benz__glc_coupe__phev"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-gle_300_d_4matic_9g_tronic",
+     "brand": "Mercedes-Benz",
+     "name": "GLE 300 d 4MATIC 9G-TRONIC",
+     "priceUsd": 134990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__gle",
+       "mercedes_benz__gle__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "mercedes_benz-gle_300_d_4matic_coupe_9g_tronic",
+     "brand": "Mercedes-Benz",
+     "name": "GLE 300 d 4MATIC Coupé 9G-TRONIC",
+     "priceUsd": 149990,
+     "fields": {
+      "modelKey": [
+       "mercedes_benz__gle_coupe",
+       "mercedes_benz__gle_coupe__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "mini-cooper_e_classic_40_7_kwh",
+     "brand": "MINI",
+     "name": "Cooper E Classic (40,7 kWh)",
+     "priceUsd": 42990,
+     "fields": {
+      "modelKey": [
+       "mini__cooper",
+       "mini__cooper__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mini-cooper_se_favoured_54_2_kwh",
+     "brand": "MINI",
+     "name": "Cooper SE Favoured (54,2 kWh)",
+     "priceUsd": 50990,
+     "fields": {
+      "modelKey": [
+       "mini__cooper",
+       "mini__cooper__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mini-countryman_e_classic_plus_64_6_kwh",
+     "brand": "MINI",
+     "name": "Countryman E Classic Plus (64,6 kWh)",
+     "priceUsd": 61990,
+     "fields": {
+      "modelKey": [
+       "mini__countryman",
+       "mini__countryman__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mini-countryman_e_favoured_64_6_kwh",
+     "brand": "MINI",
+     "name": "Countryman E Favoured (64,6 kWh)",
+     "priceUsd": 71990,
+     "fields": {
+      "modelKey": [
+       "mini__countryman",
+       "mini__countryman__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mini-countryman_se_all4_favoured_64_6_kwh",
+     "brand": "MINI",
+     "name": "Countryman SE ALL4 Favoured (64,6 kWh)",
+     "priceUsd": 75990,
+     "fields": {
+      "modelKey": [
+       "mini__countryman",
+       "mini__countryman__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mini-john_cooper_works_e_54_2_kwh",
+     "brand": "MINI",
+     "name": "John Cooper Works E (54,2 kWh)",
+     "priceUsd": 57990,
+     "fields": {
+      "modelKey": [
+       "mini__cooper",
+       "mini__cooper__electrico"
+      ]
+     }
+    },
+    {
+     "id": "mitsubishi-l200_glx_2_4_mpi_m_t_2wd",
+     "brand": "Mitsubishi",
+     "name": "L200 GLX 2.4 MPI M/T 2WD",
+     "priceUsd": 35368,
+     "fields": {
+      "modelKey": [
+       "mitsubishi__l200",
+       "mitsubishi__l200__nafta"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_pro_4x_4x4_2_5_a_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D PRO-4X 4x4 2.5 A/T",
+     "priceUsd": 44990,
+     "fields": {
+      "modelKey": [
+       "nissan__frontier",
+       "nissan__frontier__nafta"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_s_4x2_2_5_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D S 4x2 2.5 M/T",
+     "priceUsd": 34990,
+     "fields": {
+      "modelKey": [
+       "nissan__frontier",
+       "nissan__frontier__nafta"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_se_4x2_2_5_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D SE 4x2 2.5 M/T",
+     "priceUsd": 37990,
+     "fields": {
+      "modelKey": [
+       "nissan__frontier",
+       "nissan__frontier__nafta"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_d_xe_4x2_2_5_a_t",
+     "brand": "Nissan",
+     "name": "Frontier C/D XE 4x2 2.5 A/T",
+     "priceUsd": 38990,
+     "fields": {
+      "modelKey": [
+       "nissan__frontier",
+       "nissan__frontier__nafta"
+      ]
+     }
+    },
+    {
+     "id": "nissan-frontier_c_s_s_4x2_2_5_m_t",
+     "brand": "Nissan",
+     "name": "Frontier C/S S 4x2 2.5 M/T",
+     "priceUsd": 32990,
+     "fields": {
+      "modelKey": [
+       "nissan__frontier",
+       "nissan__frontier__nafta"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-2008_hybrid_1_2_145_gt_e_dcs6",
+     "brand": "Peugeot",
+     "name": "2008 Hybrid 1.2 145 GT e-DCS6",
+     "priceUsd": 36990,
+     "fields": {
+      "modelKey": [
+       "peugeot__2008",
+       "peugeot__2008__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-e_2008_gt_62_kwh",
+     "brand": "Peugeot",
+     "name": "E-2008 GT (62 kWh)",
+     "priceUsd": 45990,
+     "fields": {
+      "modelKey": [
+       "peugeot__2008",
+       "peugeot__2008__electrico"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-e_3008_gt_awd_dual_motor_73_kwh",
+     "brand": "Peugeot",
+     "name": "E-3008 GT AWD Dual Motor (73 kWh)",
+     "priceUsd": 59990,
+     "fields": {
+      "modelKey": [
+       "peugeot__3008",
+       "peugeot__3008__electrico"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-e_partner_l1_50_kwh",
+     "brand": "Peugeot",
+     "name": "e-Partner L1 (50 kWh)",
+     "priceUsd": 39990,
+     "fields": {
+      "modelKey": [
+       "peugeot__partner",
+       "peugeot__partner__electrico"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-expert_n1_pack_1_5_bluehdi_l3h1",
+     "brand": "Peugeot",
+     "name": "Expert N1 Pack 1.5 BlueHDI L3H1",
+     "priceUsd": 33490,
+     "fields": {
+      "modelKey": [
+       "peugeot__expert",
+       "peugeot__expert__diesel"
+      ]
+     }
+    },
+    {
+     "id": "peugeot-partner_m69_confort_1_6",
+     "brand": "Peugeot",
+     "name": "Partner M69 Confort 1.6",
+     "priceUsd": 15990,
+     "fields": {
+      "modelKey": [
+       "peugeot__partner",
+       "peugeot__partner__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-911_carrera_4_gts_t_hybrid_cabriolet_3_6_turbo_pdk",
+     "brand": "Porsche",
+     "name": "911 Carrera 4 GTS T-Hybrid Cabriolet 3.6 turbo PDK",
+     "priceUsd": 489700,
+     "fields": {
+      "modelKey": [
+       "porsche__911",
+       "porsche__911__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "porsche-911_carrera_4_gts_t_hybrid_coupe_3_6_turbo_pdk",
+     "brand": "Porsche",
+     "name": "911 Carrera 4 GTS T-Hybrid Coupé 3.6 turbo PDK",
+     "priceUsd": 458500,
+     "fields": {
+      "modelKey": [
+       "porsche__911",
+       "porsche__911__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "porsche-911_carrera_gts_t_hybrid_coupe_3_6_turbo_pdk",
+     "brand": "Porsche",
+     "name": "911 Carrera GTS T-Hybrid Coupé 3.6 turbo PDK",
+     "priceUsd": 439400,
+     "fields": {
+      "modelKey": [
+       "porsche__911",
+       "porsche__911__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "porsche-911_targa_gts_t_hybrid_3_6_turbo_pdk",
+     "brand": "Porsche",
+     "name": "911 Targa GTS T-Hybrid 3.6 turbo PDK",
+     "priceUsd": 489700,
+     "fields": {
+      "modelKey": [
+       "porsche__911",
+       "porsche__911__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "porsche-911_turbo_s_t_hybrid_3_6_turbo_pdk",
+     "brand": "Porsche",
+     "name": "911 Turbo S T-Hybrid 3.6 turbo PDK",
+     "priceUsd": 639700,
+     "fields": {
+      "modelKey": [
+       "porsche__911",
+       "porsche__911__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "porsche-911_turbo_s_t_hybrid_cabriolet_3_6_turbo_pdk",
+     "brand": "Porsche",
+     "name": "911 Turbo S T-Hybrid Cabriolet 3.6 turbo PDK",
+     "priceUsd": 679700,
+     "fields": {
+      "modelKey": [
+       "porsche__911",
+       "porsche__911__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_3_0_v6_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne 3.0 V6 turbo Tiptronic S",
+     "priceUsd": 212200,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne",
+       "porsche__cayenne__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_black_edition_3_0_v6_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne Black Edition 3.0 V6 turbo Tiptronic S",
+     "priceUsd": 235500,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne",
+       "porsche__cayenne__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_coupe_3_0_v6_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne Coupé 3.0 V6 turbo Tiptronic S",
+     "priceUsd": 215600,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_coupe_black_edition_3_0_v6_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne Coupé Black Edition 3.0 V6 turbo Tiptronic S",
+     "priceUsd": 239900,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_coupe_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Coupé Electric (113 kWh)",
+     "priceUsd": 143700,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__electrico"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Electric (113 kWh)",
+     "priceUsd": 141600,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne",
+       "porsche__cayenne__electrico"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_gts_4_0_v8_bi_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne GTS 4.0 V8 bi-turbo Tiptronic S",
+     "priceUsd": 330000,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne",
+       "porsche__cayenne__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_gts_coupe_4_0_v8_bi_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne GTS Coupé 4.0 V8 bi-turbo Tiptronic S",
+     "priceUsd": 331900,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_s_4_0_v8_bi_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne S 4.0 V8 bi-turbo Tiptronic S",
+     "priceUsd": 285900,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne",
+       "porsche__cayenne__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_s_coupe_4_0_bi_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne S Coupé 4.0 bi-turbo Tiptronic S",
+     "priceUsd": 289500,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_s_coupe_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne S Coupé Electric (113 kWh)",
+     "priceUsd": 160100,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__electrico"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_s_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne S Electric (113 kWh)",
+     "priceUsd": 155800,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne",
+       "porsche__cayenne__electrico"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_turbo_coupe_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Turbo Coupé Electric (113 kWh)",
+     "priceUsd": 208100,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__electrico"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_turbo_electric_113_kwh",
+     "brand": "Porsche",
+     "name": "Cayenne Turbo Electric (113 kWh)",
+     "priceUsd": 204800,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne",
+       "porsche__cayenne__electrico"
+      ]
+     }
+    },
+    {
+     "id": "porsche-cayenne_turbo_gt_coupe_4_0_v8_bi_turbo_tiptronic_s",
+     "brand": "Porsche",
+     "name": "Cayenne Turbo GT Coupé 4.0 V8 bi-turbo Tiptronic S",
+     "priceUsd": 529500,
+     "fields": {
+      "modelKey": [
+       "porsche__cayenne_coupe",
+       "porsche__cayenne_coupe__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-macan_2_0_turbo_pdk",
+     "brand": "Porsche",
+     "name": "Macan 2.0 turbo PDK",
+     "priceUsd": 145100,
+     "fields": {
+      "modelKey": [
+       "porsche__macan",
+       "porsche__macan__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-macan_gts_2_9_v6_bi_turbo_pdk",
+     "brand": "Porsche",
+     "name": "Macan GTS 2.9 V6 bi-turbo PDK",
+     "priceUsd": 237100,
+     "fields": {
+      "modelKey": [
+       "porsche__macan",
+       "porsche__macan__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-macan_s_2_9_v6_bi_turbo_pdk",
+     "brand": "Porsche",
+     "name": "Macan S 2.9 V6 bi-turbo PDK",
+     "priceUsd": 210000,
+     "fields": {
+      "modelKey": [
+       "porsche__macan",
+       "porsche__macan__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-macan_t_2_0_turbo_pdk",
+     "brand": "Porsche",
+     "name": "Macan T 2.0 turbo PDK",
+     "priceUsd": 155300,
+     "fields": {
+      "modelKey": [
+       "porsche__macan",
+       "porsche__macan__nafta"
+      ]
+     }
+    },
+    {
+     "id": "porsche-panamera_gts_4_0_v8_bi_turbo_pdk",
+     "brand": "Porsche",
+     "name": "Panamera GTS 4.0 V8 bi-turbo PDK",
+     "priceUsd": 439100,
+     "fields": {
+      "modelKey": [
+       "porsche__panamera",
+       "porsche__panamera__nafta"
+      ]
+     }
+    },
+    {
+     "id": "ram-rampage_big_horn_2_2_multijet_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage Big Horn 2.2 Multijet AT9 4x4",
+     "priceUsd": 56990,
+     "fields": {
+      "modelKey": [
+       "ram__rampage",
+       "ram__rampage__diesel"
+      ]
+     }
+    },
+    {
+     "id": "ram-rampage_laramie_2_2_multijet_at9_4x4",
+     "brand": "RAM",
+     "name": "Rampage Laramie 2.2 Multijet AT9 4x4",
+     "priceUsd": 63490,
+     "fields": {
+      "modelKey": [
+       "ram__rampage",
+       "ram__rampage__diesel"
+      ]
+     }
+    },
+    {
+     "id": "rely-r8_2_3td_at8_4wd_limited",
+     "brand": "Rely",
+     "name": "R8 2.3TD AT8 4WD Limited",
+     "priceUsd": 44990,
+     "fields": {
+      "modelKey": [
+       "rely__r8",
+       "rely__r8__diesel"
+      ]
+     }
+    },
+    {
+     "id": "rely-r8_2_3td_mt6_4wd_luxury",
+     "brand": "Rely",
+     "name": "R8 2.3TD MT6 4WD Luxury",
+     "priceUsd": 37990,
+     "fields": {
+      "modelKey": [
+       "rely__r8",
+       "rely__r8__diesel"
+      ]
+     }
+    },
+    {
+     "id": "renault-kangoo_e_tech_ev45_l2h1_45_kwh",
+     "brand": "Renault",
+     "name": "Kangoo E-Tech EV45 L2H1 (45 kWh)",
+     "priceUsd": 44900,
+     "fields": {
+      "modelKey": [
+       "renault__kangoo",
+       "renault__kangoo__electrico"
+      ]
+     }
+    },
+    {
+     "id": "soueast-s06_luxury_1_5t_230t_gdi_7dct",
+     "brand": "Soueast",
+     "name": "S06 Luxury 1.5T 230T GDI 7DCT",
+     "priceUsd": 28990,
+     "fields": {
+      "modelKey": [
+       "soueast__s06",
+       "soueast__s06__nafta"
+      ]
+     }
+    },
+    {
+     "id": "subaru-crosstrek_2_0i_l_cvt_eyesight_wi",
+     "brand": "Subaru",
+     "name": "Crosstrek 2.0i-L CVT EyeSight (WI)",
+     "priceUsd": 56000,
+     "fields": {
+      "modelKey": [
+       "subaru__crosstrek",
+       "subaru__crosstrek__nafta"
+      ]
+     }
+    },
+    {
+     "id": "subaru-crosstrek_2_0i_s_cvt_eyesight_ji",
+     "brand": "Subaru",
+     "name": "Crosstrek 2.0i-S CVT EyeSight (JI)",
+     "priceUsd": 58800,
+     "fields": {
+      "modelKey": [
+       "subaru__crosstrek",
+       "subaru__crosstrek__nafta"
+      ]
+     }
+    },
+    {
+     "id": "subaru-forester_2_5i_s_es_e_boxer_shev_cvt",
+     "brand": "Subaru",
+     "name": "Forester 2.5i-S ES e-Boxer SHEV CVT",
+     "priceUsd": 66800,
+     "fields": {
+      "modelKey": [
+       "subaru__forester",
+       "subaru__forester__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "suzuki-swift_sport_1_4_boosterjet_a_t",
+     "brand": "Suzuki",
+     "name": "Swift Sport 1.4 Boosterjet A/T",
+     "priceUsd": 33590,
+     "fields": {
+      "modelKey": [
+       "suzuki__swift",
+       "suzuki__swift__nafta"
+      ]
+     }
+    },
+    {
+     "id": "suzuki-swift_sport_1_4_boosterjet_m_t",
+     "brand": "Suzuki",
+     "name": "Swift Sport 1.4 Boosterjet M/T",
+     "priceUsd": 30590,
+     "fields": {
+      "modelKey": [
+       "suzuki__swift",
+       "suzuki__swift__nafta"
+      ]
+     }
+    },
+    {
+     "id": "toyota-corolla_cross_seg_2_0_cvt",
+     "brand": "Toyota",
+     "name": "Corolla Cross SEG 2.0 CVT",
+     "priceUsd": 48990,
+     "fields": {
+      "modelKey": [
+       "toyota__corolla_cross",
+       "toyota__corolla_cross__nafta"
+      ]
+     }
+    },
+    {
+     "id": "toyota-corolla_hybrid_seg_1_8_e_cvt",
+     "brand": "Toyota",
+     "name": "Corolla Hybrid SEG 1.8 e-CVT",
+     "priceUsd": 39990,
+     "fields": {
+      "modelKey": [
+       "toyota__corolla",
+       "toyota__corolla__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "toyota-corolla_hybrid_xei_1_8_e_cvt",
+     "brand": "Toyota",
+     "name": "Corolla Hybrid XEI 1.8 e-CVT",
+     "priceUsd": 35990,
+     "fields": {
+      "modelKey": [
+       "toyota__corolla",
+       "toyota__corolla__hibrido"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_7_vvt_i_sr_4x2",
+     "brand": "Toyota",
+     "name": "Hilux 2.7 VVT-i SR 4x2",
+     "priceUsd": 37990,
+     "fields": {
+      "modelKey": [
+       "toyota__hilux",
+       "toyota__hilux__nafta"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_7_vvt_i_srv_4x2",
+     "brand": "Toyota",
+     "name": "Hilux 2.7 VVT-i SRV 4x2",
+     "priceUsd": 41990,
+     "fields": {
+      "modelKey": [
+       "toyota__hilux",
+       "toyota__hilux__nafta"
+      ]
+     }
+    },
+    {
+     "id": "toyota-hilux_2_7_vvt_i_srv_4x4",
+     "brand": "Toyota",
+     "name": "Hilux 2.7 VVT-i SRV 4x4",
+     "priceUsd": 46990,
+     "fields": {
+      "modelKey": [
+       "toyota__hilux",
+       "toyota__hilux__nafta"
+      ]
+     }
+    },
+    {
+     "id": "toyota-rav4_phev_limited_2_5_e_cvt_e_four_awd",
+     "brand": "Toyota",
+     "name": "RAV4 PHEV Limited 2.5 e-CVT E-Four AWD",
+     "priceUsd": 84990,
+     "fields": {
+      "modelKey": [
+       "toyota__rav4",
+       "toyota__rav4__phev"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "manual": true,
+   "note": "Modelos separados por combustible y datos técnicos de cada versión",
+   "modelsChanged": 476
+  },
+  {
    "at": "2026-09-25T13:41:46+00:00",
    "runId": null,
    "dataVersion": "770cc511c709",
