@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20260929T110023Z",
+   "at": "2026-09-29T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "75737f034366",
+   "previousVersion": "da01cbb6725e",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1070 | fichas: 473 | sin ficha: 2 | actualizado: 29/09/2026\ncambios (17):\n  + byd-ti_7_dm_p_1_5t_gl_awd_26_6_kwh — U$S 57.990\n  + byd-ti_7_dm_p_1_5t_gs_awd_26_6_kwh — U$S 59.990\n  - gwm-haval_h6_hev_elite_1_5_gdit_dht\n  - gwm-ora_5_high_58_3_kwh\n  - gwm-ora_5_middle_58_3_kwh\n  - gwm-poer_2_0_t_family_deluxe_4x4_a_t-2\n  - gwm-poer_2_0_t_tool_elite_4x4_m_t-2\n  - gwm-poer_2_0_tdi_tool_elite_4x2_m_t\n  - gwm-tank_300_hev_conqueror_2_0_gdit_4wd_9hat\n  - gwm-wingle_5_dignity_2_4_4x2_cd\n  - gwm-wingle_7_luxury_2_0_tdi_4x2_cd\n  - gwm-wingle_7_luxury_2_0_tdi_4x4_cd\n  - xpeng-g6_long_range_pro_rwd_80_23_kwh\n  ~ gwm-haval_h6_gt_phev_1_5_gdit_dht_awd — 52990 -> 49990\n  ~ gwm-haval_h6_phev_deluxe_1_5_gdit_dht_2wd — 38990 -> 37990\n  ~ gwm-poer_2_0_tdi_family_luxury_4x4_a_t — 42990 -> 44990\n  ~ gwm-poer_2_0_tdi_tool_elite_4x2_m_t_cs — 37990 -> 36990",
+   "commit": "ad6929bdac58ba4fa9dfdb7d867ad07e69805a16",
+   "durationMs": 4694
+  },
+  {
    "id": "20260928T110023Z",
    "at": "2026-09-28T11:00:23+00:00",
    "event": "schedule",
