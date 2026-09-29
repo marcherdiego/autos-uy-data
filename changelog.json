@@ -1,6 +1,141 @@
 {
  "entries": [
   {
+   "at": "2026-09-29T11:00:24+00:00",
+   "runId": "20260929T110023Z",
+   "dataVersion": "75737f034366",
+   "previousVersion": "da01cbb6725e",
+   "sourceUpdatedAt": "29/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1070,
+    "models": 473,
+    "withoutModel": 2
+   },
+   "added": [
+    {
+     "id": "byd-ti_7_dm_p_1_5t_gl_awd_26_6_kwh",
+     "brand": "BYD",
+     "name": "Ti 7 DM-p 1.5T GL AWD (26,6 kWh)",
+     "priceUsd": 57990
+    },
+    {
+     "id": "byd-ti_7_dm_p_1_5t_gs_awd_26_6_kwh",
+     "brand": "BYD",
+     "name": "Ti 7 DM-p 1.5T GS AWD (26,6 kWh)",
+     "priceUsd": 59990
+    }
+   ],
+   "removed": [
+    {
+     "id": "gwm-haval_h6_hev_elite_1_5_gdit_dht",
+     "brand": "GWM",
+     "name": "Haval H6 HEV Elite 1.5 GDIT DHT",
+     "priceUsd": 33990
+    },
+    {
+     "id": "gwm-ora_5_high_58_3_kwh",
+     "brand": "GWM",
+     "name": "ORA 5 High (58,3 kWh)",
+     "priceUsd": 26990
+    },
+    {
+     "id": "gwm-ora_5_middle_58_3_kwh",
+     "brand": "GWM",
+     "name": "ORA 5 Middle (58,3 kWh)",
+     "priceUsd": 24990
+    },
+    {
+     "id": "gwm-poer_2_0_t_family_deluxe_4x4_a_t-2",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Family Deluxe 4x4 A/T",
+     "priceUsd": 39990
+    },
+    {
+     "id": "gwm-poer_2_0_t_tool_elite_4x4_m_t-2",
+     "brand": "GWM",
+     "name": "Poer 2.0 T Tool Elite 4x4 M/T",
+     "priceUsd": 41990
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_tool_elite_4x2_m_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Tool Elite 4x2 M/T",
+     "priceUsd": 38990
+    },
+    {
+     "id": "gwm-tank_300_hev_conqueror_2_0_gdit_4wd_9hat",
+     "brand": "GWM",
+     "name": "Tank 300 HEV Conqueror 2.0 GDIT 4WD 9HAT",
+     "priceUsd": 59990
+    },
+    {
+     "id": "gwm-wingle_5_dignity_2_4_4x2_cd",
+     "brand": "GWM",
+     "name": "Wingle 5 Dignity 2.4 4x2 CD",
+     "priceUsd": 22990
+    },
+    {
+     "id": "gwm-wingle_7_luxury_2_0_tdi_4x2_cd",
+     "brand": "GWM",
+     "name": "Wingle 7 Luxury 2.0 TDI 4x2 CD",
+     "priceUsd": 33990
+    },
+    {
+     "id": "gwm-wingle_7_luxury_2_0_tdi_4x4_cd",
+     "brand": "GWM",
+     "name": "Wingle 7 Luxury 2.0 TDI 4x4 CD",
+     "priceUsd": 35990
+    },
+    {
+     "id": "xpeng-g6_long_range_pro_rwd_80_23_kwh",
+     "brand": "XPeng",
+     "name": "G6 Long Range Pro RWD (80,23 kWh)",
+     "priceUsd": 49990
+    }
+   ],
+   "repriced": [
+    {
+     "id": "gwm-haval_h6_gt_phev_1_5_gdit_dht_awd",
+     "brand": "GWM",
+     "name": "Haval H6 GT PHEV 1.5 GDIT DHT AWD",
+     "priceUsd": 49990,
+     "from": 52990
+    },
+    {
+     "id": "gwm-haval_h6_phev_deluxe_1_5_gdit_dht_2wd",
+     "brand": "GWM",
+     "name": "Haval H6 PHEV Deluxe 1.5 GDIT DHT 2WD",
+     "priceUsd": 37990,
+     "from": 38990
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_family_luxury_4x4_a_t",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Family Luxury 4x4 A/T",
+     "priceUsd": 44990,
+     "from": 42990
+    },
+    {
+     "id": "gwm-poer_2_0_tdi_tool_elite_4x2_m_t_cs",
+     "brand": "GWM",
+     "name": "Poer 2.0 TDI Tool Elite 4x2 M/T CS",
+     "priceUsd": 36990,
+     "from": 37990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "gwm__ora_5",
+    "gwm__tank_300",
+    "gwm__wingle_7"
+   ]
+  },
+  {
    "at": "2026-09-29T01:33:34+00:00",
    "runId": null,
    "dataVersion": "da01cbb6725e",
