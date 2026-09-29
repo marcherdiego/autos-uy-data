@@ -330,7 +330,13 @@ def build_catalog(html, previous, overrides):
         kept = [v for v in model.get("versionIds", []) if v in car_ids]
         kept += [v for v, key in linked.items() if key == model["modelKey"] and v not in kept]
         if kept:
-            models.append({**model, "versionIds": kept})
+            entry = {**model, "versionIds": kept}
+            # Los datos técnicos de cada versión (versionSpecs) viajan con la ficha;
+            # los de una versión que ya no se vende se van con ella. Una versión nueva
+            # no tiene: la app le muestra los del modelo hasta que se arme su ficha.
+            if "versionSpecs" in model:
+                entry["versionSpecs"] = {v: spec for v, spec in model["versionSpecs"].items() if v in kept}
+            models.append(entry)
 
     catalog = {
         "source": URL, "updatedAt": updated, "currency": "USD", "dataVersion": "0" * 12,
@@ -354,6 +360,10 @@ def link_renamed(cars, previous):
     eléctrico. Si varios modelos calzan, gana el nombre más largo ("Haval H6
     GT" antes que "Haval H6").
 
+    Desde sep-2026 cada modelo es de una sola familia de combustible
+    (`fuelFamily`: la Cayenne Electric y la Cayenne nafta son modelos distintos),
+    así que un renombre sólo se enlaza a un modelo de su mismo combustible.
+
     Devuelve {id de la versión: modelKey}.
     """
     current = {car["id"] for car in cars}
@@ -367,6 +377,7 @@ def link_renamed(cars, previous):
         name = car["name"].lower()
         matches = [m for m in shrunk
                    if m.get("brandId") == car["brandId"]
+                   and m.get("fuelFamily") in (None, car.get("fuel"))
                    and re.match(re.escape(m["model"].lower()) + r"(?:\s|$)", name)]
         if matches:
             linked[car["id"]] = max(matches, key=lambda m: len(m["model"]))["modelKey"]
