@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["ND626X2NH7.com.awesome.apps.autoblog"],
+        "components": [
+          { "/": "/auto/*", "comment": "Una versión" },
+          { "/": "/marca/*", "comment": "Una marca" },
+          { "/": "/comparar/*", "comment": "Dos versiones lado a lado" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.awesome.apps.autoblog",
+      "sha256_cert_fingerprints": [
+        "3D:BC:38:B8:C4:BD:B3:42:A5:9D:A0:8F:8B:61:A2:76:9B:C9:D2:53:EA:B4:CB:DA:E6:D7:97:9D:D4:4B:4F:64",
+        "F8:B4:7F:A6:79:B6:71:2B:1E:91:44:65:A2:9E:2B:EC:1A:7D:BA:B8:C7:E4:83:A9:1A:90:2F:20:0D:27:66:1A"
+      ]
+    }
+  }
+]

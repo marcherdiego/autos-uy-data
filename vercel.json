@@ -9,6 +9,9 @@
     },
     "api/cron/vigia.js": {
       "maxDuration": 60
+    },
+    "api/share.js": {
+      "maxDuration": 15
     }
   },
   "crons": [
@@ -19,6 +22,35 @@
     {
       "path": "/api/cron/vigia",
       "schedule": "0 13 * * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/auto/:a",
+      "destination": "/api/share?t=auto&a=:a"
+    },
+    {
+      "source": "/marca/:a",
+      "destination": "/api/share?t=marca&a=:a"
+    },
+    {
+      "source": "/comparar/:a/:b",
+      "destination": "/api/share?t=comparar&a=:a&b=:b"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/.well-known/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
     }
   ]
 }
