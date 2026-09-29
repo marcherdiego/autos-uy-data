@@ -106,6 +106,19 @@ publicar fichas; el scraper sólo lo aplica en cada corrida. No se edita a mano.
 Las fichas (`models`) **se conservan** entre corridas: el job nunca las borra,
 sólo saca las versiones que ya no están en la lista de precios.
 
+## Links compartidos
+
+La app comparte links a una versión, una marca o una comparativa:
+`https://autos-uy-app.vercel.app/auto/<id>`, `/marca/<id>` y `/comparar/<id>/<id>`
+(`autos-uy-app.vercel.app` es un alias de este mismo proyecto de Vercel).
+
+- `public/.well-known/apple-app-site-association` y `assetlinks.json` verifican el dominio
+  para iOS (Universal Links) y Android (App Links). `assetlinks.json` lleva la huella de la
+  firma de Play y la del keystore de upload: si cambia alguna, hay que actualizarla acá.
+- Con la app instalada, el sistema la abre directo en esa pantalla. Sin ella, `api/share.js`
+  arma una página con los mismos datos (leídos del catalog.json publicado) y los botones
+  para abrir o bajar la app. `vercel.json` reescribe las tres rutas a esa función.
+
 ## Estructura
 
 ```
