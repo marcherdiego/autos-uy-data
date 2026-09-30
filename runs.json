@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20260930T110023Z",
+   "at": "2026-09-30T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "ae1f441c48d0",
+   "previousVersion": "75737f034366",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1070 | fichas: 472 | sin ficha: 4 | actualizado: 29/09/2026\ncambios (6):\n  + baic-x55e_1_5_comfort — U$S 27.990\n  + baic-x55e_1_5_luxury — U$S 29.990\n  - baic-x55_rehev_1_5t_comfort\n  - baic-x55_rehev_1_5t_luxury\n  ~ lynk_and_co-02_halo_ev_66_kwh — 39990 -> 36990\n  ~ lynk_and_co-02_pro_ev_66_kwh — 36990 -> 33990",
+   "commit": "0618ad3d4a59e58a866938257ab96c85204c231b",
+   "durationMs": 5251
+  },
+  {
    "id": "20260929T110023Z",
    "at": "2026-09-29T11:00:23+00:00",
    "event": "schedule",
