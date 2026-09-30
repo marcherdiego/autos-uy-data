@@ -1,6 +1,71 @@
 {
  "entries": [
   {
+   "at": "2026-09-30T11:00:24+00:00",
+   "runId": "20260930T110023Z",
+   "dataVersion": "ae1f441c48d0",
+   "previousVersion": "75737f034366",
+   "sourceUpdatedAt": "29/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1070,
+    "models": 472,
+    "withoutModel": 4
+   },
+   "added": [
+    {
+     "id": "baic-x55e_1_5_comfort",
+     "brand": "BAIC",
+     "name": "X55e 1.5 Comfort",
+     "priceUsd": 27990
+    },
+    {
+     "id": "baic-x55e_1_5_luxury",
+     "brand": "BAIC",
+     "name": "X55e 1.5 Luxury",
+     "priceUsd": 29990
+    }
+   ],
+   "removed": [
+    {
+     "id": "baic-x55_rehev_1_5t_comfort",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Comfort",
+     "priceUsd": 27990
+    },
+    {
+     "id": "baic-x55_rehev_1_5t_luxury",
+     "brand": "BAIC",
+     "name": "X55 REHEV 1.5T Luxury",
+     "priceUsd": 29990
+    }
+   ],
+   "repriced": [
+    {
+     "id": "lynk_and_co-02_halo_ev_66_kwh",
+     "brand": "Lynk & Co",
+     "name": "02 Halo EV (66 kWh)",
+     "priceUsd": 36990,
+     "from": 39990
+    },
+    {
+     "id": "lynk_and_co-02_pro_ev_66_kwh",
+     "brand": "Lynk & Co",
+     "name": "02 Pro EV (66 kWh)",
+     "priceUsd": 33990,
+     "from": 36990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "baic__x55"
+   ]
+  },
+  {
    "at": "2026-09-29T11:00:24+00:00",
    "runId": "20260929T110023Z",
    "dataVersion": "75737f034366",
