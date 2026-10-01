@@ -1,6 +1,43 @@
 {
  "entries": [
   {
+   "at": "2026-10-01T11:00:24+00:00",
+   "runId": "20261001T110023Z",
+   "dataVersion": "39eb30b03837",
+   "previousVersion": "ae1f441c48d0",
+   "sourceUpdatedAt": "29/09/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1070,
+    "models": 472,
+    "withoutModel": 4
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "dongfeng-nammi_330_31_4_kwh",
+     "brand": "Dongfeng",
+     "name": "Nammi 330 (31,4 kWh)",
+     "priceUsd": 18990,
+     "from": 17990
+    },
+    {
+     "id": "dongfeng-nammi_330_eu_31_4_kwh",
+     "brand": "Dongfeng",
+     "name": "Nammi 330 EU (31,4 kWh)",
+     "priceUsd": 20990,
+     "from": 19990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-09-30T11:00:24+00:00",
    "runId": "20260930T110023Z",
    "dataVersion": "ae1f441c48d0",
