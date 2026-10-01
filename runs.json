@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261001T110023Z",
+   "at": "2026-10-01T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "39eb30b03837",
+   "previousVersion": "ae1f441c48d0",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1070 | fichas: 472 | sin ficha: 4 | actualizado: 29/09/2026\ncambios (2):\n  ~ dongfeng-nammi_330_31_4_kwh — 17990 -> 18990\n  ~ dongfeng-nammi_330_eu_31_4_kwh — 19990 -> 20990",
+   "commit": "7388c79bb5724545051c112fdacbb12cbeb0ec6c",
+   "durationMs": 5627
+  },
+  {
    "id": "20260930T110023Z",
    "at": "2026-09-30T11:00:23+00:00",
    "event": "schedule",
