@@ -1,6 +1,133 @@
 {
  "entries": [
   {
+   "at": "2026-10-03T11:00:25+00:00",
+   "runId": "20261003T110023Z",
+   "dataVersion": "0492b09be645",
+   "previousVersion": "ae6c891c34d8",
+   "sourceUpdatedAt": "02/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1060,
+    "models": 466,
+    "withoutModel": 6
+   },
+   "added": [
+    {
+     "id": "mercedes_benz-cla_250_con_tecnologia_eq_amg_line_85_0_kwh",
+     "brand": "Mercedes-Benz",
+     "name": "CLA 250+ con tecnología EQ AMG Line (85,0 kWh)",
+     "priceUsd": 84990
+    },
+    {
+     "id": "mercedes_benz-gla_220_4matic_progressive_8g_dct",
+     "brand": "Mercedes-Benz",
+     "name": "GLA 220 4MATIC Progressive 8G-DCT",
+     "priceUsd": 68990
+    },
+    {
+     "id": "mercedes_benz-glb_250_con_tecnologia_eq_85_0_kwh",
+     "brand": "Mercedes-Benz",
+     "name": "GLB 250+ con tecnología EQ (85,0 kWh)",
+     "priceUsd": 89990
+    }
+   ],
+   "removed": [
+    {
+     "id": "byd-tang_ev530_gs_awd_108_8_kwh",
+     "brand": "BYD",
+     "name": "Tang EV530 GS AWD (108,8 kWh)",
+     "priceUsd": 80990
+    },
+    {
+     "id": "hyundai-kona_electric_limited_standard_range_48_4_kwh",
+     "brand": "Hyundai",
+     "name": "Kona Electric Limited Standard Range (48,4 kWh)",
+     "priceUsd": 43990
+    },
+    {
+     "id": "jetour-dashing_comfort_1_5_tci_dct",
+     "brand": "Jetour",
+     "name": "Dashing Comfort 1.5 TCI DCT",
+     "priceUsd": 27990
+    },
+    {
+     "id": "jmc-jmev_gse_family_60_kwh",
+     "brand": "JMC",
+     "name": "JMEV GSE Family (60 kWh)",
+     "priceUsd": 29990
+    },
+    {
+     "id": "jmc-jmev_gse_luxury_60_kwh",
+     "brand": "JMC",
+     "name": "JMEV GSE Luxury (60 kWh)",
+     "priceUsd": 34418
+    },
+    {
+     "id": "mazda-cx_5_2_0_skyactiv_g_2wd_carbon_edition_core_plus_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.0 SKYACTIV-G 2WD Carbon Edition Core Plus A/T",
+     "priceUsd": 56990
+    },
+    {
+     "id": "mazda-cx_5_2_0_skyactiv_g_2wd_carbon_edition_high_plus_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.0 SKYACTIV-G 2WD Carbon Edition High Plus A/T",
+     "priceUsd": 60990
+    },
+    {
+     "id": "mazda-cx_5_2_0_skyactiv_g_2wd_signature_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.0 SKYACTIV-G 2WD Signature A/T",
+     "priceUsd": 56990
+    },
+    {
+     "id": "mazda-cx_5_2_0_skyactiv_g_2wd_urban_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.0 SKYACTIV-G 2WD Urban A/T",
+     "priceUsd": 49990
+    },
+    {
+     "id": "mazda-cx_5_2_5_skyactiv_g_awd_carbon_edition_high_plus_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.5 SKYACTIV-G AWD Carbon Edition High Plus A/T",
+     "priceUsd": 66990
+    },
+    {
+     "id": "mazda-cx_5_2_5_skyactiv_g_awd_signature_plus_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.5 SKYACTIV-G AWD Signature Plus A/T",
+     "priceUsd": 66990
+    },
+    {
+     "id": "mercedes_benz-gla_250_4matic_progressive_8g_dct",
+     "brand": "Mercedes-Benz",
+     "name": "GLA 250 4MATIC Progressive 8G-DCT",
+     "priceUsd": 79990
+    },
+    {
+     "id": "nissan-pathfinder_exclusive_3_5_v6_9at_4wd",
+     "brand": "Nissan",
+     "name": "Pathfinder Exclusive 3.5 V6 9AT 4WD",
+     "priceUsd": 109990
+    }
+   ],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "byd__tang",
+    "hyundai__kona__electrico",
+    "jetour__dashing",
+    "jmc__jmev_gse",
+    "mazda__cx-5",
+    "nissan__pathfinder"
+   ]
+  },
+  {
    "at": "2026-10-02T11:00:30+00:00",
    "runId": "20261002T110023Z",
    "dataVersion": "ae6c891c34d8",
