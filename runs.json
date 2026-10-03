@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261003T110023Z",
+   "at": "2026-10-03T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "0492b09be645",
+   "previousVersion": "ae6c891c34d8",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1060 | fichas: 466 | sin ficha: 6 | actualizado: 02/10/2026\nrenombradas, enlazadas a su ficha (1):\n  mercedes_benz-gla_220_4matic_progressive_8g_dct → mercedes_benz__gla\ncambios (16):\n  + mercedes_benz-cla_250_con_tecnologia_eq_amg_line_85_0_kwh — U$S 84.990\n  + mercedes_benz-gla_220_4matic_progressive_8g_dct — U$S 68.990\n  + mercedes_benz-glb_250_con_tecnologia_eq_85_0_kwh — U$S 89.990\n  - byd-tang_ev530_gs_awd_108_8_kwh\n  - hyundai-kona_electric_limited_standard_range_48_4_kwh\n  - jetour-dashing_comfort_1_5_tci_dct\n  - jmc-jmev_gse_family_60_kwh\n  - jmc-jmev_gse_luxury_60_kwh\n  - mazda-cx_5_2_0_skyactiv_g_2wd_carbon_edition_core_plus_a_t\n  - mazda-cx_5_2_0_skyactiv_g_2wd_carbon_edition_high_plus_a_t\n  - mazda-cx_5_2_0_skyactiv_g_2wd_signature_a_t\n  - mazda-cx_5_2_0_skyactiv_g_2wd_urban_a_t\n  - mazda-cx_5_2_5_skyactiv_g_awd_carbon_edition_high_plus_a_t\n  - mazda-cx_5_2_5_skyactiv_g_awd_signature_plus_a_t\n  - mercedes_benz-gla_250_4matic_progressive_8g_dct\n  - nissan-pathfinder_exclusive_3_5_v6_9at_4wd",
+   "commit": "74e38a56fbb39765b84185918c6f5e899898938d",
+   "durationMs": 5461
+  },
+  {
    "id": "20261002T110023Z",
    "at": "2026-10-02T11:00:23+00:00",
    "event": "schedule",
