@@ -1,6 +1,99 @@
 {
  "entries": [
   {
+   "at": "2026-10-07T11:00:25+00:00",
+   "runId": "20261007T110023Z",
+   "dataVersion": "94a664200d35",
+   "previousVersion": "7a33de434a3d",
+   "sourceUpdatedAt": "05/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1060,
+    "models": 466,
+    "withoutModel": 6
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "chevrolet-blazer_ev_rs_102_kwh",
+     "brand": "Chevrolet",
+     "name": "Blazer EV RS (102 kWh)",
+     "priceUsd": 72990,
+     "from": 74990
+    },
+    {
+     "id": "chevrolet-equinox_ev_eawd_85_kwh",
+     "brand": "Chevrolet",
+     "name": "Equinox EV eAWD (85 kWh)",
+     "priceUsd": 63990,
+     "from": 65990
+    },
+    {
+     "id": "omoda_and_jaecoo-jaecoo_5_ev_comfort_58_9_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Jaecoo 5 EV Comfort (58,9 kWh)",
+     "priceUsd": 27990,
+     "from": 28990
+    },
+    {
+     "id": "omoda_and_jaecoo-jaecoo_5_ev_luxury_58_9_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Jaecoo 5 EV Luxury (58,9 kWh)",
+     "priceUsd": 30990,
+     "from": 31990
+    },
+    {
+     "id": "volkswagen-polo_track_1_0_mpi",
+     "brand": "Volkswagen",
+     "name": "Polo Track 1.0 MPI",
+     "priceUsd": 16990,
+     "from": 18990
+    },
+    {
+     "id": "volkswagen-polo_track_1_6_msi",
+     "brand": "Volkswagen",
+     "name": "Polo Track 1.6 MSI",
+     "priceUsd": 19990,
+     "from": 20990
+    },
+    {
+     "id": "volkswagen-tera_comfort_170_tsi_1_0_a_t",
+     "brand": "Volkswagen",
+     "name": "Tera Comfort 170 TSI 1.0 A/T",
+     "priceUsd": 24990,
+     "from": 26790
+    },
+    {
+     "id": "volkswagen-tera_high_170_tsi_1_0_a_t",
+     "brand": "Volkswagen",
+     "name": "Tera High 170 TSI 1.0 A/T",
+     "priceUsd": 26990,
+     "from": 28990
+    },
+    {
+     "id": "volkswagen-tera_outfit_170_tsi_1_0_a_t",
+     "brand": "Volkswagen",
+     "name": "Tera Outfit 170 TSI 1.0 A/T",
+     "priceUsd": 27990,
+     "from": 29990
+    },
+    {
+     "id": "volkswagen-tera_trend_1_0_mpi_m_t",
+     "brand": "Volkswagen",
+     "name": "Tera Trend 1.0 MPI M/T",
+     "priceUsd": 20990,
+     "from": 22890
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-04T11:00:24+00:00",
    "runId": "20261004T110023Z",
    "dataVersion": "7a33de434a3d",
