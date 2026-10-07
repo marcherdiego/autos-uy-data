@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261007T110023Z",
+   "at": "2026-10-07T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "94a664200d35",
+   "previousVersion": "7a33de434a3d",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1060 | fichas: 466 | sin ficha: 6 | actualizado: 05/10/2026\ncambios (10):\n  ~ chevrolet-blazer_ev_rs_102_kwh — 74990 -> 72990\n  ~ chevrolet-equinox_ev_eawd_85_kwh — 65990 -> 63990\n  ~ omoda_and_jaecoo-jaecoo_5_ev_comfort_58_9_kwh — 28990 -> 27990\n  ~ omoda_and_jaecoo-jaecoo_5_ev_luxury_58_9_kwh — 31990 -> 30990\n  ~ volkswagen-polo_track_1_0_mpi — 18990 -> 16990\n  ~ volkswagen-polo_track_1_6_msi — 20990 -> 19990\n  ~ volkswagen-tera_comfort_170_tsi_1_0_a_t — 26790 -> 24990\n  ~ volkswagen-tera_high_170_tsi_1_0_a_t — 28990 -> 26990\n  ~ volkswagen-tera_outfit_170_tsi_1_0_a_t — 29990 -> 27990\n  ~ volkswagen-tera_trend_1_0_mpi_m_t — 22890 -> 20990",
+   "commit": "69776bd39e5b5f399bcf6858240a69c2efa9f1d9",
+   "durationMs": 5583
+  },
+  {
    "id": "20261006T110023Z",
    "at": "2026-10-06T11:00:23+00:00",
    "event": "schedule",
