@@ -1,6 +1,173 @@
 {
  "entries": [
   {
+   "at": "2026-10-09T11:00:27+00:00",
+   "runId": "20261009T110023Z",
+   "dataVersion": "dd57913390be",
+   "previousVersion": "7449c094f261",
+   "sourceUpdatedAt": "12/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1051,
+    "models": 459,
+    "withoutModel": 7
+   },
+   "added": [
+    {
+     "id": "jac-sunray_pro_ev_83_67_kwh",
+     "brand": "JAC",
+     "name": "Sunray Pro EV (83,67 kWh)",
+     "priceUsd": 41990
+    }
+   ],
+   "removed": [
+    {
+     "id": "geely-coolray_gf_1_5_290t_dct",
+     "brand": "Geely",
+     "name": "Coolray GF 1.5 290T DCT",
+     "priceUsd": 30490
+    },
+    {
+     "id": "geely-coolray_lite_gs_1_5_cvt",
+     "brand": "Geely",
+     "name": "Coolray Lite GS+ 1.5 CVT",
+     "priceUsd": 24990
+    },
+    {
+     "id": "jac-e_s1_30_2_kwh",
+     "brand": "JAC",
+     "name": "e-S1 ( 30,2 kWh )",
+     "priceUsd": 17990
+    },
+    {
+     "id": "jac-m3_ev_50_23_kwh",
+     "brand": "JAC",
+     "name": "M3 EV (50,23 kWh)",
+     "priceUsd": 39990
+    },
+    {
+     "id": "lynk_and_co-01_phev_louder_1_5td_7dct_h",
+     "brand": "Lynk & Co",
+     "name": "01 PHEV Louder 1.5TD 7DCT-H",
+     "priceUsd": 44990
+    },
+    {
+     "id": "lynk_and_co-03_2_0td_t5_at8",
+     "brand": "Lynk & Co",
+     "name": "03+ 2.0TD T5 AT8",
+     "priceUsd": 69990
+    },
+    {
+     "id": "lynk_and_co-06_core_plus_1_5td_7dct",
+     "brand": "Lynk & Co",
+     "name": "06 Core Plus 1.5TD 7DCT",
+     "priceUsd": 31990
+    },
+    {
+     "id": "lynk_and_co-06_hyper_halo_1_5td_7dct",
+     "brand": "Lynk & Co",
+     "name": "06 Hyper Halo 1.5TD 7DCT",
+     "priceUsd": 36990
+    },
+    {
+     "id": "lynk_and_co-06_hyper_pro_1_5td_7dct",
+     "brand": "Lynk & Co",
+     "name": "06 Hyper Pro 1.5TD 7DCT",
+     "priceUsd": 34990
+    },
+    {
+     "id": "lynk_and_co-09_mhev_halo_2_0td_t5_bsg_at8_awd",
+     "brand": "Lynk & Co",
+     "name": "09 MHEV Halo 2.0TD T5 BSG AT8 AWD",
+     "priceUsd": 69990
+    }
+   ],
+   "repriced": [
+    {
+     "id": "geely-cityray_gf_1_5_290t_dct",
+     "brand": "Geely",
+     "name": "Cityray GF 1.5 290T DCT",
+     "priceUsd": 33990,
+     "from": 34990
+    },
+    {
+     "id": "geely-cityray_gk_1_5_290t_dct",
+     "brand": "Geely",
+     "name": "Cityray GK 1.5 290T DCT",
+     "priceUsd": 31990,
+     "from": 32990
+    },
+    {
+     "id": "geely-ex2_max_39_4_kwh",
+     "brand": "Geely",
+     "name": "EX2 Max (39,4 kWh)",
+     "priceUsd": 22990,
+     "from": 22490
+    },
+    {
+     "id": "geely-ex2_pro_39_4_kwh",
+     "brand": "Geely",
+     "name": "EX2 Pro (39,4 kWh)",
+     "priceUsd": 20790,
+     "from": 20490
+    },
+    {
+     "id": "jac-js8_pro_flagship_1_5_t_dct",
+     "brand": "JAC",
+     "name": "JS8 Pro Flagship 1.5 T DCT",
+     "priceUsd": 34990,
+     "from": 36990
+    },
+    {
+     "id": "jac-js8_pro_flagship_plus_1_5_t_dct",
+     "brand": "JAC",
+     "name": "JS8 Pro Flagship Plus 1.5 T DCT",
+     "priceUsd": 35990,
+     "from": 39990
+    },
+    {
+     "id": "jac-js8_pro_luxury_1_5_t_dct",
+     "brand": "JAC",
+     "name": "JS8 Pro Luxury 1.5 T DCT",
+     "priceUsd": 31990,
+     "from": 32990
+    },
+    {
+     "id": "jac-sunray_ev_92_16_kwh",
+     "brand": "JAC",
+     "name": "Sunray EV (92,16 kWh)",
+     "priceUsd": 59900,
+     "from": 59990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "JAC",
+     "name": "Grupo Fiancar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. En E-S3 Ytterby: 6 años o 150.000 km. (+ 8 años o 150.000 km para la batería en los modelos electrificados).",
+       "5 años o 150.000 km. En Ytterby: 6 años o 150.000 km. (+ 8 años o 150.000 km para la batería en los modelos electrificados)."
+      ]
+     }
+    }
+   ],
+   "modelsRemoved": [
+    "geely__coolray",
+    "jac__e_s1",
+    "jac__m3_ev",
+    "lynk_and_co__01",
+    "lynk_and_co__03",
+    "lynk_and_co__06",
+    "lynk_and_co__09"
+   ]
+  },
+  {
    "at": "2026-10-08T14:44:51+00:00",
    "runId": "20261008T144447Z",
    "dataVersion": "7449c094f261",
