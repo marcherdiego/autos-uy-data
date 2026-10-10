@@ -1,6 +1,41 @@
 {
  "entries": [
   {
+   "at": "2026-10-10T11:00:33+00:00",
+   "runId": "20261010T110023Z",
+   "dataVersion": "b195d66cc212",
+   "previousVersion": "dd57913390be",
+   "sourceUpdatedAt": "12/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1053,
+    "models": 459,
+    "withoutModel": 9
+   },
+   "added": [
+    {
+     "id": "ram-dakota_laramie_night_edition_2_2_turbodiesel_4x4_at8",
+     "brand": "RAM",
+     "name": "Dakota Laramie Night Edition 2.2 Turbodiesel 4x4 AT8",
+     "priceUsd": 68990
+    },
+    {
+     "id": "ram-dakota_warlock_2_2_turbodiesel_4x4_at8",
+     "brand": "RAM",
+     "name": "Dakota Warlock 2.2 Turbodiesel 4x4 AT8",
+     "priceUsd": 63990
+    }
+   ],
+   "removed": [],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-09T11:00:27+00:00",
    "runId": "20261009T110023Z",
    "dataVersion": "dd57913390be",
