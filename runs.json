@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261010T110023Z",
+   "at": "2026-10-10T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "b195d66cc212",
+   "previousVersion": "dd57913390be",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1053 | fichas: 459 | sin ficha: 9 | actualizado: 12/10/2026\ncambios (2):\n  + ram-dakota_laramie_night_edition_2_2_turbodiesel_4x4_at8 — U$S 68.990\n  + ram-dakota_warlock_2_2_turbodiesel_4x4_at8 — U$S 63.990",
+   "commit": "458518b0e78899597d676f8f7faae1825b575496",
+   "durationMs": 14136
+  },
+  {
    "id": "20261009T110023Z",
    "at": "2026-10-09T11:00:23+00:00",
    "event": "schedule",
