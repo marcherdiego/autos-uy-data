@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261014T110023Z",
+   "at": "2026-10-14T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "cb896a05f2ab",
+   "previousVersion": "b195d66cc212",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1054 | fichas: 459 | sin ficha: 11 | actualizado: 14/10/2026\nrenombradas, enlazadas a su ficha (1):\n  zeekr-x_premium_rwd_69_05_kwh → zeekr__x\ncambios (5):\n  + gwm-ora_5_high_58_3_kwh — U$S 26.990\n  + gwm-ora_5_middle_58_3_kwh — U$S 24.990\n  + zeekr-x_premium_rwd_69_05_kwh — U$S 46.990\n  - zeekr-x_p_remium_rwd_69_05_kwh\n  - zeekr-x_smart_rwd_49_kwh",
+   "commit": "1fcb1b504ab25f9ab09aaf443d6bebdf00a3baab",
+   "durationMs": 15149
+  },
+  {
    "id": "20261013T110023Z",
    "at": "2026-10-13T11:00:23+00:00",
    "event": "schedule",
