@@ -1,6 +1,73 @@
 {
  "entries": [
   {
+   "at": "2026-10-14T11:00:32+00:00",
+   "runId": "20261014T110023Z",
+   "dataVersion": "cb896a05f2ab",
+   "previousVersion": "b195d66cc212",
+   "sourceUpdatedAt": "14/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1054,
+    "models": 459,
+    "withoutModel": 11
+   },
+   "added": [
+    {
+     "id": "gwm-ora_5_high_58_3_kwh",
+     "brand": "GWM",
+     "name": "ORA 5 High (58,3 kWh)",
+     "priceUsd": 26990
+    },
+    {
+     "id": "gwm-ora_5_middle_58_3_kwh",
+     "brand": "GWM",
+     "name": "ORA 5 Middle (58,3 kWh)",
+     "priceUsd": 24990
+    },
+    {
+     "id": "zeekr-x_premium_rwd_69_05_kwh",
+     "brand": "Zeekr",
+     "name": "X Premium RWD (69,05 kWh)",
+     "priceUsd": 46990
+    }
+   ],
+   "removed": [
+    {
+     "id": "zeekr-x_p_remium_rwd_69_05_kwh",
+     "brand": "Zeekr",
+     "name": "X P remium RWD (69,05 kWh)",
+     "priceUsd": 46990
+    },
+    {
+     "id": "zeekr-x_smart_rwd_49_kwh",
+     "brand": "Zeekr",
+     "name": "X Smart RWD (49 kWh)",
+     "priceUsd": 37990
+    }
+   ],
+   "repriced": [],
+   "changed": [
+    {
+     "id": "foton-e_tunland_4x2_88_5_kwh",
+     "brand": "Foton",
+     "name": "e-Tunland 4x2 (88,5 kWh)",
+     "priceUsd": 59950,
+     "fields": {
+      "name": [
+       "e-Tunland 4x2 ( 88,5 kWh )",
+       "e-Tunland 4x2 (88,5 kWh)"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-10T11:00:33+00:00",
    "runId": "20261010T110023Z",
    "dataVersion": "b195d66cc212",
