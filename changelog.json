@@ -1,6 +1,56 @@
 {
  "entries": [
   {
+   "at": "2026-10-14T22:17:03+00:00",
+   "runId": null,
+   "dataVersion": "f2357bb153df",
+   "previousVersion": "cb896a05f2ab",
+   "sourceUpdatedAt": "14/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1054,
+    "models": 460,
+    "withoutModel": 9
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [
+    {
+     "id": "gwm-ora_5_high_58_3_kwh",
+     "brand": "GWM",
+     "name": "ORA 5 High (58,3 kWh)",
+     "priceUsd": 26990,
+     "fields": {
+      "modelKey": [
+       null,
+       "gwm__ora_5"
+      ]
+     }
+    },
+    {
+     "id": "gwm-ora_5_middle_58_3_kwh",
+     "brand": "GWM",
+     "name": "ORA 5 Middle (58,3 kWh)",
+     "priceUsd": 24990,
+     "fields": {
+      "modelKey": [
+       null,
+       "gwm__ora_5"
+      ]
+     }
+    }
+   ],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [],
+   "manual": true,
+   "note": "Ficha del GWM Ora y ajustes de fichas",
+   "modelsChanged": 8
+  },
+  {
    "at": "2026-10-14T11:00:32+00:00",
    "runId": "20261014T110023Z",
    "dataVersion": "cb896a05f2ab",
