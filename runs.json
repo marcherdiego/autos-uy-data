@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261016T110023Z",
+   "at": "2026-10-16T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "2a8d5774e5ce",
+   "previousVersion": "511294bb1f97",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1058 | fichas: 460 | sin ficha: 13 | actualizado: 19/10/2026\ncambios (7):\n  + hyundai-elexio_limited_extended_fwd_88_kwh — U$S 44.990\n  + hyundai-elexio_limited_fwd_62_kwh — U$S 36.990\n  + hyundai-elexio_ultimate_awd_88_kwh — U$S 48.990\n  + ram-1500_black_express_3_6_v6_etorque_a_t_4x4 — U$S 76.900\n  ~ chevrolet-silverado_1500_crew_cab_ltz_3_0td_l6_duramax_4x4_a_t — 93990 -> 94990\n  ~ chevrolet-silverado_lt_trail_boss_z71_5_3_v8_4x4_a_t — 73990 -> 74990\n  ~ jmc-jmev_3_31_9_kwh — 16990 -> 15990",
+   "commit": "86d3c2addbaa829e46cb2a8153fdfe34e4f96f28",
+   "durationMs": 8573
+  },
+  {
    "id": "20261015T110026Z",
    "at": "2026-10-15T11:00:26+00:00",
    "event": "schedule",
