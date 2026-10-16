@@ -1,6 +1,75 @@
 {
  "entries": [
   {
+   "at": "2026-10-16T11:00:27+00:00",
+   "runId": "20261016T110023Z",
+   "dataVersion": "2a8d5774e5ce",
+   "previousVersion": "511294bb1f97",
+   "sourceUpdatedAt": "19/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1058,
+    "models": 460,
+    "withoutModel": 13
+   },
+   "added": [
+    {
+     "id": "hyundai-elexio_limited_extended_fwd_88_kwh",
+     "brand": "Hyundai",
+     "name": "Elexio Limited Extended FWD (88 kWh)",
+     "priceUsd": 44990
+    },
+    {
+     "id": "hyundai-elexio_limited_fwd_62_kwh",
+     "brand": "Hyundai",
+     "name": "Elexio Limited FWD (62 kWh)",
+     "priceUsd": 36990
+    },
+    {
+     "id": "hyundai-elexio_ultimate_awd_88_kwh",
+     "brand": "Hyundai",
+     "name": "Elexio Ultimate AWD (88 kWh)",
+     "priceUsd": 48990
+    },
+    {
+     "id": "ram-1500_black_express_3_6_v6_etorque_a_t_4x4",
+     "brand": "RAM",
+     "name": "1500 Black Express 3.6 V6 eTorque A/T 4x4",
+     "priceUsd": 76900
+    }
+   ],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "chevrolet-silverado_1500_crew_cab_ltz_3_0td_l6_duramax_4x4_a_t",
+     "brand": "Chevrolet",
+     "name": "Silverado 1500 Crew Cab LTZ 3.0TD L6 Duramax 4x4 A/T",
+     "priceUsd": 94990,
+     "from": 93990
+    },
+    {
+     "id": "chevrolet-silverado_lt_trail_boss_z71_5_3_v8_4x4_a_t",
+     "brand": "Chevrolet",
+     "name": "Silverado LT Trail Boss Z71 5.3 V8 4x4 A/T",
+     "priceUsd": 74990,
+     "from": 73990
+    },
+    {
+     "id": "jmc-jmev_3_31_9_kwh",
+     "brand": "JMC",
+     "name": "JMEV 3 (31,9 kWh)",
+     "priceUsd": 15990,
+     "from": 16990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-15T11:00:30+00:00",
    "runId": "20261015T110026Z",
    "dataVersion": "511294bb1f97",
