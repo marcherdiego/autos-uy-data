@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261021T110023Z",
+   "at": "2026-10-21T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "ccd5ea73f568",
+   "previousVersion": "2a8d5774e5ce",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1056 | fichas: 459 | sin ficha: 13 | actualizado: 21/10/2026\ncambios (2):\n  - hyundai-ioniq_5_limited_long_range_rwd_84_0_kwh\n  - hyundai-ioniq_5_safe_long_range_rwd_84_0_kwh",
+   "commit": "2c9fe3547f8bc031053d7e3a2bfad12de83a9ae1",
+   "durationMs": 8637
+  },
+  {
    "id": "20261020T110023Z",
    "at": "2026-10-20T11:00:23+00:00",
    "event": "schedule",
