@@ -1,6 +1,43 @@
 {
  "entries": [
   {
+   "at": "2026-10-21T11:00:27+00:00",
+   "runId": "20261021T110023Z",
+   "dataVersion": "ccd5ea73f568",
+   "previousVersion": "2a8d5774e5ce",
+   "sourceUpdatedAt": "21/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1056,
+    "models": 459,
+    "withoutModel": 13
+   },
+   "added": [],
+   "removed": [
+    {
+     "id": "hyundai-ioniq_5_limited_long_range_rwd_84_0_kwh",
+     "brand": "Hyundai",
+     "name": "Ioniq 5 Limited Long Range RWD (84,0 kWh)",
+     "priceUsd": 65990
+    },
+    {
+     "id": "hyundai-ioniq_5_safe_long_range_rwd_84_0_kwh",
+     "brand": "Hyundai",
+     "name": "Ioniq 5 Safe Long Range RWD (84,0 kWh)",
+     "priceUsd": 55990
+    }
+   ],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "hyundai__ioniq_5"
+   ]
+  },
+  {
    "at": "2026-10-16T11:00:27+00:00",
    "runId": "20261016T110023Z",
    "dataVersion": "2a8d5774e5ce",
