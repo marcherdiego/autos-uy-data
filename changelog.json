@@ -1,6 +1,68 @@
 {
  "entries": [
   {
+   "at": "2026-10-22T11:00:27+00:00",
+   "runId": "20261022T110023Z",
+   "dataVersion": "6d275d0ab9e0",
+   "previousVersion": "ccd5ea73f568",
+   "sourceUpdatedAt": "23/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1060,
+    "models": 459,
+    "withoutModel": 17
+   },
+   "added": [
+    {
+     "id": "mazda-cx_5_2_5_e_skyactiv_g_mhev_2wd_active_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.5 e-Skyactiv G MHEV 2WD Active A/T",
+     "priceUsd": 49990
+    },
+    {
+     "id": "mazda-cx_5_2_5_e_skyactiv_g_mhev_2wd_core_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.5 e-Skyactiv G MHEV 2WD Core A/T",
+     "priceUsd": 53990
+    },
+    {
+     "id": "mazda-cx_5_2_5_e_skyactiv_g_mhev_awd_high_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.5 e-Skyactiv G MHEV AWD High A/T",
+     "priceUsd": 61990
+    },
+    {
+     "id": "mazda-cx_5_2_5_e_skyactiv_g_mhev_awd_high_plus_a_t",
+     "brand": "Mazda",
+     "name": "CX-5 2.5 e-Skyactiv G MHEV AWD High Plus A/T",
+     "priceUsd": 66990
+    }
+   ],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "geely-ex5_urban_49_52_kwh",
+     "brand": "Geely",
+     "name": "EX5 Urban (49,52 kWh)",
+     "priceUsd": 27990,
+     "from": 28990
+    },
+    {
+     "id": "jetour-x50_premium_1_5t_dct",
+     "brand": "Jetour",
+     "name": "X50 Premium 1.5T DCT",
+     "priceUsd": 23990,
+     "from": 24990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-21T11:00:27+00:00",
    "runId": "20261021T110023Z",
    "dataVersion": "ccd5ea73f568",
