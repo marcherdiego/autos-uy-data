@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261022T110023Z",
+   "at": "2026-10-22T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "6d275d0ab9e0",
+   "previousVersion": "ccd5ea73f568",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1060 | fichas: 459 | sin ficha: 17 | actualizado: 23/10/2026\ncambios (6):\n  + mazda-cx_5_2_5_e_skyactiv_g_mhev_2wd_active_a_t — U$S 49.990\n  + mazda-cx_5_2_5_e_skyactiv_g_mhev_2wd_core_a_t — U$S 53.990\n  + mazda-cx_5_2_5_e_skyactiv_g_mhev_awd_high_a_t — U$S 61.990\n  + mazda-cx_5_2_5_e_skyactiv_g_mhev_awd_high_plus_a_t — U$S 66.990\n  ~ geely-ex5_urban_49_52_kwh — 28990 -> 27990\n  ~ jetour-x50_premium_1_5t_dct — 24990 -> 23990",
+   "commit": "d60b3436db9f5fe0fc18d1c7c8645a6a80a0aee1",
+   "durationMs": 9022
+  },
+  {
    "id": "20261021T110023Z",
    "at": "2026-10-21T11:00:23+00:00",
    "event": "schedule",
