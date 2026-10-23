@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261023T110023Z",
+   "at": "2026-10-23T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "9f23838f31ba",
+   "previousVersion": "6d275d0ab9e0",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1060 | fichas: 459 | sin ficha: 17 | actualizado: 23/10/2026\ncambios (5):\n  ~ hyundai-creta_limited_1_0_t_gdi_a_t — 34990 -> 32990\n  ~ suzuki-swift_hybrid_1_2_glx_cvt — 24990 -> 22990\n  ~ suzuki-swift_hybrid_1_2_glx_m_t — 22990 -> 20990\n  ~ suzuki-swift_sport_1_4_boosterjet_a_t — 33590 -> 32990\n  ~ suzuki-swift_sport_1_4_boosterjet_m_t — 30590 -> 29990",
+   "commit": "10d56ee589b8dd60224b1109e35e1bf7f3d2f659",
+   "durationMs": 47932
+  },
+  {
    "id": "20261022T110023Z",
    "at": "2026-10-22T11:00:23+00:00",
    "event": "schedule",
