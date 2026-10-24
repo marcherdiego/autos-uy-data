@@ -1,6 +1,94 @@
 {
  "entries": [
   {
+   "at": "2026-10-24T11:00:26+00:00",
+   "runId": "20261024T110023Z",
+   "dataVersion": "981ddfc1fbeb",
+   "previousVersion": "9f23838f31ba",
+   "sourceUpdatedAt": "26/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1061,
+    "models": 459,
+    "withoutModel": 21
+   },
+   "added": [
+    {
+     "id": "bmw-m3_competition_cabrio_m_xdrive_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M3 Competition Cabrio M xDrive 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 256990
+    },
+    {
+     "id": "bmw-m3_competition_coupe_m_xdrive_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M3 Competition Coupé M xDrive 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 246990
+    },
+    {
+     "id": "bmw-m3_competition_m_xdrive_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M3 Competition M xDrive 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 233990
+    },
+    {
+     "id": "bmw-m3_competition_touring_m_xdrive_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M3 Competition Touring M xDrive 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 274990
+    }
+   ],
+   "removed": [
+    {
+     "id": "bmw-m3_competition_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M3 Competition 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 233990
+    },
+    {
+     "id": "bmw-m4_competition_cabrio_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M4 Competition Cabrio 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 256990
+    },
+    {
+     "id": "bmw-m4_competition_coupe_3_0_t_m_steptronic_drivelogic",
+     "brand": "BMW",
+     "name": "M4 Competition Coupé 3.0 T M Steptronic Drivelogic",
+     "priceUsd": 246990
+    }
+   ],
+   "repriced": [
+    {
+     "id": "mini-aceman_e_classic_40_7_kwh",
+     "brand": "MINI",
+     "name": "Aceman E Classic (40,7 kWh)",
+     "priceUsd": 39990,
+     "from": 44990
+    },
+    {
+     "id": "mini-aceman_se_favoured_54_2_kwh",
+     "brand": "MINI",
+     "name": "Aceman SE Favoured (54,2 kWh)",
+     "priceUsd": 47990,
+     "from": 52990
+    },
+    {
+     "id": "mini-john_cooper_works_aceman_e_54_2_kwh",
+     "brand": "MINI",
+     "name": "John Cooper Works Aceman E (54,2 kWh)",
+     "priceUsd": 54990,
+     "from": 59990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-23T11:01:06+00:00",
    "runId": "20261023T110023Z",
    "dataVersion": "9f23838f31ba",
