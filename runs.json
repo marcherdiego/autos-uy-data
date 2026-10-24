@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261024T110023Z",
+   "at": "2026-10-24T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "981ddfc1fbeb",
+   "previousVersion": "9f23838f31ba",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1061 | fichas: 459 | sin ficha: 21 | actualizado: 26/10/2026\ncambios (10):\n  + bmw-m3_competition_cabrio_m_xdrive_3_0_t_m_steptronic_drivelogic — U$S 256.990\n  + bmw-m3_competition_coupe_m_xdrive_3_0_t_m_steptronic_drivelogic — U$S 246.990\n  + bmw-m3_competition_m_xdrive_3_0_t_m_steptronic_drivelogic — U$S 233.990\n  + bmw-m3_competition_touring_m_xdrive_3_0_t_m_steptronic_drivelogic — U$S 274.990\n  - bmw-m3_competition_3_0_t_m_steptronic_drivelogic\n  - bmw-m4_competition_cabrio_3_0_t_m_steptronic_drivelogic\n  - bmw-m4_competition_coupe_3_0_t_m_steptronic_drivelogic\n  ~ mini-aceman_e_classic_40_7_kwh — 44990 -> 39990\n  ~ mini-aceman_se_favoured_54_2_kwh — 52990 -> 47990\n  ~ mini-john_cooper_works_aceman_e_54_2_kwh — 59990 -> 54990",
+   "commit": "42c65fb2714ebff18a4a98b67d2bb4008aefab0b",
+   "durationMs": 8221
+  },
+  {
    "id": "20261023T110023Z",
    "at": "2026-10-23T11:00:23+00:00",
    "event": "schedule",
