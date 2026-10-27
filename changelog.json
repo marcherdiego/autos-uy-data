@@ -1,6 +1,113 @@
 {
  "entries": [
   {
+   "at": "2026-10-27T11:00:31+00:00",
+   "runId": "20261027T110023Z",
+   "dataVersion": "41b1fe0113b4",
+   "previousVersion": "80316db1f802",
+   "sourceUpdatedAt": "27/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1061,
+    "models": 459,
+    "withoutModel": 21
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "kia-ev3_light_2wd_long_range_81_4_kwh",
+     "brand": "Kia",
+     "name": "EV3 Light+ 2WD Long Range (81,4 kWh)",
+     "priceUsd": 45990,
+     "from": 44990
+    },
+    {
+     "id": "kia-ev5_land_2wd_long_range_88_16_kwh",
+     "brand": "Kia",
+     "name": "EV5 Land 2WD Long Range (88,16 kWh)",
+     "priceUsd": 55990,
+     "from": 54990
+    },
+    {
+     "id": "kia-k3_cross_ex_1_4_a_t",
+     "brand": "Kia",
+     "name": "K3 Cross EX 1.4 A/T",
+     "priceUsd": 27990,
+     "from": 29990
+    },
+    {
+     "id": "kia-k3_cross_gt_line_1_4_a_t",
+     "brand": "Kia",
+     "name": "K3 Cross GT-Line 1.4 A/T",
+     "priceUsd": 29990,
+     "from": 32990
+    },
+    {
+     "id": "kia-k3_cross_lx_1_4_m_t",
+     "brand": "Kia",
+     "name": "K3 Cross LX 1.4 M/T",
+     "priceUsd": 24990,
+     "from": 26990
+    },
+    {
+     "id": "kia-k3_sedan_ex_1_4_a_t",
+     "brand": "Kia",
+     "name": "K3 Sedán EX 1.4 A/T",
+     "priceUsd": 26990,
+     "from": 28990
+    },
+    {
+     "id": "kia-k3_sedan_gt_line_1_4_a_t",
+     "brand": "Kia",
+     "name": "K3 Sedán GT-Line 1.4 A/T",
+     "priceUsd": 29990,
+     "from": 32990
+    },
+    {
+     "id": "kia-k3_sedan_lx_1_4_m_t",
+     "brand": "Kia",
+     "name": "K3 Sedán LX 1.4 M/T",
+     "priceUsd": 23990,
+     "from": 25990
+    },
+    {
+     "id": "kia-soluto_lx_plus_1_4_a_t",
+     "brand": "Kia",
+     "name": "Soluto LX Plus 1.4 A/T",
+     "priceUsd": 19990,
+     "from": 21990
+    },
+    {
+     "id": "kia-soluto_lx_plus_1_4_m_t",
+     "brand": "Kia",
+     "name": "Soluto LX Plus 1.4 M/T",
+     "priceUsd": 17990,
+     "from": 19990
+    },
+    {
+     "id": "riddara-horizon_pro_4wd_73_kwh",
+     "brand": "Riddara",
+     "name": "Horizon Pro 4WD (73 kWh)",
+     "priceUsd": 47990,
+     "from": 49990
+    },
+    {
+     "id": "riddara-horizon_ultra_4wd_86_kwh",
+     "brand": "Riddara",
+     "name": "Horizon Ultra 4WD (86 kWh)",
+     "priceUsd": 52990,
+     "from": 55990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-25T11:00:45+00:00",
    "runId": "20261025T110023Z",
    "dataVersion": "80316db1f802",
