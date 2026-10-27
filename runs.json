@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261027T110023Z",
+   "at": "2026-10-27T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "41b1fe0113b4",
+   "previousVersion": "80316db1f802",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1061 | fichas: 459 | sin ficha: 21 | actualizado: 27/10/2026\ncambios (12):\n  ~ kia-ev3_light_2wd_long_range_81_4_kwh — 44990 -> 45990\n  ~ kia-ev5_land_2wd_long_range_88_16_kwh — 54990 -> 55990\n  ~ kia-k3_cross_ex_1_4_a_t — 29990 -> 27990\n  ~ kia-k3_cross_gt_line_1_4_a_t — 32990 -> 29990\n  ~ kia-k3_cross_lx_1_4_m_t — 26990 -> 24990\n  ~ kia-k3_sedan_ex_1_4_a_t — 28990 -> 26990\n  ~ kia-k3_sedan_gt_line_1_4_a_t — 32990 -> 29990\n  ~ kia-k3_sedan_lx_1_4_m_t — 25990 -> 23990\n  ~ kia-soluto_lx_plus_1_4_a_t — 21990 -> 19990\n  ~ kia-soluto_lx_plus_1_4_m_t — 19990 -> 17990\n  ~ riddara-horizon_pro_4wd_73_kwh — 49990 -> 47990\n  ~ riddara-horizon_ultra_4wd_86_kwh — 55990 -> 52990",
+   "commit": "9add11546202cb1f12322ef67bf7bd3dc08ff77b",
+   "durationMs": 13047
+  },
+  {
    "id": "20261026T110023Z",
    "at": "2026-10-26T11:00:23+00:00",
    "event": "schedule",
