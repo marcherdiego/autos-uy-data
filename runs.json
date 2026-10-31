@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261031T110023Z",
+   "at": "2026-10-31T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "e1555b60f8ba",
+   "previousVersion": "cf58a2376a1a",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1061 | fichas: 459 | sin ficha: 21 | actualizado: 02/10/2026\nrenombradas, enlazadas a su ficha (5):\n  nevo-q05_comfort_40_3_kwh → nevo__q05\n  nevo-q05_luxury_51_9_kwh → nevo__q05\n  nevo-q05_elite_51_9_kwh → nevo__q05\n  zeekr-x_premium_rwd_66_kwh → zeekr__x\n  zeekr-x_flagship_awd_66_kwh → zeekr__x\ncambios (10):\n  + nevo-q05_comfort_40_3_kwh — U$S 23.990\n  + nevo-q05_elite_51_9_kwh — U$S 28.990\n  + nevo-q05_luxury_51_9_kwh — U$S 26.990\n  + zeekr-x_flagship_awd_66_kwh — U$S 49.990\n  + zeekr-x_premium_rwd_66_kwh — U$S 42.990\n  - nevo-q05_ev_comfort_40_3_kwh\n  - nevo-q05_ev_elite_51_9_kwh\n  - nevo-q05_ev_luxury_51_9_kwh\n  - zeekr-x_flagship_awd_69_05_kwh\n  - zeekr-x_premium_rwd_69_05_kwh",
+   "commit": "7cb9790bd506a812f5bcaff0fe0f0e94c297a81a",
+   "durationMs": 9242
+  },
+  {
    "id": "20261030T110023Z",
    "at": "2026-10-30T11:00:23+00:00",
    "event": "schedule",
