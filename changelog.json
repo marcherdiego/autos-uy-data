@@ -1,6 +1,106 @@
 {
  "entries": [
   {
+   "at": "2026-10-31T11:00:27+00:00",
+   "runId": "20261031T110023Z",
+   "dataVersion": "e1555b60f8ba",
+   "previousVersion": "cf58a2376a1a",
+   "sourceUpdatedAt": "02/10/2026",
+   "totals": {
+    "brands": 74,
+    "importers": 75,
+    "cars": 1061,
+    "models": 459,
+    "withoutModel": 21
+   },
+   "added": [
+    {
+     "id": "nevo-q05_comfort_40_3_kwh",
+     "brand": "NEVO",
+     "name": "Q05 Comfort (40,3 kWh)",
+     "priceUsd": 23990
+    },
+    {
+     "id": "nevo-q05_elite_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 Elite (51,9 kWh)",
+     "priceUsd": 28990
+    },
+    {
+     "id": "nevo-q05_luxury_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 Luxury (51,9 kWh)",
+     "priceUsd": 26990
+    },
+    {
+     "id": "zeekr-x_flagship_awd_66_kwh",
+     "brand": "Zeekr",
+     "name": "X Flagship AWD (66 kWh)",
+     "priceUsd": 49990
+    },
+    {
+     "id": "zeekr-x_premium_rwd_66_kwh",
+     "brand": "Zeekr",
+     "name": "X Premium RWD (66 kWh)",
+     "priceUsd": 42990
+    }
+   ],
+   "removed": [
+    {
+     "id": "nevo-q05_ev_comfort_40_3_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Comfort (40,3 kWh)",
+     "priceUsd": 23990
+    },
+    {
+     "id": "nevo-q05_ev_elite_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Elite (51,9 kWh)",
+     "priceUsd": 28990
+    },
+    {
+     "id": "nevo-q05_ev_luxury_51_9_kwh",
+     "brand": "NEVO",
+     "name": "Q05 EV Luxury (51,9 kWh)",
+     "priceUsd": 26990
+    },
+    {
+     "id": "zeekr-x_flagship_awd_69_05_kwh",
+     "brand": "Zeekr",
+     "name": "X Flagship AWD (69,05 kWh)",
+     "priceUsd": 51990
+    },
+    {
+     "id": "zeekr-x_premium_rwd_69_05_kwh",
+     "brand": "Zeekr",
+     "name": "X Premium RWD (69,05 kWh)",
+     "priceUsd": 46990
+    }
+   ],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Zeekr",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "address": [
+       "Euclides Peluffo 1609",
+       "26 de marzo y Sabat Pabet"
+      ],
+      "phone": [
+       "22880023",
+       "2902 0404"
+      ]
+     }
+    }
+   ],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-10-30T11:00:27+00:00",
    "runId": "20261030T110023Z",
    "dataVersion": "cf58a2376a1a",
