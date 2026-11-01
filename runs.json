@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261101T110024Z",
+   "at": "2026-11-01T11:00:24+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": false,
+   "dataVersion": "e1555b60f8ba",
+   "previousVersion": "e1555b60f8ba",
+   "summary": "marcas: 74 | importadores: 75 | versiones: 1061 | fichas: 459 | sin ficha: 21 | actualizado: 02/10/2026\nsin cambios respecto del catálogo anterior",
+   "commit": null,
+   "durationMs": 4413
+  },
+  {
    "id": "20261031T110023Z",
    "at": "2026-10-31T11:00:23+00:00",
    "event": "schedule",
