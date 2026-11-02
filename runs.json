@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261102T110023Z",
+   "at": "2026-11-02T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "ac4bff222d03",
+   "previousVersion": "e1555b60f8ba",
+   "summary": "marcas: 75 | importadores: 76 | versiones: 1066 | fichas: 454 | sin ficha: 41 | actualizado: 01/11/2026\nmarcas nuevas: Mcrown, Omoda-jaecoo\ncambios (35):\n  + foton-e_tunland_4x4_88_5_kwh — U$S 44.950\n  + honda-ridgeline_sport_3_5_v6_awd_a_t — U$S 69.900\n  + kgm-musso_ev_high_2wd_80_6_kwh — U$S 52.950\n  + kgm-musso_ev_limited_2wd_80_6_kwh — U$S 54.950\n  + kgm-musso_ev_limited_4wd_80_6_kwh — U$S 57.950\n  + mcrown-mini_ev4_16_2_kwh — U$S 13.490\n  + omoda_jaecoo-jaecoo_5_ev_comfort_58_9_kwh — U$S 27.990\n  + omoda_jaecoo-jaecoo_5_ev_luxury_58_9_kwh — U$S 30.990\n  + omoda_jaecoo-jaecoo_6_ev_flagship_iwd_69_77_kwh — U$S 43.990\n  + omoda_jaecoo-jaecoo_6_ev_luxury_2wd_65_69_kwh — U$S 39.990\n  + omoda_jaecoo-jaecoo_7_phev_1_5t_gdi_dht — U$S 39.990\n  + omoda_jaecoo-omoda_5_shs_luxury_1_5t_dht — U$S 27.990\n  + omoda_jaecoo-omoda_5_shs_premium_1_5t_dht — U$S 31.990\n  + omoda_jaecoo-omoda_e5_comfort_standard_range_51_kwh — U$S 25.990\n  + omoda_jaecoo-omoda_e5_luxury_59_kwh — U$S 30.990\n  + omoda_jaecoo-omoda_e5_luxury_standard_range_51_kwh — U$S 27.990\n  + peugeot-2008_t200_mhev_allure_1_0_cvt — U$S 27.990\n  + peugeot-2008_t200_mhev_gt_1_0_cvt — U$S 29.990\n  + peugeot-208_t200_mhev_allure_1_0_cvt — U$S 23.490\n  + peugeot-208_t200_mhev_gt_1_0_cvt — U$S 25.490\n  - omoda_and_jaecoo-jaecoo_5_ev_comfort_58_9_kwh\n  - omoda_and_jaecoo-jaecoo_5_ev_luxury_58_9_kwh\n  - omoda_and_jaecoo-jaecoo_6_ev_flagship_iwd_69_77_kwh\n  - omoda_and_jaecoo-jaecoo_6_ev_luxury_2wd_65_69_kwh\n  - omoda_and_jaecoo-jaecoo_7_phev_1_5t_gdi_dht\n  - omoda_and_jaecoo-omoda_5_shs_luxury_1_5t_dht\n  - omoda_and_jaecoo-omoda_5_shs_premium_1_5t_dht\n  - omoda_and_jaecoo-omoda_e5_comfort_standard_range_51_kwh\n  - omoda_and_jaecoo-omoda_e5_luxury_59_kwh\n  - omoda_and_jaecoo-omoda_e5_luxury_standard_range_51_kwh\n  - peugeot-2008_allure_1_0_turbo_200_cvt\n  - peugeot-2008_gt_1_0_turbo_200_cvt\n  - peugeot-208_allure_1_0_turbo_200_cvt\n  - peugeot-208_allure_1_6_vti_bvm5\n  - peugeot-208_gt_1_0_turbo_200_cvt",
+   "commit": "0d72b19cb534da49eb223745b6e3581106fdf2f7",
+   "durationMs": 14337
+  },
+  {
    "id": "20261101T110024Z",
    "at": "2026-11-01T11:00:24+00:00",
    "event": "schedule",
