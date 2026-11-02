@@ -1,6 +1,267 @@
 {
  "entries": [
   {
+   "at": "2026-11-02T11:00:33+00:00",
+   "runId": "20261102T110023Z",
+   "dataVersion": "ac4bff222d03",
+   "previousVersion": "e1555b60f8ba",
+   "sourceUpdatedAt": "01/11/2026",
+   "totals": {
+    "brands": 75,
+    "importers": 76,
+    "cars": 1066,
+    "models": 454,
+    "withoutModel": 41
+   },
+   "added": [
+    {
+     "id": "foton-e_tunland_4x4_88_5_kwh",
+     "brand": "Foton",
+     "name": "e-Tunland 4x4 (88,5 kWh)",
+     "priceUsd": 44950
+    },
+    {
+     "id": "honda-ridgeline_sport_3_5_v6_awd_a_t",
+     "brand": "Honda",
+     "name": "Ridgeline Sport 3.5 V6 AWD A/T",
+     "priceUsd": 69900
+    },
+    {
+     "id": "kgm-musso_ev_high_2wd_80_6_kwh",
+     "brand": "KGM",
+     "name": "Musso EV High 2WD (80,6 kWh)",
+     "priceUsd": 52950
+    },
+    {
+     "id": "kgm-musso_ev_limited_2wd_80_6_kwh",
+     "brand": "KGM",
+     "name": "Musso EV Limited 2WD (80,6 kWh)",
+     "priceUsd": 54950
+    },
+    {
+     "id": "kgm-musso_ev_limited_4wd_80_6_kwh",
+     "brand": "KGM",
+     "name": "Musso EV Limited 4WD (80,6 kWh)",
+     "priceUsd": 57950
+    },
+    {
+     "id": "mcrown-mini_ev4_16_2_kwh",
+     "brand": "Mcrown",
+     "name": "Mini EV4 (16,2 kWh)",
+     "priceUsd": 13490
+    },
+    {
+     "id": "omoda_jaecoo-jaecoo_5_ev_comfort_58_9_kwh",
+     "brand": "Omoda-jaecoo",
+     "name": "Jaecoo 5 EV Comfort (58,9 kWh)",
+     "priceUsd": 27990
+    },
+    {
+     "id": "omoda_jaecoo-jaecoo_5_ev_luxury_58_9_kwh",
+     "brand": "Omoda-jaecoo",
+     "name": "Jaecoo 5 EV Luxury (58,9 kWh)",
+     "priceUsd": 30990
+    },
+    {
+     "id": "omoda_jaecoo-jaecoo_6_ev_flagship_iwd_69_77_kwh",
+     "brand": "Omoda-jaecoo",
+     "name": "Jaecoo 6 EV Flagship iWD (69,77 kWh)",
+     "priceUsd": 43990
+    },
+    {
+     "id": "omoda_jaecoo-jaecoo_6_ev_luxury_2wd_65_69_kwh",
+     "brand": "Omoda-jaecoo",
+     "name": "Jaecoo 6 EV Luxury 2WD (65,69 kWh)",
+     "priceUsd": 39990
+    },
+    {
+     "id": "omoda_jaecoo-jaecoo_7_phev_1_5t_gdi_dht",
+     "brand": "Omoda-jaecoo",
+     "name": "Jaecoo 7 PHEV 1.5T GDI DHT",
+     "priceUsd": 39990
+    },
+    {
+     "id": "omoda_jaecoo-omoda_5_shs_luxury_1_5t_dht",
+     "brand": "Omoda-jaecoo",
+     "name": "Omoda 5 SHS Luxury 1.5T DHT",
+     "priceUsd": 27990
+    },
+    {
+     "id": "omoda_jaecoo-omoda_5_shs_premium_1_5t_dht",
+     "brand": "Omoda-jaecoo",
+     "name": "Omoda 5 SHS Premium 1.5T DHT",
+     "priceUsd": 31990
+    },
+    {
+     "id": "omoda_jaecoo-omoda_e5_comfort_standard_range_51_kwh",
+     "brand": "Omoda-jaecoo",
+     "name": "Omoda E5 Comfort Standard Range (51 kWh)",
+     "priceUsd": 25990
+    },
+    {
+     "id": "omoda_jaecoo-omoda_e5_luxury_59_kwh",
+     "brand": "Omoda-jaecoo",
+     "name": "Omoda E5 Luxury (59 kWh)",
+     "priceUsd": 30990
+    },
+    {
+     "id": "omoda_jaecoo-omoda_e5_luxury_standard_range_51_kwh",
+     "brand": "Omoda-jaecoo",
+     "name": "Omoda E5 Luxury Standard Range (51 kWh)",
+     "priceUsd": 27990
+    },
+    {
+     "id": "peugeot-2008_t200_mhev_allure_1_0_cvt",
+     "brand": "Peugeot",
+     "name": "2008 T200 MHEV Allure 1.0 CVT",
+     "priceUsd": 27990
+    },
+    {
+     "id": "peugeot-2008_t200_mhev_gt_1_0_cvt",
+     "brand": "Peugeot",
+     "name": "2008 T200 MHEV GT 1.0 CVT",
+     "priceUsd": 29990
+    },
+    {
+     "id": "peugeot-208_t200_mhev_allure_1_0_cvt",
+     "brand": "Peugeot",
+     "name": "208 T200 MHEV Allure 1.0 CVT",
+     "priceUsd": 23490
+    },
+    {
+     "id": "peugeot-208_t200_mhev_gt_1_0_cvt",
+     "brand": "Peugeot",
+     "name": "208 T200 MHEV GT 1.0 CVT",
+     "priceUsd": 25490
+    }
+   ],
+   "removed": [
+    {
+     "id": "omoda_and_jaecoo-jaecoo_5_ev_comfort_58_9_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Jaecoo 5 EV Comfort (58,9 kWh)",
+     "priceUsd": 27990
+    },
+    {
+     "id": "omoda_and_jaecoo-jaecoo_5_ev_luxury_58_9_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Jaecoo 5 EV Luxury (58,9 kWh)",
+     "priceUsd": 30990
+    },
+    {
+     "id": "omoda_and_jaecoo-jaecoo_6_ev_flagship_iwd_69_77_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Jaecoo 6 EV Flagship iWD (69,77 kWh)",
+     "priceUsd": 43990
+    },
+    {
+     "id": "omoda_and_jaecoo-jaecoo_6_ev_luxury_2wd_65_69_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Jaecoo 6 EV Luxury 2WD (65,69 kWh)",
+     "priceUsd": 39990
+    },
+    {
+     "id": "omoda_and_jaecoo-jaecoo_7_phev_1_5t_gdi_dht",
+     "brand": "Omoda & Jaecoo",
+     "name": "Jaecoo 7 PHEV 1.5T GDI DHT",
+     "priceUsd": 39990
+    },
+    {
+     "id": "omoda_and_jaecoo-omoda_5_shs_luxury_1_5t_dht",
+     "brand": "Omoda & Jaecoo",
+     "name": "Omoda 5 SHS Luxury 1.5T DHT",
+     "priceUsd": 27990
+    },
+    {
+     "id": "omoda_and_jaecoo-omoda_5_shs_premium_1_5t_dht",
+     "brand": "Omoda & Jaecoo",
+     "name": "Omoda 5 SHS Premium 1.5T DHT",
+     "priceUsd": 31990
+    },
+    {
+     "id": "omoda_and_jaecoo-omoda_e5_comfort_standard_range_51_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Omoda E5 Comfort Standard Range (51 kWh)",
+     "priceUsd": 25990
+    },
+    {
+     "id": "omoda_and_jaecoo-omoda_e5_luxury_59_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Omoda E5 Luxury (59 kWh)",
+     "priceUsd": 30990
+    },
+    {
+     "id": "omoda_and_jaecoo-omoda_e5_luxury_standard_range_51_kwh",
+     "brand": "Omoda & Jaecoo",
+     "name": "Omoda E5 Luxury Standard Range (51 kWh)",
+     "priceUsd": 27990
+    },
+    {
+     "id": "peugeot-2008_allure_1_0_turbo_200_cvt",
+     "brand": "Peugeot",
+     "name": "2008 Allure 1.0 Turbo 200 CVT",
+     "priceUsd": 32990
+    },
+    {
+     "id": "peugeot-2008_gt_1_0_turbo_200_cvt",
+     "brand": "Peugeot",
+     "name": "2008 GT 1.0 Turbo 200 CVT",
+     "priceUsd": 33990
+    },
+    {
+     "id": "peugeot-208_allure_1_0_turbo_200_cvt",
+     "brand": "Peugeot",
+     "name": "208 Allure 1.0 Turbo 200 CVT",
+     "priceUsd": 25990
+    },
+    {
+     "id": "peugeot-208_allure_1_6_vti_bvm5",
+     "brand": "Peugeot",
+     "name": "208 Allure 1.6 VTi BVM5",
+     "priceUsd": 24990
+    },
+    {
+     "id": "peugeot-208_gt_1_0_turbo_200_cvt",
+     "brand": "Peugeot",
+     "name": "208 GT 1.0 Turbo 200 CVT",
+     "priceUsd": 28490
+    }
+   ],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [
+    "Mcrown",
+    "Omoda-jaecoo"
+   ],
+   "brandsRemoved": [
+    "Omoda & Jaecoo"
+   ],
+   "importers": [
+    {
+     "brand": "Mcrown",
+     "name": "Noderal S.A.",
+     "status": "added"
+    },
+    {
+     "brand": "Omoda & Jaecoo",
+     "name": "Santa Rosa",
+     "status": "removed"
+    },
+    {
+     "brand": "Omoda-jaecoo",
+     "name": "Santa Rosa",
+     "status": "added"
+    }
+   ],
+   "modelsRemoved": [
+    "omoda_and_jaecoo__jaecoo_5",
+    "omoda_and_jaecoo__jaecoo_6",
+    "omoda_and_jaecoo__jaecoo_7",
+    "omoda_and_jaecoo__omoda_5",
+    "omoda_and_jaecoo__omoda_e5"
+   ]
+  },
+  {
    "at": "2026-10-31T11:00:27+00:00",
    "runId": "20261031T110023Z",
    "dataVersion": "e1555b60f8ba",
