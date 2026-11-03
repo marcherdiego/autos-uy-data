@@ -1,6 +1,40 @@
 {
  "entries": [
   {
+   "at": "2026-11-03T11:00:27+00:00",
+   "runId": "20261103T110023Z",
+   "dataVersion": "14f63229e4d8",
+   "previousVersion": "ac4bff222d03",
+   "sourceUpdatedAt": "03/11/2026",
+   "totals": {
+    "brands": 75,
+    "importers": 76,
+    "cars": 1066,
+    "models": 454,
+    "withoutModel": 41
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Tesla",
+     "name": "Tesla Uruguay SAS",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "4 años u 80.000 km (8 años o 160.000 km para la batería).",
+       "4 años u 80.000 km"
+      ]
+     }
+    }
+   ],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-11-02T11:00:33+00:00",
    "runId": "20261102T110023Z",
    "dataVersion": "ac4bff222d03",
