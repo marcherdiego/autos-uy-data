@@ -36,6 +36,7 @@ RUNS_BRANCH = "corridas"
 RUNS_FILE = "runs.json"
 RUNS_MAX = 90
 API = "https://api.github.com"
+RETRY_DELAYS = (1, 3, 6)  # segundos entre reintentos de la API de GitHub
 AUTHOR = {"name": "autos-uy-cron", "email": "autos-uy-cron@users.noreply.github.com"}
 
 
@@ -51,8 +52,20 @@ class GitHub:
             "User-Agent": "autos-uy-cron",
             "X-GitHub-Api-Version": "2022-11-28",
         })
-        with urllib.request.urlopen(request, timeout=30, context=scrape_catalog.tls_context()) as response:
-            raw = response.read()
+        # GitHub devuelve 5xx pasajeros (el 04/11/2026 un 500 en /git/blobs dejó la corrida sin
+        # anotar y el panel avisó "el cron no corre"): reintenta unas veces antes de rendirse.
+        # Los 4xx (p. ej. el 422 de un push en el medio) no se reintentan acá.
+        for attempt in range(len(RETRY_DELAYS) + 1):
+            try:
+                with urllib.request.urlopen(request, timeout=30, context=scrape_catalog.tls_context()) as response:
+                    raw = response.read()
+                break
+            except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
+                retryable = (error.code >= 500 if isinstance(error, urllib.error.HTTPError) else True)
+                if not retryable or attempt == len(RETRY_DELAYS):
+                    raise
+                print(f"github respondió {getattr(error, 'code', error)}; reintento {attempt + 1} en {RETRY_DELAYS[attempt]} s")
+                time.sleep(RETRY_DELAYS[attempt])
         if accept.endswith(".raw"):
             return raw.decode("utf-8")
         return json.loads(raw) if raw else None
@@ -210,6 +223,10 @@ class handler(BaseHTTPRequestHandler):  # noqa: N801 (nombre que exige Vercel)
         except Exception as error:  # noqa: BLE001
             traceback.print_exc()
             run["recordError"] = str(error)[:300]
+            if not dry:
+                # Sin esto el panel dice "el cron no corre" y nadie sabe por qué.
+                alert("Autos UY: no se pudo anotar la corrida", f"La corrida {run_id} terminó "
+                      f"({run['conclusion']}) pero no quedó en runs.json: {str(error)[:200]}")
         self.reply(status, run)
 
     def reply(self, status, body):
