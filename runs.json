@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261105T130040Z",
+   "at": "2026-11-05T13:00:40+00:00",
+   "event": "retry",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "ff2d0db65652",
+   "previousVersion": "14f63229e4d8",
+   "summary": "marcas: 75 | importadores: 76 | versiones: 1065 | fichas: 453 | sin ficha: 41 | actualizado: 03/11/2026\ncambios (1):\n  - peugeot-2008_active_1_0_turbo_200_cvt",
+   "commit": "d0a21dcf2244d1a288aabc8b87dfebedbcdcac8e",
+   "durationMs": 27936
+  },
+  {
    "id": "20261105T110023Z",
    "at": "2026-11-05T11:00:23+00:00",
    "event": "schedule",
