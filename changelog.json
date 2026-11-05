@@ -1,6 +1,37 @@
 {
  "entries": [
   {
+   "at": "2026-11-05T13:01:03+00:00",
+   "runId": "20261105T130040Z",
+   "dataVersion": "ff2d0db65652",
+   "previousVersion": "14f63229e4d8",
+   "sourceUpdatedAt": "03/11/2026",
+   "totals": {
+    "brands": 75,
+    "importers": 76,
+    "cars": 1065,
+    "models": 453,
+    "withoutModel": 41
+   },
+   "added": [],
+   "removed": [
+    {
+     "id": "peugeot-2008_active_1_0_turbo_200_cvt",
+     "brand": "Peugeot",
+     "name": "2008 Active 1.0 Turbo 200 CVT",
+     "priceUsd": 28990
+    }
+   ],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "peugeot__2008"
+   ]
+  },
+  {
    "at": "2026-11-03T11:00:27+00:00",
    "runId": "20261103T110023Z",
    "dataVersion": "14f63229e4d8",
