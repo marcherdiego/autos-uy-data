@@ -1,6 +1,50 @@
 {
  "entries": [
   {
+   "at": "2026-11-06T11:00:27+00:00",
+   "runId": "20261106T110023Z",
+   "dataVersion": "56103ea141f5",
+   "previousVersion": "ff2d0db65652",
+   "sourceUpdatedAt": "06/11/2026",
+   "totals": {
+    "brands": 75,
+    "importers": 76,
+    "cars": 1065,
+    "models": 453,
+    "withoutModel": 41
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "gac_motor-aion_ut_44_12_kwh",
+     "brand": "GAC Motor",
+     "name": "Aion UT (44,12 kWh)",
+     "priceUsd": 21990,
+     "from": 22490
+    },
+    {
+     "id": "gac_motor-aion_ut_max_60_kwh",
+     "brand": "GAC Motor",
+     "name": "Aion UT Max (60 kWh)",
+     "priceUsd": 24990,
+     "from": 25990
+    },
+    {
+     "id": "gac_motor-hyptec_ht_rwd_72_7_kwh",
+     "brand": "GAC Motor",
+     "name": "Hyptec HT RWD (72,7 kWh)",
+     "priceUsd": 36990,
+     "from": 39990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-11-05T13:01:03+00:00",
    "runId": "20261105T130040Z",
    "dataVersion": "ff2d0db65652",
