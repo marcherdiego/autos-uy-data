@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261106T110023Z",
+   "at": "2026-11-06T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "56103ea141f5",
+   "previousVersion": "ff2d0db65652",
+   "summary": "marcas: 75 | importadores: 76 | versiones: 1065 | fichas: 453 | sin ficha: 41 | actualizado: 06/11/2026\ncambios (3):\n  ~ gac_motor-aion_ut_44_12_kwh — 22490 -> 21990\n  ~ gac_motor-aion_ut_max_60_kwh — 25990 -> 24990\n  ~ gac_motor-hyptec_ht_rwd_72_7_kwh — 39990 -> 36990",
+   "commit": "e9573f85ae556904c003a0f0d410de6abcc5b185",
+   "durationMs": 9358
+  },
+  {
    "id": "20261105T130040Z",
    "at": "2026-11-05T13:00:40+00:00",
    "event": "retry",
