@@ -1,6 +1,76 @@
 {
  "entries": [
   {
+   "at": "2026-11-07T11:00:28+00:00",
+   "runId": "20261107T110023Z",
+   "dataVersion": "41b7b1aff8b2",
+   "previousVersion": "56103ea141f5",
+   "sourceUpdatedAt": "06/11/2026",
+   "totals": {
+    "brands": 75,
+    "importers": 76,
+    "cars": 1067,
+    "models": 453,
+    "withoutModel": 43
+   },
+   "added": [
+    {
+     "id": "volvo-xc40_b4_plus_dark_2_0t_8at",
+     "brand": "Volvo",
+     "name": "XC40 B4 Plus Dark 2.0T 8AT",
+     "priceUsd": 64900
+    },
+    {
+     "id": "volvo-xc40_b4_ultra_dark_2_0t_8at",
+     "brand": "Volvo",
+     "name": "XC40 B4 Ultra Dark 2.0T 8AT",
+     "priceUsd": 69900
+    },
+    {
+     "id": "volvo-xc60_recharge_core_t8_awd_2_0_t_a_t",
+     "brand": "Volvo",
+     "name": "XC60 Recharge Core T8 AWD 2.0 T A/T",
+     "priceUsd": 94900
+    }
+   ],
+   "removed": [
+    {
+     "id": "volvo-xc60_recharge_plus_t8_awd_2_0_t_a_t",
+     "brand": "Volvo",
+     "name": "XC60 Recharge Plus T8 AWD 2.0 T A/T",
+     "priceUsd": 94900
+    }
+   ],
+   "repriced": [
+    {
+     "id": "volvo-c40_recharge_p6_rwd_69_kwh",
+     "brand": "Volvo",
+     "name": "C40 Recharge P6 RWD (69 kWh)",
+     "priceUsd": 64900,
+     "from": 69900
+    },
+    {
+     "id": "volvo-xc90_recharge_ultimate_bright_t8_awd_2_0_t_a_t",
+     "brand": "Volvo",
+     "name": "XC90 Recharge Ultimate Bright T8 AWD 2.0 T A/T",
+     "priceUsd": 143900,
+     "from": 144900
+    },
+    {
+     "id": "volvo-xc90_recharge_ultimate_dark_t8_awd_2_0_t_a_t",
+     "brand": "Volvo",
+     "name": "XC90 Recharge Ultimate Dark T8 AWD 2.0 T A/T",
+     "priceUsd": 153900,
+     "from": 159900
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-11-06T11:00:27+00:00",
    "runId": "20261106T110023Z",
    "dataVersion": "56103ea141f5",
