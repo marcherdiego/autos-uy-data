@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261107T110023Z",
+   "at": "2026-11-07T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "41b7b1aff8b2",
+   "previousVersion": "56103ea141f5",
+   "summary": "marcas: 75 | importadores: 76 | versiones: 1067 | fichas: 453 | sin ficha: 43 | actualizado: 06/11/2026\nrenombradas, enlazadas a su ficha (1):\n  volvo-xc60_recharge_core_t8_awd_2_0_t_a_t → volvo__xc60\ncambios (7):\n  + volvo-xc40_b4_plus_dark_2_0t_8at — U$S 64.900\n  + volvo-xc40_b4_ultra_dark_2_0t_8at — U$S 69.900\n  + volvo-xc60_recharge_core_t8_awd_2_0_t_a_t — U$S 94.900\n  - volvo-xc60_recharge_plus_t8_awd_2_0_t_a_t\n  ~ volvo-c40_recharge_p6_rwd_69_kwh — 69900 -> 64900\n  ~ volvo-xc90_recharge_ultimate_bright_t8_awd_2_0_t_a_t — 144900 -> 143900\n  ~ volvo-xc90_recharge_ultimate_dark_t8_awd_2_0_t_a_t — 159900 -> 153900",
+   "commit": "c3f6ceeb82e4452127930dc6d304616811c68ee4",
+   "durationMs": 10083
+  },
+  {
    "id": "20261106T110023Z",
    "at": "2026-11-06T11:00:23+00:00",
    "event": "schedule",
