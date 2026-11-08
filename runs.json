@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261108T110023Z",
+   "at": "2026-11-08T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "b49d9d2fd3b4",
+   "previousVersion": "41b7b1aff8b2",
+   "summary": "marcas: 76 | importadores: 77 | versiones: 1068 | fichas: 453 | sin ficha: 44 | actualizado: 07/11/2026\nmarcas nuevas: Hongqi\ncambios (2):\n  + hongqi-ehs5_2wd_63_kwh — U$S 43.900\n  ~ chevrolet-montana_lt_1_2_turbo_a_t — 21990 -> 20990",
+   "commit": "8ba57dc3ce934cf8c24790cb6638a61733630d04",
+   "durationMs": 8394
+  },
+  {
    "id": "20261107T110023Z",
    "at": "2026-11-07T11:00:23+00:00",
    "event": "schedule",
