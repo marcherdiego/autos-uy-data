@@ -1,6 +1,51 @@
 {
  "entries": [
   {
+   "at": "2026-11-08T11:00:26+00:00",
+   "runId": "20261108T110023Z",
+   "dataVersion": "b49d9d2fd3b4",
+   "previousVersion": "41b7b1aff8b2",
+   "sourceUpdatedAt": "07/11/2026",
+   "totals": {
+    "brands": 76,
+    "importers": 77,
+    "cars": 1068,
+    "models": 453,
+    "withoutModel": 44
+   },
+   "added": [
+    {
+     "id": "hongqi-ehs5_2wd_63_kwh",
+     "brand": "Hongqi",
+     "name": "EHS5 2WD (63 kWh)",
+     "priceUsd": 43900
+    }
+   ],
+   "removed": [],
+   "repriced": [
+    {
+     "id": "chevrolet-montana_lt_1_2_turbo_a_t",
+     "brand": "Chevrolet",
+     "name": "Montana LT 1.2 Turbo A/T",
+     "priceUsd": 20990,
+     "from": 21990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [
+    "Hongqi"
+   ],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Hongqi",
+     "name": "Kaitazoff Motors",
+     "status": "added"
+    }
+   ],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-11-07T11:00:28+00:00",
    "runId": "20261107T110023Z",
    "dataVersion": "41b7b1aff8b2",
