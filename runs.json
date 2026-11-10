@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261110T110024Z",
+   "at": "2026-11-10T11:00:24+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "57a9aab7f8fd",
+   "previousVersion": "84a1882a646d",
+   "summary": "marcas: 76 | importadores: 77 | versiones: 1068 | fichas: 453 | sin ficha: 44 | actualizado: 08/11/2026\ncambios (1):\n  ~ renault-koleos_e_tech_hybrid_1_5t_3_dht_2wd — 58000 -> 51990",
+   "commit": "e37297521788075abda2bd55aad8ecfbbe9653cf",
+   "durationMs": 9479
+  },
+  {
    "id": "20261109T110023Z",
    "at": "2026-11-09T11:00:23+00:00",
    "event": "schedule",
