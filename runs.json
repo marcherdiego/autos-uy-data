@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261111T110023Z",
+   "at": "2026-11-11T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "8fb8ebcbcee2",
+   "previousVersion": "57a9aab7f8fd",
+   "summary": "marcas: 76 | importadores: 77 | versiones: 1068 | fichas: 452 | sin ficha: 45 | actualizado: 11/11/2026\ncambios (7):\n  + dongfeng-rich_6_2_5_4x4_m_t_full — U$S 35.900\n  - dongfeng-rich_6_2_5_4x2_m_t_full\n  ~ nissan-versa_1_6_advance_cvt — 29990 -> 27990\n  ~ nissan-versa_1_6_exclusive_cvt — 32990 -> 30990\n  ~ nissan-versa_1_6_sense_cvt — 28990 -> 26990\n  ~ nissan-versa_1_6_sense_m_t — 27990 -> 25990\n  ~ nissan-versa_drive_sense_1_6_m_t — 25990 -> 23990",
+   "commit": "1dca5d68c96b40c6d783d383e8f125bdded8bff4",
+   "durationMs": 8823
+  },
+  {
    "id": "20261110T110024Z",
    "at": "2026-11-10T11:00:24+00:00",
    "event": "schedule",
