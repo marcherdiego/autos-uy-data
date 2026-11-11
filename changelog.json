@@ -1,6 +1,80 @@
 {
  "entries": [
   {
+   "at": "2026-11-11T11:00:27+00:00",
+   "runId": "20261111T110023Z",
+   "dataVersion": "8fb8ebcbcee2",
+   "previousVersion": "57a9aab7f8fd",
+   "sourceUpdatedAt": "11/11/2026",
+   "totals": {
+    "brands": 76,
+    "importers": 77,
+    "cars": 1068,
+    "models": 452,
+    "withoutModel": 45
+   },
+   "added": [
+    {
+     "id": "dongfeng-rich_6_2_5_4x4_m_t_full",
+     "brand": "Dongfeng",
+     "name": "Rich 6 2.5 4x4 M/T Full",
+     "priceUsd": 35900
+    }
+   ],
+   "removed": [
+    {
+     "id": "dongfeng-rich_6_2_5_4x2_m_t_full",
+     "brand": "Dongfeng",
+     "name": "Rich 6 2.5 4x2 M/T Full",
+     "priceUsd": 31900
+    }
+   ],
+   "repriced": [
+    {
+     "id": "nissan-versa_1_6_advance_cvt",
+     "brand": "Nissan",
+     "name": "Versa 1.6 Advance CVT",
+     "priceUsd": 27990,
+     "from": 29990
+    },
+    {
+     "id": "nissan-versa_1_6_exclusive_cvt",
+     "brand": "Nissan",
+     "name": "Versa 1.6 Exclusive CVT",
+     "priceUsd": 30990,
+     "from": 32990
+    },
+    {
+     "id": "nissan-versa_1_6_sense_cvt",
+     "brand": "Nissan",
+     "name": "Versa 1.6 Sense CVT",
+     "priceUsd": 26990,
+     "from": 28990
+    },
+    {
+     "id": "nissan-versa_1_6_sense_m_t",
+     "brand": "Nissan",
+     "name": "Versa 1.6 Sense M/T",
+     "priceUsd": 25990,
+     "from": 27990
+    },
+    {
+     "id": "nissan-versa_drive_sense_1_6_m_t",
+     "brand": "Nissan",
+     "name": "Versa Drive Sense 1.6 M/T",
+     "priceUsd": 23990,
+     "from": 25990
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": [
+    "dongfeng__rich_6__diesel"
+   ]
+  },
+  {
    "at": "2026-11-10T11:00:27+00:00",
    "runId": "20261110T110024Z",
    "dataVersion": "57a9aab7f8fd",
