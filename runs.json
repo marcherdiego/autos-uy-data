@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261112T110023Z",
+   "at": "2026-11-12T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "ae74cce3473e",
+   "previousVersion": "8fb8ebcbcee2",
+   "summary": "marcas: 76 | importadores: 77 | versiones: 1068 | fichas: 452 | sin ficha: 45 | actualizado: 11/11/2026\ncambios (1):\n  ~ nissan-qashqai_1_3_t_exclusive_awd_cvt — 49990 -> 46990",
+   "commit": "8a451ce73704e06e2529e78857793e9034f21668",
+   "durationMs": 8892
+  },
+  {
    "id": "20261111T110023Z",
    "at": "2026-11-11T11:00:23+00:00",
    "event": "schedule",
