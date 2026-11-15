@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261115T110023Z",
+   "at": "2026-11-15T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "ec0775d1c0b7",
+   "previousVersion": "ae74cce3473e",
+   "summary": "marcas: 76 | importadores: 77 | versiones: 1066 | fichas: 452 | sin ficha: 43 | actualizado: 16/11/2026\ncambios (3):\n  - omoda_jaecoo-jaecoo_6_ev_flagship_iwd_69_77_kwh\n  - omoda_jaecoo-jaecoo_6_ev_luxury_2wd_65_69_kwh\n  ~ nevo-q05_comfort_40_3_kwh — 23990 -> 22990",
+   "commit": "69bbc9039f586d1a619d274e2dfbb83d878e963c",
+   "durationMs": 9689
+  },
+  {
    "id": "20261114T110023Z",
    "at": "2026-11-14T11:00:23+00:00",
    "event": "schedule",
