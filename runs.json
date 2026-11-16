@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261116T110023Z",
+   "at": "2026-11-16T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "78efa39902ec",
+   "previousVersion": "ec0775d1c0b7",
+   "summary": "marcas: 76 | importadores: 77 | versiones: 1066 | fichas: 452 | sin ficha: 43 | actualizado: 16/11/2026\nsin altas, bajas ni cambios de precio, pero el contenido cambió",
+   "commit": "e7b77205534add38421472782f9293cb925003cc",
+   "durationMs": 9413
+  },
+  {
    "id": "20261115T110023Z",
    "at": "2026-11-15T11:00:23+00:00",
    "event": "schedule",
