@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261121T110023Z",
+   "at": "2026-11-21T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "d9733306e761",
+   "previousVersion": "78efa39902ec",
+   "summary": "marcas: 77 | importadores: 78 | versiones: 1070 | fichas: 450 | sin ficha: 49 | actualizado: 20/11/2026\nmarcas nuevas: JMEV\nrenombradas, enlazadas a su ficha (2):\n  chevrolet-s10_trail_boss_2_8_ctdi_4x4_at8 → chevrolet__s10\n  tesla-model_3_standard_range_rwd_63_kwh → tesla__model_3\ncambios (20):\n  + byd-ti7_dm_p_1_5t_gl_awd_26_6_kwh — U$S 57.990\n  + byd-ti7_dm_p_1_5t_gs_awd_26_6_kwh — U$S 59.990\n  + chery-qq_ev_comfort_42_7_kwh — U$S 20.990\n  + chery-qq_ev_luxury_42_7_kwh — U$S 23.990\n  + chevrolet-s10_trail_boss_2_8_ctdi_4x4_at8 — U$S 62.490\n  + jmev-jmev_2_15_86_kwh — U$S 13.990\n  + jmev-jmev_3_31_9_kwh — U$S 15.990\n  + jmev-jmev_ewind_comfort_70_38_kwh — U$S 27.990\n  + jmev-jmev_ewind_luxury_70_38_kwh — U$S 30.990\n  + tesla-model_3_standard_range_rwd_63_kwh — U$S 34.890\n  - byd-ti_7_dm_p_1_5t_gl_awd_26_6_kwh\n  - byd-ti_7_dm_p_1_5t_gs_awd_26_6_kwh\n  - chevrolet-s10_ltz_2_8_ctdi_4x4_at8\n  - jmc-jmev_2_15_86_kwh\n  - jmc-jmev_3_31_9_kwh\n  - tesla-model_3_premium_standard_range_rwd_63_kwh\n  ~ tesla-model_3_performance_awd_85_kwh — 49990 -> 54740\n  ~ tesla-model_3_premium_long_range_rwd_85_kwh — 37990 -> 44240\n  ~ tesla-model_y_premium_long_range_rwd_85_kwh — 41490 -> 48240\n  ~ tesla-model_y_premium_standard_range_rwd_63_kwh — 36490 -> 38740",
+   "commit": "90e4a9a867a9cdf0c38d55f8b791d522e6abac3f",
+   "durationMs": 11003
+  },
+  {
    "id": "20261120T110023Z",
    "at": "2026-11-20T11:00:23+00:00",
    "event": "schedule",
