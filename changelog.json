@@ -1,6 +1,188 @@
 {
  "entries": [
   {
+   "at": "2026-11-21T11:00:29+00:00",
+   "runId": "20261121T110023Z",
+   "dataVersion": "d9733306e761",
+   "previousVersion": "78efa39902ec",
+   "sourceUpdatedAt": "20/11/2026",
+   "totals": {
+    "brands": 77,
+    "importers": 78,
+    "cars": 1070,
+    "models": 450,
+    "withoutModel": 49
+   },
+   "added": [
+    {
+     "id": "byd-ti7_dm_p_1_5t_gl_awd_26_6_kwh",
+     "brand": "BYD",
+     "name": "Ti7 DM-p 1.5T GL AWD (26,6 kWh)",
+     "priceUsd": 57990
+    },
+    {
+     "id": "byd-ti7_dm_p_1_5t_gs_awd_26_6_kwh",
+     "brand": "BYD",
+     "name": "Ti7 DM-p 1.5T GS AWD (26,6 kWh)",
+     "priceUsd": 59990
+    },
+    {
+     "id": "chery-qq_ev_comfort_42_7_kwh",
+     "brand": "Chery",
+     "name": "QQ EV Comfort (42,7 kWh)",
+     "priceUsd": 20990
+    },
+    {
+     "id": "chery-qq_ev_luxury_42_7_kwh",
+     "brand": "Chery",
+     "name": "QQ EV Luxury (42,7 kWh)",
+     "priceUsd": 23990
+    },
+    {
+     "id": "chevrolet-s10_trail_boss_2_8_ctdi_4x4_at8",
+     "brand": "Chevrolet",
+     "name": "S10 Trail Boss 2.8 CTDI 4x4 AT8",
+     "priceUsd": 62490
+    },
+    {
+     "id": "jmev-jmev_2_15_86_kwh",
+     "brand": "JMEV",
+     "name": "JMEV 2 (15,86 kWh)",
+     "priceUsd": 13990
+    },
+    {
+     "id": "jmev-jmev_3_31_9_kwh",
+     "brand": "JMEV",
+     "name": "JMEV 3 (31,9 kWh)",
+     "priceUsd": 15990
+    },
+    {
+     "id": "jmev-jmev_ewind_comfort_70_38_kwh",
+     "brand": "JMEV",
+     "name": "JMEV Ewind Comfort (70,38 kWh)",
+     "priceUsd": 27990
+    },
+    {
+     "id": "jmev-jmev_ewind_luxury_70_38_kwh",
+     "brand": "JMEV",
+     "name": "JMEV Ewind Luxury (70,38 kWh)",
+     "priceUsd": 30990
+    },
+    {
+     "id": "tesla-model_3_standard_range_rwd_63_kwh",
+     "brand": "Tesla",
+     "name": "Model 3 Standard Range RWD (63 kWh)",
+     "priceUsd": 34890
+    }
+   ],
+   "removed": [
+    {
+     "id": "byd-ti_7_dm_p_1_5t_gl_awd_26_6_kwh",
+     "brand": "BYD",
+     "name": "Ti 7 DM-p 1.5T GL AWD (26,6 kWh)",
+     "priceUsd": 57990
+    },
+    {
+     "id": "byd-ti_7_dm_p_1_5t_gs_awd_26_6_kwh",
+     "brand": "BYD",
+     "name": "Ti 7 DM-p 1.5T GS AWD (26,6 kWh)",
+     "priceUsd": 59990
+    },
+    {
+     "id": "chevrolet-s10_ltz_2_8_ctdi_4x4_at8",
+     "brand": "Chevrolet",
+     "name": "S10 LTZ 2.8 CTDI 4x4 AT8",
+     "priceUsd": 65990
+    },
+    {
+     "id": "jmc-jmev_2_15_86_kwh",
+     "brand": "JMC",
+     "name": "JMEV 2 (15,86 kWh)",
+     "priceUsd": 13990
+    },
+    {
+     "id": "jmc-jmev_3_31_9_kwh",
+     "brand": "JMC",
+     "name": "JMEV 3 (31,9 kWh)",
+     "priceUsd": 15990
+    },
+    {
+     "id": "tesla-model_3_premium_standard_range_rwd_63_kwh",
+     "brand": "Tesla",
+     "name": "Model 3 Premium Standard Range RWD (63 kWh)",
+     "priceUsd": 32990
+    }
+   ],
+   "repriced": [
+    {
+     "id": "tesla-model_3_performance_awd_85_kwh",
+     "brand": "Tesla",
+     "name": "Model 3 Performance AWD (85 kWh)",
+     "priceUsd": 54740,
+     "from": 49990
+    },
+    {
+     "id": "tesla-model_3_premium_long_range_rwd_85_kwh",
+     "brand": "Tesla",
+     "name": "Model 3 Premium Long Range RWD (85 kWh)",
+     "priceUsd": 44240,
+     "from": 37990
+    },
+    {
+     "id": "tesla-model_y_premium_long_range_rwd_85_kwh",
+     "brand": "Tesla",
+     "name": "Model Y Premium Long Range RWD (85 kWh)",
+     "priceUsd": 48240,
+     "from": 41490
+    },
+    {
+     "id": "tesla-model_y_premium_standard_range_rwd_63_kwh",
+     "brand": "Tesla",
+     "name": "Model Y Premium Standard Range RWD (63 kWh)",
+     "priceUsd": 38740,
+     "from": 36490
+    }
+   ],
+   "changed": [],
+   "brandsAdded": [
+    "JMEV"
+   ],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Chery",
+     "name": "Grupo Fidocar",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "5 años o 150.000 km. (8 años o 150.000 km para la batería en modelos electrificados).",
+       "5 años o 150.000 km (8 años o 150.000 km para la batería en modelos electrificados). En QQ EV: 7 años o 200.000 km (8 años o 200.000 km para la batería)."
+      ]
+     }
+    },
+    {
+     "brand": "JMC",
+     "name": "Santa Rosa",
+     "status": "changed",
+     "fields": {
+      "warranty": [
+       "3 años o 100.000 km. (5 años o 150.000 km para la batería en JMEV GSE y 3 años u 80.000 km y 8 años o 120.000 km para la batería en JMEV 2 y 3).",
+       "3 años o 100.000 km."
+      ]
+     }
+    },
+    {
+     "brand": "JMEV",
+     "name": "Santa Rosa",
+     "status": "added"
+    }
+   ],
+   "modelsRemoved": [
+    "jmc__jmev_2",
+    "jmc__jmev_3"
+   ]
+  },
+  {
    "at": "2026-11-16T11:00:27+00:00",
    "runId": "20261116T110023Z",
    "dataVersion": "78efa39902ec",
