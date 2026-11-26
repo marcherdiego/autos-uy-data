@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "id": "20261126T110023Z",
+   "at": "2026-11-26T11:00:23+00:00",
+   "event": "schedule",
+   "conclusion": "success",
+   "changed": true,
+   "dataVersion": "efceb1ec9a21",
+   "previousVersion": "7582939517fb",
+   "summary": "marcas: 78 | importadores: 79 | versiones: 1074 | fichas: 450 | sin ficha: 53 | actualizado: 26/11/2026\nmarcas nuevas: Icaur\ncambios (4):\n  + icaur-v23_2wd_59_93_kwh — U$S 28.990\n  + icaur-v23_4wd_81_8_kwh — U$S 35.990\n  + icaur-v27_reev_2wd — U$S 39.990\n  + icaur-v27_reev_4wd — U$S 44.990",
+   "commit": "23ca9468b48c54b74d31f8fdb2b732ba1c4c7f93",
+   "durationMs": 10496
+  },
+  {
    "id": "20261125T110023Z",
    "at": "2026-11-25T11:00:23+00:00",
    "event": "schedule",
