@@ -1,6 +1,61 @@
 {
  "entries": [
   {
+   "at": "2026-11-26T11:00:27+00:00",
+   "runId": "20261126T110023Z",
+   "dataVersion": "efceb1ec9a21",
+   "previousVersion": "7582939517fb",
+   "sourceUpdatedAt": "26/11/2026",
+   "totals": {
+    "brands": 78,
+    "importers": 79,
+    "cars": 1074,
+    "models": 450,
+    "withoutModel": 53
+   },
+   "added": [
+    {
+     "id": "icaur-v23_2wd_59_93_kwh",
+     "brand": "Icaur",
+     "name": "V23 2WD (59,93 kWh)",
+     "priceUsd": 28990
+    },
+    {
+     "id": "icaur-v23_4wd_81_8_kwh",
+     "brand": "Icaur",
+     "name": "V23 4WD (81,8 kWh)",
+     "priceUsd": 35990
+    },
+    {
+     "id": "icaur-v27_reev_2wd",
+     "brand": "Icaur",
+     "name": "V27 REEV 2WD",
+     "priceUsd": 39990
+    },
+    {
+     "id": "icaur-v27_reev_4wd",
+     "brand": "Icaur",
+     "name": "V27 REEV 4WD",
+     "priceUsd": 44990
+    }
+   ],
+   "removed": [],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [
+    "Icaur"
+   ],
+   "brandsRemoved": [],
+   "importers": [
+    {
+     "brand": "Icaur",
+     "name": "Santa Rosa",
+     "status": "added"
+    }
+   ],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-11-24T11:00:27+00:00",
    "runId": "20261124T110023Z",
    "dataVersion": "7582939517fb",
