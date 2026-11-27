@@ -1,6 +1,28 @@
 {
  "entries": [
   {
+   "at": "2026-11-27T11:00:27+00:00",
+   "runId": "20261127T110023Z",
+   "dataVersion": "b402b8287ce8",
+   "previousVersion": "efceb1ec9a21",
+   "sourceUpdatedAt": "30/11/2026",
+   "totals": {
+    "brands": 78,
+    "importers": 79,
+    "cars": 1074,
+    "models": 450,
+    "withoutModel": 53
+   },
+   "added": [],
+   "removed": [],
+   "repriced": [],
+   "changed": [],
+   "brandsAdded": [],
+   "brandsRemoved": [],
+   "importers": [],
+   "modelsRemoved": []
+  },
+  {
    "at": "2026-11-26T11:00:27+00:00",
    "runId": "20261126T110023Z",
    "dataVersion": "efceb1ec9a21",
